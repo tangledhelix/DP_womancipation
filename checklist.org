@@ -5,6 +5,15 @@
 "The emancipation of women and its probable consequences" by Crepaz, Adele
 
 * Things to revisit
+** General
+** Text only
+- [ ] 138-140: float left/right (title, author)
+** HTML only
+- [ ] 003: paragraph has "deep indent"
+- [ ] 005: opening word in smallcaps
+- [ ] 007: opening word in smallcaps
+- [ ] 137: ads: hanging indents
+- [ ] 138-140: float left/right (title, author)
 * Transcriber Notes
 * Notes
 ** General notes
@@ -47,9 +56,9 @@ cd ~/dp/util
 - [X] Set document language (probably ~en~)
 - [X] ~File → Project → Configure Page Labels...~. Check for roman numerals and unnumbered pages. Go to end of book to check page numbers line up.
 *** Sequential Inspection of Text
-- [ ] Turn on ~Auto Img~
-- [ ] Check for chapter/section spacing (2,4). Regex: ~(^$\n^$\n^$\n^$\n|^$\n^$\n)~ and use "Highlight All".
-- [ ] If languages other than main language are noticed, add them to Lang setting (e.g. ~en+fr~)
+- [X] Turn on ~Auto Img~
+- [X] Check for chapter/section spacing (2,4). Regex: ~(^$\n^$\n^$\n^$\n|^$\n^$\n)~ and use "Highlight All".
+- [X] If languages other than main language are noticed, add them to Lang setting (e.g. ~en+fr~)
 Check for:
 - Proper spacing for chapters and paragraphs
   - Before chapter start: 4 blank lines
