@@ -2,21 +2,16 @@
 
 
 
-/*
+/C
 THE
-
 <sc>Emancipation of Women</sc>
-
 AND
-
 ITS PROBABLE CONSEQUENCES
 
 BY
-
 ADELE CREPAZ
 
 <i>WITH A LETTER TO THE AUTHORESS BY</i>
-
 THE RIGHT HON. W. E. GLADSTONE, M.P.
 
 [Illustration]
@@ -25,16 +20,16 @@ LONDON
 SWAN SONNENSCHEIN & CO.
 NEW YORK: CHARLES SCRIBNER'S SONS
 1893
-*/
+C/
 
 
 
 
-/*
+/R
 <sc>10 Downing Street,
 Whitehall.</sc>
 <i>Oct. 3, '92.</i>
-*/
+R/
 
 
 <sc>Madam</sc>,
@@ -70,12 +65,12 @@ out. I only wish the treatise had been open
 to my countrymen and countrywomen in their
 own tongue.
 
-/*
+/X
 I remain, Madam,
 With high consideration,
 Your faithful servant,
 <sc>W. E. Gladstone</sc>.
-*/
+X/
 
 <i>P.S.</i>--For this as well as for other subjects,
 I deeply regret the death of J. S. Mill: he had
@@ -114,9 +109,9 @@ England's Prime Minister is some indication
 that they are not without supporters in this
 country.
 
-/*
+/R
 <sc>Ellis Wright.</sc>
-*/
+R/
 
 <sc>London</sc>, <i>January 1893</i>.
 
@@ -2673,7 +2668,7 @@ ON THE
 SOCIAL SCIENCE SERIES.
 
 
-/#
+/X
 "'The Principles of State Interference' is another of Messrs. Swan Sonnenschein's
 Series of Handbooks on Scientific Social Subjects. <b>It would be
 fitting to close our remarks on this little work with a word of commendation
@@ -2714,7 +2709,7 @@ be forthcoming at the hands of the next contributor."--<i>Literary World.</i>
 
 "'The Social Science Series' aims at the illustration of all sides of social and
 economic truth and error."--<i>Scotsman.</i>
-#/
+X/
 
 
 SWAN SONNENSCHEIN & CO., LONDON.
@@ -2727,519 +2722,292 @@ SOCIAL SCIENCE SERIES.
 <i>SCARLET CLOTH, EACH 2s. 6d.</i>
 
 
-/*
+/X
 1. <b>Work and Wages.</b>      Prof. <sc>J. E. Thorold Rogers</sc>.
-*/
 
-/#
 "Nothing that Professor Rogers writes can fail to be of interest to thoughtful
 people."--<i>Athenæum.</i>
-#/
 
-/*
 2. <b>Civilisation: its Cause and Cure.</b>      <sc>Edward Carpenter.</sc>
-*/
 
-/#
 "No passing piece of polemics, but a permanent possession."--<i>Scottish Review.</i>
-#/
 
-/*
 3. <b>Quintessence of Socialism.</b>      Dr. <sc>Schäffle</sc>.
-*/
 
-/#
 "Precisely the manual needed. Brief, lucid, fair and wise."--<i>British Weekly.</i>
-#/
 
-/*
 4. <b>Darwinism and Politics.</b>      <sc>D. G. Ritchie</sc>, M.A. (Oxon.).
-*/
 
-/#
 New Edition, with two additional Essays on <sc>Human Evolution</sc>.
 
 "One of the most suggestive books we have met with."--<i>Literary World.</i>
-#/
 
-/*
 5. <b>Religion of Socialism.</b>      <sc>E. Belfort Bax.</sc>
 
 6. <b>Ethics of Socialism.</b>      <sc>E. Belfort Bax.</sc>
-*/
 
-/#
 "Mr. Bax is by far the ablest of the English exponents of Socialism."--<i>Westminster
 Review.</i>
-#/
 
-/*
 7. <b>The Drink Question.</b>      Dr. <sc>Kate Mitchell</sc>.
-*/
 
-/#
 "Plenty of interesting matter for reflection."--<i>Graphic.</i>
-#/
 
-/*
 8. <b>Promotion of General Happiness.</b>      Prof. <sc>M. Macmillan</sc>.
-*/
 
-/#
 "A reasoned account of the most advanced and most enlightened utilitarian doctrine
 in a clear and readable form."--<i>Scotsman.</i>
-#/
 
-/*
 9. <b>England's Ideal, &c.</b>      <sc>Edward Carpenter.</sc>
-*/
 
-/#
 "The literary power is unmistakable, their freshness of style, their humour, and
 their enthusiasm."--<i>Pall Mall Gazette.</i>
-#/
 
-/*
 10. <b>Socialism in England.</b>      <sc>Sidney Webb</sc>, LL.B.
-*/
 
-/#
 "The best general view of the subject from the modern Socialist side."--<i>Athenæum.</i>
-#/
 
-/*
 11. <b>Prince Bismarck and State Socialism.</b>      <sc>W. H. Dawson.</sc>
-*/
 
-/#
 "A succinct, well-digested review of German social and economic legislation since
 1870."--<i>Saturday Review.</i>
-#/
 
-/*
 12. <b>Godwin's Political Justice (On Property).</b>      Edited by <sc>H. S. Salt</sc>.
-*/
 
-/#
 "Shows Godwin at his best; with an interesting and informing introduction."--<i>Glasgow
 Herald.</i>
-#/
 
-/*
 13. <b>The Story of the French Revolution.</b>      <sc>E. Belfort Bax.</sc>
-*/
 
-/#
 "A trustworthy outline."--<i>Scotsman.</i>
-#/
 
-/*
 14. <b>The Co-Operative Commonwealth.</b>      <sc>Laurence Gronlund.</sc>
-*/
 
-/#
 "An independent exposition of the Socialism of the Marx school."--<i>Contemporary
 Review.</i>
-#/
 
-/*
 15. <b>Essays and Addresses.</b>      <sc>Bernard Bosanquet</sc>, M.A. (Oxon.).
-*/
 
-/#
 "Ought to be in the hands of every student of the Nineteenth Century spirit."--<i>Echo.</i>
 
 "No one can complain of not being able to understand what Mr. Bosanquet
 means."--<i>Pall Mall Gazette.</i>
-#/
 
-/*
 16. <b>Charity Organisation.</b>      <sc>C. S. Loch</sc>, Secretary to Charity Organisation Society.
-*/
 
-/#
 "A perfect little manual."--<i>Athenæum.</i>
 
 "Deserves a wide circulation."--<i>Scotsman.</i>
-#/
 
-/*
 17. <b>Thoreau's Anti-Slavery and Reform Papers.</b>      Edited by <sc>H. S. Salt</sc>.
-*/
 
-/#
 "An interesting collection of essays."--<i>Literary World.</i>
-#/
 
-/*
 18. <b>Self-Help a Hundred Years Ago.</b>      <sc>G. J. Holyoake.</sc>
-*/
 
-/#
 "Will be studied with much benefit by all who are interested in the amelioration
 of the condition of the poor."--<i>Morning Post.</i>
-#/
 
-/*
 19. <b>The New York State Reformatory at Elmira.</b>      <sc>Alexander Winter.</sc>
-*/
 
-/*
 With Preface by <sc>Havelock Ellis</sc>.
-*/
 
-/#
 "A valuable contribution to the literature of penology."--<i>Black and White.</i>
-#/
 
-/*
 20. <b>Common Sense about Women.</b>      <sc>T. W. Higginson.</sc>
-*/
 
-/#
 "An admirable collection of papers, advocating in the most liberal spirit the
 emancipation of women."--<i>Woman's Herald.</i>
-#/
 
-/*
 21. <b>The Unearned Increment.</b>      <sc>W. H. Dawson.</sc>
-*/
 
-/#
 "A concise but comprehensive volume."--<i>Echo.</i>
-#/
 
-/*
 22. <b>Our Destiny.</b>      <sc>Laurence Gronlund.</sc>
-*/
 
-/#
 "A very vigorous little book, dealing with the influence of Socialism on morals
 and religion."--<i>Daily Chronicle.</i>
-#/
 
-/*
 23. <b>The Working-Class Movement in America.</b>      Dr. <sc>Edward</sc> and <sc>E. Marx Aveling</sc>.
-*/
 
-/#
 "Will give a good idea of the condition of the working classes in America, and of
 the various organisations which they have formed."--<i>Scots Leader.</i>
-#/
 
-/*
 24. <b>Luxury.</b>      Prof. <sc>Emile de Laveleye</sc>.
-*/
 
-/#
 "An eloquent plea on moral and economical grounds for simplicity of life."--<i>Academy.</i>
-#/
 
-/*
 25. <b>The Land and the Labourers.</b>      Rev. <sc>C. W. Stubbs</sc>, M.A.
-*/
 
-/#
 "This admirable book should be circulated in every village in the country."--<i>Manchester
 Guardian.</i>
-#/
 
-/*
 26. <b>The Evolution of Property.</b>      <sc>Paul Lafargue.</sc>
-*/
 
-/#
 "Will prove interesting and profitable to all students of economic history."--<i>Scotsman.</i>
-#/
 
-/*
 27. <b>Crime and its Causes.</b>      <sc>W. Douglas Morrison.</sc>
-*/
 
-/#
 "Can hardly fail to suggest to all readers several new and pregnant reflections on
 the subject."--<i>Anti-Jacobin.</i>
-#/
 
-/*
 28. <b>Principles of State Interference.</b>      <sc>D. G. Ritchie</sc>, M.A.
-*/
 
-/#
 "An interesting contribution to the controversy on the functions of the State."--<i>Glasgow
 Herald.</i>
-#/
 
-/*
 29. <b>German Socialism and F. Lassalle.</b>      <sc>W. H. Dawson.</sc>
-*/
 
-/#
 "As a biographical history of German Socialistic movements during this century
 it may be accepted as complete."--<i>British Weekly.</i>
-#/
 
-/*
 30. <b>The Purse and the Conscience.</b>      <sc>H. M. Thompson</sc>, B.A. (Cantab.).
-*/
 
-/#
 "Shows common sense and fairness in his arguments."--<i>Scotsman.</i>
-#/
 
 31. <b>Origin of Property in Land.</b> <sc>Fustel de Coulanges.</sc> Edited, with an
 Introductory Chapter on the English Manor, by Prof. <sc>W. J. Ashley</sc>, M.A.
 
-/#
 "His views are clearly stated, and are worth reading."--<i>Saturday Review.</i>
-#/
 
-/*
 32. <b>The English Republic.</b>      <sc>W. J. Linton.</sc>    Edited by <sc>Kineton Parkes</sc>.
-*/
 
-/#
 "Characterised by that vigorous intellectuality which has marked his long life of
 literary and artistic activity."--<i>Glasgow Herald.</i>
-#/
 
-/*
 33. <b>The Co-Operative Movement.</b>      <sc>Beatrice Potter.</sc>
-*/
 
-/#
 "Without doubt the ablest and most philosophical analysis of the Co-Operative
 Movement which has yet been produced."--<i>Speaker.</i>
-#/
 
-/*
 34. <b>Neighbourhood Guilds.</b>      Dr. <sc>Stanton Coit</sc>.
-*/
 
-/#
 "A most suggestive little book to anyone interested in the social question."--<i>Pall
 Mall Gazette.</i>
-#/
 
-/*
 35. <b>Modern Humanists.</b>      <sc>J. M. Robertson.</sc>
-*/
 
-/#
 "Mr. Robertson's style is excellent--nay, even brilliant--and his purely literary
 criticisms bear the mark of much acumen."--<i>Times.</i>
-#/
 
-/*
 36. <b>Outlooks from the New Standpoint.</b>      <sc>E. Belfort Bax.</sc>
-*/
 
-/#
 "Mr. Bax is a very acute and accomplished student of history and economics."--<i>Daily
 Chronicle.</i>
-#/
 
 37. <b>Distributing Co-Operative Societies.</b>    Dr. <sc>Luigi Pizzamiglio</sc>.    Edited by
 <sc>F. J. Snell</sc>.
 
-/#
 "Dr. Pizzamiglio has gathered together and grouped a wide array of facts and
 statistics, and they speak for themselves."--<i>Speaker.</i>
-#/
 
-/*
 38. <b>Collectivism and Socialism.</b>      By <sc>A. Nacquet</sc>.    Edited by <sc>W. Heaford</sc>.
-*/
 
-/#
 "An admirable criticism by a well-known French politician of the New Socialism
 of Marx and Lassalle."--<i>Daily Chronicle.</i>
-#/
 
-/*
 39. <b>The London Programme.</b>      <sc>Sidney Webb</sc>, LL.B.
-*/
 
-/#
 "Brimful of excellent ideas."--<i>Anti-Jacobin.</i>
-#/
 
-/*
 40. <b>The Modern State.</b>      <sc>Paul Leroy Beaulieu.</sc>
-*/
 
-/#
 "A most interesting book; well worth a place in the library of every social
 inquirer."--<i>N. B. Economist.</i>
-#/
 
-/*
 41. <b>The Condition of Labour.</b>      <sc>Henry George.</sc>
-*/
 
-/#
 "Written with striking ability, and sure to attract attention."--<i>Newcastle Chronicle.</i>
-#/
 
 42. <b>The Revolutionary Spirit preceding the French Revolution.</b>
 <sc>Felix Rocquain.</sc> With a Preface by Professor <sc>Huxley</sc>.
 
-/#
 "The student of the French Revolution will find in it an excellent introduction to
 the study of that catastrophe."--<i>Scotsman.</i>
-#/
 
-/*
 43. <b>The Student's Marx.</b>      <sc>Edward Aveling</sc>, D.Sc.
-*/
 
-/#
 "One of the most practically useful of any in the Series."--<i>Glasgow Herald.</i>
-#/
 
-/*
 44. <b>A Short History of Parliament.</b>      <sc>B. C. Skottowe</sc>, M.A. (Oxon.).
-*/
 
-/#
 "Deals very carefully and completely with this side of constitutional history."--<i>Spectator.</i>
-#/
 
-/*
 45. <b>Poverty: Its Genesis and Exodus.</b>      <sc>J. G. Godard.</sc>
-*/
 
-/#
 "He states the problems with great force and clearness."--<i>N. B. Economist.</i>
-#/
 
-/*
 46. <b>The Trade Policy of Imperial Federation.</b>      <sc>Maurice H. Hervey.</sc>
-*/
 
-/#
 "An interesting contribution to the discussion."--<i>Publishers' Circular.</i>
-#/
 
-/*
 47. <b>The Dawn of Radicalism.</b>      <sc>J. Bowles Daly</sc>, LL.D.
-*/
 
-/#
 "Forms an admirable picture of an epoch more pregnant, perhaps, with political
 instruction than any other in the world's history."--<i>Daily Telegraph.</i>
-#/
 
-/*
 48. <b>The Destitute Alien in Great Britain.</b>      <sc>Arnold White</sc>; <sc>Montague Crackanthorpe</sc>,
 Q.C.; <sc>W. A. M'Arthur</sc>, M.P.; <sc>W. H. Wilkins</sc>, &c.
-*/
 
-/#
 "Much valuable information concerning a burning question of the day."--<i>Times.</i>
-#/
 
 49. <b>Illegitimacy and the Influence of Seasons on Conduct.</b>
 <sc>Albert Leffingwell</sc>, M.D.
 
-/#
 "We have not often seen a work based on statistics which is more continuously
 interesting."--<i>Westminster Review.</i>
-#/
 
-/*
 50. <b>Commercial Crises of the Nineteenth Century.</b>      <sc>H. M. Hyndman.</sc>
-*/
 
-/#
 "One of the best and most permanently useful volumes of the Series."--<i>Literary
 Opinion.</i>
-#/
 
-/*
 51. <b>The State and Pensions in Old Age.</b>      <sc>J. A. Spender</sc> and <sc>Arthur Acland</sc>, M.P.
-*/
 
-/#
 "A careful and cautious examination of the question."--<i>Times.</i>
-#/
 
-/*
 52. <b>The Fallacy of Saving.</b>      <sc>John M. Robertson.</sc>
-*/
 
-/#
 "A plea for the reorganisation of our social and industrial system."--<i>Speaker.</i>
-#/
 
-/*
 53. <b>The Irish Peasant.</b>      <sc>Anon.</sc>
-*/
 
-/#
 "A real contribution to the Irish Problem by a close, patient and dispassionate
 investigator."--<i>Daily Chronicle.</i>
-#/
 
-/*
 54. <b>The Effects of Machinery on Wages.</b>      Prof. <sc>J. S. Nicholson</sc>, D.Sc.
-*/
 
-/#
 "Ably reasoned, clearly stated, impartially written."--<i>Literary World.</i>
-#/
 
-/*
 55. <b>The Social Horizon.</b>      <sc>Anon.</sc>
-*/
 
-/#
 "A really admirable little book, bright, clear, and unconventional."--<i>Daily
 Chronicle.</i>
-#/
 
-/*
 56. <b>Socialism, Utopian and Scientific.</b>      <sc>Frederick Engels.</sc>
-*/
 
-/#
 "The body of the book is still fresh and striking."--<i>Daily Chronicle.</i>
-#/
 
-/*
 57. <b>Land Nationalisation.</b>      <sc>A. R. Wallace.</sc>
-*/
 
-/#
 "The most instructive and convincing of the popular works on the subject."--<i>National
 Reformer.</i>
-#/
 
-/*
 58. <b>The Ethic of Usury and Interest.</b>      Rev. <sc>W. Blissard</sc>.
-*/
 
-/#
 "The work is marked by genuine ability."--<i>North British Agriculturalist.</i>
-#/
 
-/*
 59. <b>The Emancipation of Women.</b>      <sc>Adele Crepaz.</sc>
-*/
 
-/#
 "By far the most comprehensive, luminous, and penetrating work on this question
 that I have yet met with."--<i>Extract from</i> Mr. <sc>Gladstone's</sc> <i>Preface</i>.
-#/
 
-/*
 60. <b>The Eight Hours' Question.</b>      <sc>John M. Robertson.</sc>
-*/
-
+X/
 
 DOUBLE VOLUMES, Each 3s. 6d.
 
-/*
+/X
 1. <b>Life of Robert Owen.</b>      <sc>Lloyd Jones.</sc>
 
 2. <b>The Impossibility of Social Democracy</b>: a Second Part of "The Quintessence
@@ -3248,4 +3016,4 @@ of Socialism".      Dr. <sc>A. Schäffle</sc>.
 3. <b>The Condition of the Working Class in England in 1844.</b>      <sc>Frederick Engels.</sc>
 
 4. <b>The Principles of Social Economy.</b>      <sc>Yves Guyot.</sc>
-*/
+X/
