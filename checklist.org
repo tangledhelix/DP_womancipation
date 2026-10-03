@@ -14,6 +14,9 @@
 - [ ] 137-140: ad section
 - [ ] 138-140: float left/right (title, author)
 ** HTML only
+- [ ] 127: citation: Conversation with Christiana von Wurmb
+- [ ] 140: ~M'Arthur should get opening curly-quote
+*** Formatting
 - [ ] 003: right-aligned heading (not all at the margin)
 - [ ] 003: paragraph has "deep indent"
 - [ ] 004: complicated sign-off
@@ -25,6 +28,11 @@
 - [ ] 137: ads: hanging indents
 - [ ] 137-140: ad section
 - [ ] 138-140: float left/right (title, author)
+*** Languages
+- [ ] 014: Latin
+- [ ] 017: French
+- [ ] 040: French
+- [ ] 065: German
 * Transcriber Notes
 - p. 12: “Hall” changed to “Falls” (the little town of Seneca Falls)
 - p. 14: “clergywoman” changed to “clergywomen” (officials, clergywomen, ladies everywhere)
@@ -151,19 +159,19 @@ Instructions for ~/* */~ and ~/# #/~ blocks:
 *** Add Noted Rewrap Markers
 - [X] If the to-do list has any notes about adding [[https://www.pgdp.net/wiki/PPTools/Guiguts/Guiguts_Manual/Tools_Menu#Rewrap_Markers][rewrap markers]] (such as indexes or poetry), make those changes.
 *** Apply Word-Frequency Checks
-- [ ] Open ~Tools → Word Frequency~. Click on an entry to jump to it.
-- [ ] Choose ~Freq~ and ~All Words~. List is now sorted by word frequency; scroll to the end and skim up the list of words that only appear 1 time looking for oddities and obvious misspellings.
-- [ ] Click ~Character Cnts~.
+- [X] Open ~Tools → Word Frequency~. Click on an entry to jump to it.
+- [X] Choose ~Freq~ and ~All Words~. List is now sorted by word frequency; scroll to the end and skim up the list of words that only appear 1 time looking for oddities and obvious misspellings.
+- [X] Click ~Character Cnts~.
   - Note characters that appear only once, check usage.
   - Check for equal counts of left & right parens and brackets.
-- [ ] Click ~Emdashes~. This shows words with emdashes in them as well as similar words without emdashes (aka: suspects) marked with ~****~. Check suspects against the text and page images. Preserve author's intent even when inconsistent.
-- [ ] Click ~Hyphens~. Same as Emdashes above but for Hyphens.
-- [ ] Click ~Alpha/num~. Scan list for ~one/ell~ and ~oh/zero~ errors.
-- [ ] Click ~ALL CAPITALS~. Scan list looking for oddities.
-- [ ] Click ~MiXeD CasE~. Scan list looking for letters such as o that sometimes OCR wrongly as uppercase. ~Oh/zero~ errors can show up here, too.
-- [ ] Click ~Diacritics/æ/œ~. Scan list looking for mistakes, inconsistent usages.
-- [ ] Click ~Ital/Bold/SC~. Scan list for incorrect or inconsistent use of italics, bold face, and small caps.
-- [ ] Click ~Ligatures~. Scan list for [[https://www.pgdp.net/wiki/Æ_and_œ_ligatures][incorrect or inconsistent use]] of ~ae~ and ~oe~ ligatures.
+- [X] Click ~Emdashes~. This shows words with emdashes in them as well as similar words without emdashes (aka: suspects) marked with ~****~. Check suspects against the text and page images. Preserve author's intent even when inconsistent.
+- [X] Click ~Hyphens~. Same as Emdashes above but for Hyphens.
+- [X] Click ~Alpha/num~. Scan list for ~one/ell~ and ~oh/zero~ errors.
+- [X] Click ~ALL CAPITALS~. Scan list looking for oddities.
+- [X] Click ~MiXeD CasE~. Scan list looking for letters such as o that sometimes OCR wrongly as uppercase. ~Oh/zero~ errors can show up here, too.
+- [X] Click ~Diacritics/æ/œ~. Scan list looking for mistakes, inconsistent usages.
+- [X] Click ~Ital/Bold/SC~. Scan list for incorrect or inconsistent use of italics, bold face, and small caps.
+- [X] Click ~Ligatures~. Scan list for [[https://www.pgdp.net/wiki/Æ_and_œ_ligatures][incorrect or inconsistent use]] of ~ae~ and ~oe~ ligatures.
 #+BEGIN_SRC text
 æ Æ    <Opt> '    /ai/ to rhyme with “eye”.
 œ Œ    <Opt> q    /ɔɪ/ to rhyme with “oi” in “foil”

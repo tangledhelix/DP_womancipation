@@ -1,7 +1,7 @@
 {
-  "md5checksum": "7268c958685206755d1d7b72ac4528fd",
-  "insertpos": "73.1",
-  "insertpospeer": "3247.0",
+  "md5checksum": "c5f2d7b96377ac5391164ecde3dbfd42",
+  "insertpos": "1280.34",
+  "insertpospeer": "3020.0",
   "pagedetails": {
     "001": {
       "index": "1.0",
@@ -832,13 +832,13 @@
       "label": ""
     },
     "139": {
-      "index": "2889.0",
+      "index": "2816.0",
       "style": "\"",
       "number": "No Count",
       "label": ""
     },
     "140": {
-      "index": "3053.0",
+      "index": "2908.0",
       "style": "\"",
       "number": "No Count",
       "label": ""
@@ -846,7 +846,7 @@
   },
   "imagedir": "/Users/dan/dp/pp/womancipation/pngs",
   "projectid": "projectID65d9ffa2f17d8",
-  "languages": "en",
+  "languages": "en+fr+de+la",
   "charsuites": {
     "Basic Latin": true
   },
