@@ -185,7 +185,7 @@ Instructions for ~/* */~ and ~/# #/~ blocks:
 - [X] ~Tools → Jeebies~. Examine its report of possible ~he/be~ errors.
 - [X] ~Tools → Regex Library~. Run my custom ~misc_checks.json~.
 *** Apply Bookloupe
-- [ ] ~Tools → Bookloupe~.
+- [X] ~Tools → Bookloupe~.
 *** Spelling and Distance Checks
 - [ ] If any languages known to be in the book aren't in the Lang: setting, add them (e.g. ~en+fr~). Only tag languages we have a dictionary for. (More dictionaries are available; see [[https://www.pgdp.net/wiki/PPTools/Guiguts/Guiguts_2_Manual/Tools_Menu#Spelling][the wiki]].)
 - [ ] Use ~Tools → Spelling~. Proceed through the document, correcting words or adding them to the project dictionary as appropriate.
