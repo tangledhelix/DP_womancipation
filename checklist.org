@@ -209,13 +209,13 @@ For now, do not process EM dash. The EM dash and long dash (2x EM) are left for 
     - Negative numbers ~–14º~ (uses MINUS SIGN)
 - Any single dashes not covered above are treated as hyphens.
 *** Move footnotes to landing zones
-- [ ] Depending on book, move footnotes to end of chapters, or end of book (use Footnote Fixup)
+- [X] Depending on book, move footnotes to end of chapters, or end of book (use Footnote Fixup)
 *** Last pre-split check
-- [ ] Look at the revisit list for anything to handle before text/html split
-- [ ] Check for unexpected ~*~: ~Search → Find Asterisks w/o Slash~
+- [X] Look at the revisit list for anything to handle before text/html split
+- [X] Check for unexpected ~*~: ~Search → Find Asterisks w/o Slash~
 *** Save Edited Markup
-- [ ] Save any unsaved changes
-- [ ] Use ~File → Save a Copy As~ to make ~womancipation.html~
+- [X] Save any unsaved changes
+- [X] Use ~File → Save a Copy As~ to make ~womancipation.html~
   - This will be the starting file for the HTML version. You can also use it  as fallback in case you mess up and need to start the following steps over.
 ** Prepare the Plain Text Version
 We now proceed to create a Plain Text Version of the book.
