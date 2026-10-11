@@ -1,40 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+    <title>
+      The emancipation of women and its probable consequences | Project Gutenberg
+    </title>
+    <link rel="icon" href="images/cover.jpg" type="image/x-cover">
+    <style>
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-align: center; /* all headings centered */
+    clear: both;
+}
+
+p {
+    margin-top: .5em;
+    text-align: justify;
+    margin-bottom: .5em;
+}
+
+.p2       {margin-top: 2em;}
+.p4       {margin-top: 4em;}
+.p6       {margin-top: 6em;}
+
+hr {
+    width: 33%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 33.5%;
+    margin-right: 33.5%;
+    clear: both;
+}
+
+hr.tb   {width: 45%; margin-left: 27.5%; margin-right: 27.5%;}
+hr.chap {width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
+@media print { hr.chap {display: none; visibility: hidden;} }
+hr.full {width: 95%; margin-left: 2.5%; margin-right: 2.5%;}
+
+hr.r5  {width: 5%; margin-top: 1em; margin-bottom: 1em; margin-left: 47.5%; margin-right: 47.5%;}
+hr.r65 {width: 65%; margin-top: 3em; margin-bottom: 3em; margin-left: 17.5%; margin-right: 17.5%;}
+hr.hrimage {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 2em;
+    width: 100%;
+    border: 0;
+    margin: 1em 0;
+}
+
+div.chapter {page-break-before: always;}
+h2.nobreak  {page-break-before: avoid;}
+
+ul.index { list-style-type: none; }
+li.ifrst {
+    margin-top: 1em;
+    text-indent: -2em;
+    padding-left: 1em;
+}
+li.indx  {
+    margin-top: .5em;
+    text-indent: -2em;
+    padding-left: 1em;
+}
+li.isub1 {
+    text-indent: -2em;
+    padding-left: 2em;
+}
+li.isub2 {
+    text-indent: -2em;
+    padding-left: 3em;
+}
+li.isub3 {
+    text-indent: -2em;
+    padding-left: 4em;
+}
+li.isub4 {
+    text-indent: -2em;
+    padding-left: 5em;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+td, th { padding: 0.25em; }
+
+/* Classes to support ToC using list & flex */
+.toc-wrap {
+    max-width: 30em;
+    margin: 0 auto;
+    text-align: left;
+}
+.toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.toc-head {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.toc-entry {
+    display: flex;
+    line-height: 1.5;
+}
+.toc-num {
+    flex: 0 0 4em;
+    text-align: right;
+}
+.toc-title {
+    flex: 1 1 auto;
+    margin-left: 2em;
+    text-indent: -1em;
+}
+.toc-page {
+    flex: 0 0 5em;
+    margin-left: 1em;
+    text-align: right;
+    align-self: flex-end;
+}
+
+.tdl      {text-align: left;}
+.tdr      {text-align: right;}
+.tdc      {text-align: center;}
+
+.pagenum { /* uncomment the next line for invisible page numbers */
+    /*  visibility: hidden;  */
+    position: absolute;
+    left: 92%;
+    font-size: small;
+    text-align: right;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-indent: 0;
+} /* page numbers */
+
+.linenum {
+    position: absolute;
+    top: auto;
+    left: 4%;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+} /* poetry number */
+
+blockquote {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.sidenote {
+    width: 20%;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
+    margin-left: 1em;
+    float: right;
+    clear: right;
+    margin-top: 1em;
+    font-size: small;
+    color: black;
+    background: #eeeeee;
+    border: 1px dashed;
+}
+
+.bb       {border-bottom: 2px solid;}
+
+.bl       {border-left: 2px solid;}
+
+.bt       {border-top: 2px solid;}
+
+.br       {border-right: 2px solid;}
+
+.bbox     {border: 2px solid;}
+
+.center   {text-align: center; text-indent: 0;}
+
+.right    {text-align: right;}
+
+.smcap    {font-variant: small-caps;}
+
+.allsmcap {font-variant: small-caps; text-transform: lowercase;}
+
+.u        {text-decoration: underline;}
+
+.gesperrt
+{
+    font-style: normal;
+    letter-spacing: 0.2em;
+    margin-right: -0.2em;
+}
+.x-ebookmaker-2 .gesperrt {
+    font-style: italic;
+    letter-spacing: normal;
+    margin-right: 0em;
+}
+
+figcaption   {font-weight: bold;}
+figcaption p {margin-top: 0; margin-bottom: .2em; text-align: inherit;}
+
+/* Images */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+img.w100 {width: 100%;}
 
 
+.figcenter {
+    margin: auto;
+    text-align: center;
+    page-break-inside: avoid;
+    max-width: 100%;
+}
+
+.figleft {
+    float: left;
+    clear: left;
+    margin-left: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding: 0;
+    text-align: center;
+    page-break-inside: avoid;
+    max-width: 100%;
+}
+/* comment out next line and uncomment the following one for floating figleft on ebookmaker output */
+.x-ebookmaker .figleft {float: none; text-align: center; margin-right: 0;}
+/* .x-ebookmaker .figleft {float: left;} */
+
+.figright {
+    float: right;
+    clear: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-right: 0;
+    padding: 0;
+    text-align: center;
+    page-break-inside: avoid;
+    max-width: 100%;
+}
+/* comment out next line and uncomment the following one for floating figright on ebookmaker output */
+.x-ebookmaker .figright {float: none; text-align: center; margin-left: 0;}
+/* .x-ebookmaker .figright {float: right;} */
+
+/* Footnotes */
+.footnotes        {border: 1px dashed;}
+
+.footnote         {margin-left: 10%; margin-right: 10%; font-size: 0.9em;}
+
+.footnote .label  {position: absolute; right: 84%; text-align: right;}
+
+.fnanchor {
+    vertical-align: super;
+    font-size: .8em;
+    text-decoration:
+    none;
+}
+
+/* Poetry */
+/* uncomment the next line for centered poetry */
+/* .poetry-container {display: flex; justify-content: center;} */
+.poetry-container {text-align: center;}
+.poetry           {text-align: left; margin-left: 5%; margin-right: 5%;}
+.poetry .stanza   {margin: 1em auto;}
+.poetry .verse    {text-indent: -3em; padding-left: 3em;}
+
+/* Transcriber's notes */
+.transnote {background-color: #E6E6FA;
+    color: black;
+    font-size:small;
+    padding:0.5em;
+    margin-bottom:5em;
+    font-family:sans-serif, serif;
+}
 
 
-/F
-THE
-<sc>Emancipation of Women</sc>
+/* indent paragraphs, reset justification */
+p { text-indent: 1em; text-align: left; }
+p.noindent { text-indent: 0; }
+
+/* de-emphasize page numbers */
+.pagenum { color: #bbbbbb; }
+
+/* footnote block styling */
+.footnotes {
+    border: 1px dashed #aaaaaa;
+    margin-top: 1.5em;
+}
+
+/* TN styling */
+.transnote {
+    background-color: inherit;
+    border: 1px dashed #bbbbbb;
+    margin-top: 3em;
+    page-break-before: always;
+}
+
+/* Don't visibly style abbr tags. Browsers usually underline them. */
+abbr, abbr[title] {
+    text-decoration: none;
+}
+/* abbrs that should be read letter-by-letter */
+abbr.spell { speak: spell-out; }
+
+/* "gray bar" blockquotes */
+/*blockquote {
+    border-left: .15em solid #c8c8c8;
+    padding-left: .7em;
+    margin-left: 4%;
+    margin-right: 8%;
+}*/
+
+/* don't wrap; better than invisible word joiner char? */
+.nowrap { white-space: nowrap; }
+
+/* remove italic styling, e.g. on a <cite> */
+.nonitalic { font-style: normal; }
+
+/* hanging indent */
+.hanging2 {
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
+/* drop caps */
+p.drop-cap { text-indent: 0em; }
+p.drop-cap::first-letter {
+  float: left;
+  margin: 0 0.1em 0 0;
+  font-size: 250%;
+  line-height:0.85em;
+}
+.uppercase { text-transform: uppercase; }
+
+/* disable drop caps for EPUB2 */
+.x-ebookmaker-2  p.drop-cap::first-letter {
+  float: none;
+  margin: 0;
+  font-size: 100%;
+}
+
+
+    </style>
+</head>
+<body>
+
+
+<p><span class="pagenum" id="Page_i" role="doc-pagebreak">i</span></p>
+
+<!-- Autogenerated TOC. Modify or delete as required. -->
+<nav data-epub-type="toc">
+<div class="toc-wrap">
+<ul class="toc-list">
+  <!-- Header row -->
+  <!--<li class="toc-entry toc-head">
+    <span class="toc-num">Chap.</span>
+    <span class="toc-title">Title</span>
+    <span class="toc-page">Page</span>
+  </li>-->
+  <li class="toc-entry">
+    <!--<span class="toc-num">##</span>-->
+    <a class="toc-title" href="#TRANSLATORS">TRANSLATOR’S PREFACE TO THE ENGLISH EDITION.</a>
+    <!--<span class="toc-page">NN</span>-->
+  </li>
+  <li class="toc-entry">
+    <!--<span class="toc-num">##</span>-->
+    <a class="toc-title" href="#THE_EMANCIPATION_OF">THE EMANCIPATION OF WOMEN.</a>
+    <!--<span class="toc-page">NN</span>-->
+  </li>
+  <li class="toc-entry">
+    <!--<span class="toc-num">##</span>-->
+    <a class="toc-title" href="#OPINIONS_OF_THE_PRESS">OPINIONS OF THE PRESS ON THE SOCIAL SCIENCE SERIES.</a>
+    <!--<span class="toc-page">NN</span>-->
+  </li>
+  <li class="toc-entry">
+    <!--<span class="toc-num">##</span>-->
+    <a class="toc-title" href="#SOCIAL_SCIENCE_SERIES">SOCIAL SCIENCE SERIES. <i>SCARLET CLOTH, EACH 2s. 6d.</i></a>
+    <!--<span class="toc-page">NN</span>-->
+  </li>
+</ul>
+</div>
+</nav>
+<!-- End Autogenerated TOC. -->
+
+
+<p class="center">THE
+<span class="smcap">Emancipation of Women</span>
 AND
-ITS PROBABLE CONSEQUENCES
+ITS PROBABLE CONSEQUENCES</p>
 
-BY
-ADELE CREPAZ
+<p class="center">BY
+ADELE CREPAZ</p>
 
-<i>WITH A LETTER TO THE AUTHORESS BY</i>
-THE RIGHT HON. W. E. GLADSTONE, M.P.
+<p class="center"><i>WITH A LETTER TO THE AUTHORESS BY</i>
+THE RIGHT HON. W. E. GLADSTONE, M.P.</p>
 
-[Illustration]
+<p class="center">[Illustration]</p>
 
-LONDON
-SWAN SONNENSCHEIN & CO.
+<p class="center">LONDON
+SWAN SONNENSCHEIN &amp; CO.
 NEW YORK: CHARLES SCRIBNER’S SONS
-1893
-F/
+1893</p>
 
 
+<p><span class="pagenum" id="Page_ii" role="doc-pagebreak"></span><span class="pagenum" id="Page_iii" role="doc-pagebreak">iii</span></p>
+
+<hr class="chap x-ebookmaker-drop" aria-hidden="true">
+
+<div class="chapter">
+<p class="right">
+  <span class="smcap">10 Downing Street,</span><br>
+  <span style="margin-right: 3.5em;"><span class="smcap">Whitehall.</span></span><br>
+  <span style="margin-right: 1.5em;"><i>Oct. 3, ’92.</i></span>
+</p>
+</div>
 
 
-/R
-<sc>10 Downing Street,
-Whitehall.</sc>
-<i>Oct. 3, ’92.</i>
-R/
+<h3 id="Madam">
+  <span class="smcap">Madam</span>,
+</h3>
 
-
-<sc>Madam</sc>,
-
-I recently found that I had had the
+<p>I recently found that I had had the
 honour to receive, possibly from yourself,
 your tract on the <i>Frauen-Emancipation</i>. The
 German type is somewhat trying to my failing
@@ -52,7 +455,7 @@ great grief is this, speaking for my own country
 only: that, while the subject is alike vast and
 profound, it is commonly treated in the slightest
 and most superficial, as well as sometimes in
-the most passionate manner. In such a region
+<span class="pagenum" id="Page_iv" role="doc-pagebreak">iv</span>the most passionate manner. In such a region
 it is far better, as between opposite risks, to
 postpone a right measure than to commit ourselves
 to a wrong one. To save us from this
@@ -63,31 +466,38 @@ it. You have opened up many new thoughts
 in my own mind, but I cannot follow them
 out. I only wish the treatise had been open
 to my countrymen and countrywomen in their
-own tongue.
+own tongue.</p>
 
-/R
-I remain, Madam,
-With high consideration,
-Your faithful servant,
-<sc>W. E. Gladstone</sc>.
-R/
+<p class="right">
+  <span style="margin-right: 4.5em;">I remain, Madam,</span><br>
+  <span style="margin-right: 0.5em;">With high consideration,</span><br>
+  <span style="margin-right: 1.5em;">Your faithful servant,</span><br>
+  <span class="smcap">W. E. Gladstone</span>.
+</p>
 
-<i>P.S.</i>—For this as well as for other subjects,
+<p><i>P.S.</i>—For this as well as for other subjects,
 I deeply regret the death of J. S. Mill: he had
-perhaps the most <i>open</i> mind of his generation.
+perhaps the most <i>open</i> mind of his generation.</p>
 
-⁂ <i>This Letter is published by special permission of the Right
-Hon. W. E. Gladstone.</i>
-
-
+<p>⁂ <i>This Letter is published by special permission of the Right
+Hon. W. E. Gladstone.</i></p>
 
 
-TRANSLATOR’S
+<hr class="chap x-ebookmaker-drop" aria-hidden="true">
+<div class="chapter">
 
-PREFACE TO THE ENGLISH EDITION.
+<p><span class="pagenum" id="Page_v" role="doc-pagebreak">v</span></p>
 
 
-In order to avoid the possibility of misconception
+  <h2 class="nobreak" id="TRANSLATORS">
+    TRANSLATOR’S
+    <br>
+    PREFACE TO THE ENGLISH EDITION.
+  </h2>
+</div>
+
+
+<p>In order to avoid the possibility of misconception
 on the part of English readers of the
 following essay, it seems well to point out
 that, although written principally with a view
@@ -102,39 +512,48 @@ facilities for self-support, it is against their
 claim to <i>equal political and social rights with
 men</i> that Frau Crepaz would earnestly protest,
 convinced that therein lies much danger
-to the welfare of humanity.
+to the welfare of humanity.</p>
 
-The recognition accorded to her views by
+<p><span class="pagenum" id="Page_vi" role="doc-pagebreak">vi</span></p>
+
+<p>The recognition accorded to her views by
 England’s Prime Minister is some indication
 that they are not without supporters in this
-country.
+country.</p>
 
-/R
-<sc>Ellis Wright.</sc>
-R/
+<p class="right">
+  <span class="smcap">Ellis Wright.</span>
+</p>
 
-<sc>London</sc>, <i>January 1893</i>.
-
-
+<p><span class="smcap">London</span>, <i>January 1893</i>.</p>
 
 
-THE EMANCIPATION OF
-WOMEN.
+<hr class="chap x-ebookmaker-drop" aria-hidden="true">
+<div class="chapter">
+
+<p><span class="pagenum" id="Page_1" role="doc-pagebreak">1</span></p>
 
 
-It is no light task, at the present juncture,
+  <h2 class="nobreak" id="THE_EMANCIPATION_OF">
+    THE EMANCIPATION OF
+    WOMEN.
+  </h2>
+</div>
+
+
+<p>It is no light task, at the present juncture,
 to discuss the dangers of a movement of
 which the fruitful seeds are rapidly
-spreading throughout the whole world.
+spreading throughout the whole world.</p>
 
-A new era of justice and humanity
+<p>A new era of justice and humanity
 seems about to dawn upon mankind, and
 with it the morning glow of promise of
 freedom from narrowing restraints and
 prejudices. In every quarter of the world
 the banner of “Women’s Rights” is being
 waved, the movement, taking ever deeper
-and deeper root in the Western Hemisphere,
+<span class="pagenum" id="Page_2" role="doc-pagebreak">2</span>and deeper root in the Western Hemisphere,
 penetrating even to the remote East, until
 the tranquil life of the Hindoo woman
 is stirred with its vibration. On all sides
@@ -153,7 +572,7 @@ these successes are being welcomed by
 thousands and thousands of the sex with
 acclamation, and fresh exertions are being
 made to exact new rights, it is well to
-pause a while, as by a sign-post set up to
+<span class="pagenum" id="Page_3" role="doc-pagebreak">3</span>pause a while, as by a sign-post set up to
 tell the way-farer the road he has come
 and whither it leads. The torrent rushes
 unhindered from the steep mountain heights
@@ -172,10 +591,10 @@ them freedom and independence, turn
 them from what ensures not only their
 own happiness and well-being, but also from
 that upon which the welfare of the whole
-human race is grounded. To point this
-out is the object of this treatise.
+<span class="pagenum" id="Page_4" role="doc-pagebreak">4</span>human race is grounded. To point this
+out is the object of this treatise.</p>
 
-The emancipation of women, their deliverance
+<p>The emancipation of women, their deliverance
 from early prejudices and unnatural
 trammels, was a necessity which
 the development of culture and the altered
@@ -192,7 +611,7 @@ of willing hands, and afforded scope for
 much latent intellectual power. Work,
 which in former times was looked upon
 as a degradation to ladies of position, is
-now elevated to a moral power, and the
+<span class="pagenum" id="Page_5" role="doc-pagebreak">5</span>now elevated to a moral power, and the
 gentlewoman in reduced circumstances no
 longer needs to earn her living with tears
 of humiliation and in secret. Openly she
@@ -211,13 +630,13 @@ ennobling of the sex, and must serve to
 keep it from some errors, and from the
 consciousness of empty, vapid lives. True,
 in all ages, there have been remarkable
-women who have endeavoured to force
+<span class="pagenum" id="Page_6" role="doc-pagebreak">6</span>women who have endeavoured to force
 the narrow limits of social opinion, but
 it has remained to the 19th century to
 bring about the great reformation in the
-position of women.
+position of women.</p>
 
-The position of its women is the test
+<p>The position of its women is the test
 of a nation’s culture. Among all uncivilised
 races the woman is looked upon as a beast
 of burden. The Zulu Kaffir only works
@@ -231,7 +650,7 @@ wife was either subject to, or the slave
 of, her husband. Among the Greeks, the
 most cultured of all races, the woman
 had no “position.” Shut out from public
-life, her place was in her home, and her
+<span class="pagenum" id="Page_7" role="doc-pagebreak">7</span>life, her place was in her home, and her
 function in the education of her children—of
 her boys up to a certain age only.
 In spite of this we find a considerable
@@ -250,7 +669,7 @@ day brought forward the question of
 Women’s Rights. “Many women,” said he,
 “are better calculated for certain things
 than many men, nor is there any department
-of Government work which is exclusively
+<span class="pagenum" id="Page_8" role="doc-pagebreak">8</span>of Government work which is exclusively
 adapted for woman as woman,
 or for man as man; but the gifts of
 nature being in like manner divided between
@@ -259,9 +678,9 @@ and woman share alike in all occupations,
 only that in all things woman is the
 weaker part.” Nevertheless, no rights in
 public life were conceded to the sex, nor
-did women exercise any influence upon it.
+did women exercise any influence upon it.</p>
 
-In Rome, where women had greater
+<p>In Rome, where women had greater
 freedom and enjoyed higher consideration
 in family life, they were still politically
 ignored; they might not avail themselves
@@ -270,7 +689,7 @@ marriage rights, no equal parental authority,
 no power of representing the family.
 Whether women offered noble examples
 of sacrifice to the country, or others plotted
-against and betrayed them, no political
+<span class="pagenum" id="Page_9" role="doc-pagebreak">9</span>against and betrayed them, no political
 rights were conceded to them, no public
 recognition accorded them. Among the
 ancient Teutons, women were held in
@@ -289,7 +708,7 @@ which they were held, women were still
 considered by old German law to be under
 male tutelage; the father, or, in the case
 of a married woman, the husband, possessing
-rights of death, of chastisement, or of sale
+<span class="pagenum" id="Page_10" role="doc-pagebreak">10</span>rights of death, of chastisement, or of sale
 over them. Although with lapse of time
 these rights lost much of their power,
 the man still retained his supremacy.
@@ -302,14 +721,14 @@ stirring events, the rise and fall of nations,
 emigrations, crusades, the Reformation, the
 Thirty Years’ War, the finding of new continents,
 the greatest discoveries, <i>all have
-taken place without woman’s participation</i>.
+taken place without woman’s participation</i>.</p>
 
-True, there have ever been examples: distinguished
+<p>True, there have ever been examples: distinguished
 women sovereigns, women of
 learning, authoresses, and artists, who have
 followed the promptings of their own inner
 convictions free from all emancipation
-crazes. The first germ of emancipation
+<span class="pagenum" id="Page_11" role="doc-pagebreak">11</span>crazes. The first germ of emancipation
 was in the French Revolution. In the
 period preceding it, women had exercised
 an important and baleful influence upon
@@ -328,7 +747,7 @@ the holiest institutions were desecrated and
 outraged, women adopted a freer mode of
 dress and morals; <i>la merveilleuse</i> and <i>le
 costume sauvage</i> were extravagances which
-had already died out under the Directorate,
+<span class="pagenum" id="Page_12" role="doc-pagebreak">12</span>had already died out under the Directorate,
 and which have nothing to do with the
 Women’s Rights question of to-day. First
 in the Revolution of July did the cry of
@@ -339,22 +758,23 @@ allied with socialistic ideas, took the name
 of the Emancipation of Women. However,
 France did but give the impetus; the
 practical solution of it ripened in England
-and America.
+and America.</p>
 
-In the little town of Seneca Falls, in the
-State of New York,[1] a meeting of American
+<p>In the little town of Seneca Falls, in the
+State of New York,&#x2060;<a id="FNanchor_1_1" href="#Footnote_1_1" class="fnanchor" role="doc-noteref" data-epub-type="noteref">[1]</a> a meeting of American
 women was held in 1848, in which a resolution
 was passed to the effect that “the
 one half of humanity, weighted with equal
-responsibilities and with duties as exalted, demands
+<span class="pagenum" id="Page_13" role="doc-pagebreak">13</span>responsibilities and with duties as exalted, demands
 equal rights with the other physically
-stronger half.”
+stronger half.”</p>
 
-[Footnote 1: The dates here given are taken from the preface by
+<aside class="footnote" id="Footnote_1_1" role="doc-footnote" data-epub-type="footnote"><p><a href="#FNanchor_1_1" class="label" role="doc-backlink">[1]</a>
+    The dates here given are taken from the preface by
 Jenny Hersch to the German translation of J. S. Mill’s
-“Subjection of Women.”]
+“Subjection of Women.”</p></aside>
 
-The champions who had called this meeting
+<p>The champions who had called this meeting
 together, supported their claims with
 spirit. Besides Mrs. Elizabeth Anthony
 Stanton, there were present Frau Anneke,
@@ -370,7 +790,7 @@ in Boston and Chicago, Tinnie Claflin, and
 many others. We have not space here to
 enumerate all the names connected with
 the movement; we shall return later to
-America, the Eldorado of women. Their
+<span class="pagenum" id="Page_14" role="doc-pagebreak">14</span>America, the Eldorado of women. Their
 efforts have been crowned with success.
 At the present day we see women in
 America filling almost every calling, every
@@ -383,14 +803,14 @@ them. The women, having thus acquired
 equality with men in nearly all professions,
 are keen to obtain political rights, and the
 question is being largely agitated in
-America.
+America.</p>
 
-In Europe, where the discovery and application
+<p>In Europe, where the discovery and application
 of machinery and railways have
 developed new industrial capabilities, the
 domestic position of women has undergone
 a change in every country; and there has
-been a general movement to promote opportunities
+<span class="pagenum" id="Page_15" role="doc-pagebreak">15</span>been a general movement to promote opportunities
 for women to earn their own living.
 Much as has been said and written about
 this movement for the improvement of the
@@ -409,7 +829,7 @@ held shortly afterwards at Bradford,
 gave the subject their most earnest consideration,
 with the result that an Association
 for the Promotion of Ladies’ Industry was
-started in London in the year 1860, which
+<span class="pagenum" id="Page_16" role="doc-pagebreak">16</span>started in London in the year 1860, which
 has served as the model for similar institutions,
 which in course of time have been
 founded in every important town in the
@@ -428,7 +848,7 @@ to obtain for their sex, would be thrown
 open to them. Even if the women of
 America do possess greater privileges than
 their English sisters, the latter still enjoy very
-many, and they have two special provinces
+<span class="pagenum" id="Page_17" role="doc-pagebreak">17</span>many, and they have two special provinces
 in which they reign supreme—in education,
 in its widest sense, from the nursery to reformatory
 school and the universities, and in the
@@ -446,9 +866,11 @@ of Women’s Suffrage, and John Bright
 favoured the claim of the self-dependent, tax-paying
 matron, that is, of maiden ladies and
 widows, pointing out that a married woman
-is sufficiently represented by her husband.
+is sufficiently represented by her husband.</p>
 
-If now we glance at the development of
+<p><span class="pagenum" id="Page_18" role="doc-pagebreak">18</span></p>
+
+<p>If now we glance at the development of
 the emancipation of women in Germany, we
 find the first evidences of it during the
 great period of revolutionary agitation. In
@@ -467,15 +889,15 @@ women have obtained situations as teachers,
 as Post Office or telegraph clerks, or in
 public offices, thus finding opportunities
 of earning their own living by either brain
-work or hand work. Nevertheless, German
+<span class="pagenum" id="Page_19" role="doc-pagebreak">19</span>work or hand work. Nevertheless, German
 universities and academies are still closed
 against them, and although petitions for
 the admission of women to higher education,
 bearing many thousands of signatures, have
 been presented to the Imperial Council, they
-have so far proved unavailing.
+have so far proved unavailing.</p>
 
-Women, however, are far from unanimous
+<p>Women, however, are far from unanimous
 in their desire for political suffrage; even in
 England there is a strong counter movement.
 In the <i>Nineteenth Century</i> an article recently
@@ -486,9 +908,11 @@ of Women’s Suffrage. This article, signed by
 the Dowager Lady Stanley of Alderley, the
 Duchess of St. Albans, Mrs. Goschen, Mrs.
 Huxley, Mrs. Alma Tadema, Mrs. Max Müller,
-and many other ladies, concludes with the words:
+and many other ladies, concludes with the words:</p>
 
-“We are convinced that the pursuit of a
+<p><span class="pagenum" id="Page_20" role="doc-pagebreak">20</span></p>
+
+<p>“We are convinced that the pursuit of a
 mere outward equality with men is for women
 not only vain but demoralising. It leads to a
 total misconception of woman’s true dignity
@@ -497,9 +921,9 @@ struggle and rivalry, where the only effort of
 both the great divisions of the human family
 should be to contribute the characteristic
 labour and the best gifts of each to the
-common stock.”
+common stock.”</p>
 
-If we now consider the state of woman’s
+<p>If we now consider the state of woman’s
 emancipation in different countries at the
 present time, we find that in each, according
 to its social and domestic development,
@@ -508,7 +932,7 @@ which women have gained facilities for
 employment in public and Government
 offices. It is pre-eminently a question for
 the middle classes to decide. Titled ladies,
-and those belonging to the “upper ten”
+<span class="pagenum" id="Page_21" role="doc-pagebreak">21</span>and those belonging to the “upper ten”
 stand aloof. Nor has it any interest for the
 women of the lower orders, their right to
 help their husbands in providing a living
@@ -527,7 +951,7 @@ away the old established manners and customs,
 endeared to us for centuries past, in
 order to attain to the requisite conditions for
 the new state of things. Above all, we
-have to take into consideration that culture
+<span class="pagenum" id="Page_22" role="doc-pagebreak">22</span>have to take into consideration that culture
 in the New and Old Worlds is totally different.
 In America it is the product of modern
 times; whilst in Europe, culture and education
@@ -545,9 +969,11 @@ of ancient culture, excels her in every branch
 of art and science. We would liken the
 New World to a tall tree shooting high
 overhead; Europe to one naturally developed,
-bearing its good, sound fruit in due season.
+bearing its good, sound fruit in due season.</p>
 
-The privileged position of women in
+<p><span class="pagenum" id="Page_23" role="doc-pagebreak">23</span></p>
+
+<p>The privileged position of women in
 America is due to many causes. From the
 Mother Country was imbibed the respect and
 veneration in which she is held there, added
@@ -566,7 +992,7 @@ see paid to them by all classes of men. Nor
 was the emancipation of women in America
 a question of their earning their bread, as
 in Europe; nor has it to do with a surplus
-female population, causing comparatively few
+<span class="pagenum" id="Page_24" role="doc-pagebreak">24</span>female population, causing comparatively few
 marriages, and hence obliging them to seek a
 means of subsistence. The numerical superiority
 of the male population renders marriage
@@ -585,7 +1011,7 @@ as America; in no land has the seed made
 such rapid growth. Nor must we overlook
 the fact that domestic conditions in America
 are altogether different from ours. The
-machines to be met with in every household,
+<span class="pagenum" id="Page_25" role="doc-pagebreak">25</span>machines to be met with in every household,
 are economisers of time and labour, and,
 withal, Americans live more simply, and
 expend less time upon cookery and the table,
@@ -604,7 +1030,7 @@ indeed, are far less onerous than ours.
 The woman of the Northern States of
 America—and it is of her we exclusively
 speak—is, on an average, more
-highly educated than the men. As M.
+<span class="pagenum" id="Page_26" role="doc-pagebreak">26</span>highly educated than the men. As M.
 Wilckens tells us, “She is the pioneer of
 culture, the foster-nurse of Art and Science,
 the most eager advocate for public instruction.”
@@ -623,7 +1049,7 @@ less sensitive to tender emotions, and a
 marriage of reason is the only one she thinks
 of. It is well-known that <i>the happiest
 marriages in America are those contracted between
-American men and German women</i>. The
+<span class="pagenum" id="Page_27" role="doc-pagebreak">27</span>American men and German women</i>. The
 German wife surrounds her husband with
 affectionate care and solicitude, and devotes
 herself to making his home life intensely
@@ -642,16 +1068,16 @@ comfortable, but more complex; our social
 claims demand more from her, the education
 of her children devolves upon her, and her
 presence is more indispensable than in an
-American house. Did we desire to introduce
+<span class="pagenum" id="Page_28" role="doc-pagebreak">28</span>American house. Did we desire to introduce
 the independent standing of the American
 woman among us, it would entail great
 changes in our public and home relations,
 changes which could scarcely be brought about
 among us, so <i>opposed are they to the spirit and
 character of the German people and their time-honoured
-institutions</i>.
+institutions</i>.</p>
 
-Let us now turn from America to
+<p>Let us now turn from America to
 England. There the last census tells us that
 the women of Great Britain are in a preponderance
 of half a million, with the
@@ -662,7 +1088,7 @@ added to which it is more difficult
 for their middle class to set up housekeeping
 than with us, because of the far
 greater expenses entailed by the number of
-servants, and their pretensions to luxury;
+<span class="pagenum" id="Page_29" role="doc-pagebreak">29</span>servants, and their pretensions to luxury;
 thus most of the single women who strike
 out an independent path for themselves are
 among their middle class. We have already
@@ -674,15 +1100,15 @@ The native women of India are forbidden to
 call in a male doctor, hence a considerable
 number of lady doctors are required. Colonial
 schools, also, are mostly conducted by
-women.
+women.</p>
 
-John S. Mill’s great book on “The Subjection
+<p>John S. Mill’s great book on “The Subjection
 of Women” speaks of the tyranny
 exercised over married women, but his
 advocacy only applies to the women of
 England, where a wife is dependent upon
 the will of her husband. In Austro-Hungary
-and in Germany, where the law
+<span class="pagenum" id="Page_30" role="doc-pagebreak">30</span>and in Germany, where the law
 accords the wife equal rights with her husband
 over the possession and management
 of her property, in divorce or separation,
@@ -698,11 +1124,11 @@ their indignation forgetting that his representations
 of the subjection of women
 applied only to the injustices of English
 law, by which their rights were so cruelly
-limited.
+limited.</p>
 
-Yet, despite the injustice of their law,
+<p>Yet, despite the injustice of their law,
 English women are treated with great deference
-in their own country, and the ever-increasing
+<span class="pagenum" id="Page_31" role="doc-pagebreak">31</span>in their own country, and the ever-increasing
 Women’s Rights movement is
 proof of their great influence. It would
 be ridiculous to maintain in the present day
@@ -715,14 +1141,14 @@ cruelly oppressed by a tyrannical husband;
 but we must not forget that sometimes these
 cases are reversed, and many a man has to
 suffer from the misery of a domineering
-wife.
+wife.</p>
 
-When we point to the differences existing
+<p>When we point to the differences existing
 between the circumstances of our own country
 and those of England and America, we
 must also include Russia, where the movement
 for Women’s Rights has assumed such
-vast dimensions. In the wide dominions of
+<span class="pagenum" id="Page_32" role="doc-pagebreak">32</span>vast dimensions. In the wide dominions of
 the Czar, where the education of the people
 is at so low a level, and the enormous standing
 army draws so many thousands of the
@@ -741,12 +1167,12 @@ gained distinction in the medical profession;
 one important factor here being, that in
 the Russian provinces and possessions, where
 the Mahommedan religion prevails, women
-only consult lady doctors. In Russia, ladies
+<span class="pagenum" id="Page_33" role="doc-pagebreak">33</span>only consult lady doctors. In Russia, ladies
 not only hold a prominent position as instructors,
 but are much employed in the
-service of the State.
+service of the State.</p>
 
-Similar conditions regarding the Women’s
+<p>Similar conditions regarding the Women’s
 Rights movement have prevailed in the North
 of Europe, Sweden, Norway, and Denmark,
 while in the South, where the luxuriance of
@@ -761,7 +1187,7 @@ of women should be, socially and legally,
 less favoured than in any other. In the
 French Revolution, as we have said, when
 men and women alike were led to the
-guillotine, there arose a cry for the equality
+<span class="pagenum" id="Page_34" role="doc-pagebreak">34</span>guillotine, there arose a cry for the equality
 of the sexes, which, however, soon died
 away unheard. Napoleon, who made a
 careful study of the question of the population
@@ -780,7 +1206,7 @@ of the law, there is no country where
 woman exercises such influence in society.
 French literature affords us abundant proof
 of this. As a whole, the French woman is
-inferior to her German sister in higher education,
+<span class="pagenum" id="Page_35" role="doc-pagebreak">35</span>inferior to her German sister in higher education,
 but what she lacks therein is amply
 compensated for by her practical common
 sense. It is acknowledged that the women
@@ -792,39 +1218,39 @@ and its industries feed the people. Want is
 only to be found in large towns, for instance
 in Paris, where the growth of numbers, as in
 all capitals, makes the question of living a
-more difficult one.
+more difficult one.</p>
 
-The domestic prosperity of the country
+<p>The domestic prosperity of the country
 and woman’s active participation in business,
 has prevented the question of Women’s Rights
 from becoming a burning one in France,
 although of late it has made some progress.
 How the question stands with regard to
-Austro-Hungary and Germany we have already
+<span class="pagenum" id="Page_36" role="doc-pagebreak">36</span>Austro-Hungary and Germany we have already
 seen, nor is woman with us ever likely
 to assume the prominent position in public
 and Government offices, which she does in
 the above-mentioned countries. We have
 no colonies abroad, no surplus million of
 female population, and no lack of intellectual
-power amongst our men.
+power amongst our men.</p>
 
-In our hasty sketch of the social and
+<p>In our hasty sketch of the social and
 intellectual conditions affecting the question
 of Women’s Rights in various countries,
 we find, as we said before, certain
 differences which tend to either favour
 or to check the movement, thereby
-rendering its universal progress less desirable.
+rendering its universal progress less desirable.</p>
 
-Physiology teaches us that by nature the
+<p>Physiology teaches us that by nature the
 physical constitution of man, as regards
 bone and muscle, is stronger than that of
-woman, the natural inference being that
+<span class="pagenum" id="Page_37" role="doc-pagebreak">37</span>woman, the natural inference being that
 man <i>has the greater capacity for mental and
-bodily labour</i>.
+bodily labour</i>.</p>
 
-In recent times much attention has
+<p>In recent times much attention has
 been given to the brain of woman; the
 circumstance that its size is considerably—about
 some 5-3/8 ozs. (152 gramm.)—less
@@ -840,7 +1266,7 @@ of feeling, man for that of reason. We must
 allow that this difference is more apparent
 among the most highly cultivated nations,
 less perceptible among those less cultivated,
-least of all among savage races. For
+<span class="pagenum" id="Page_38" role="doc-pagebreak">38</span>least of all among savage races. For
 example—while the difference in the size of
 brain between a modern Parisian male and
 female amounts to 11 cubic inches (222 cubic
@@ -856,11 +1282,11 @@ of the two sexes would considerably diminish
 with the higher education of woman. Only,
 perhaps, the more fully developed brain of
 woman might not then be in proportion to
-her other powers.
+her other powers.</p>
 
-It is true that the representatives of
+<p>It is true that the representatives of
 Women’s Rights contend that a woman’s
-muscles could be strengthened, her nerves
+<span class="pagenum" id="Page_39" role="doc-pagebreak">39</span>muscles could be strengthened, her nerves
 more strung, her blood more oxygenated, by
 adopting different conditions of life; and
 Darwin teaches us that the construction of
@@ -879,7 +1305,7 @@ and physical nature of woman would be
 transformed by changed methods of training
 and education; we are unable to measure the
 advantages, but only the disadvantages, which
-must ensue to future generations from such
+<span class="pagenum" id="Page_40" role="doc-pagebreak">40</span>must ensue to future generations from such
 an over-forcing of female strength. Nature
 having endowed man with superior strength,
 has laid upon him the greatest burden of
@@ -898,10 +1324,10 @@ motherhood, instinctively teach her this. As
 the man would have to provide the necessaries
 of life for their common existence, so
 would the woman, on her side, have to turn
-to account the raw products and make them
-palatable.
+<span class="pagenum" id="Page_41" role="doc-pagebreak">41</span>to account the raw products and make them
+palatable.</p>
 
-In such a state of nature, the division of
+<p>In such a state of nature, the division of
 labour, the thorough adaptation of male and
 female resources, would come of itself. The
 surroundings of our modern culture are, it
@@ -918,16 +1344,16 @@ solemn duty upon woman, the neglecting of
 which, says Professor Suess, is “<i>a degeneration,
 a sin against Nature amounting to interference
 with the physical development of coming generations</i>.”
-To those who would throw contempt
+<span class="pagenum" id="Page_42" role="doc-pagebreak">42</span>To those who would throw contempt
 upon the dignity of motherhood and its duties,
 I would quote these beautiful words of his,
 “To me there is no more sublime, elevating
 spectacle in the whole world than that of a
 mother, who gives herself up to the fulfilment
 of her duties. <i>No other aim should be
-placed before her sex.</i>”
+placed before her sex.</i>”</p>
 
-The latest emancipation theory sets this
+<p>The latest emancipation theory sets this
 aim on one side, its representatives being
 only anxious to demonstrate practically that
 the feminine sex is fully capable of taking
@@ -938,15 +1364,15 @@ different system of life is presented to us,
 woman’s intellectual activity is being largely
 enhanced. We hear of women such as Miss
 Garrett, Miss Fry, Mrs. Chisholm, Miss
-Carpenter, Miss Nightingale, Miss Florence
+<span class="pagenum" id="Page_43" role="doc-pagebreak">43</span>Carpenter, Miss Nightingale, Miss Florence
 Blackwell, and others, who have undoubtedly
 attained to eminence in the careers they
 have chosen. The mistake lies in forgetting
 that these are exceptional women, not types
 of the female sex, and who afford no
-standard for the measure of the community.
+standard for the measure of the community.</p>
 
-It is also advanced that in an examination
+<p>It is also advanced that in an examination
 of male and female students the latter often
 come off best. <i>Yet it were a fallacy to deduce
 from this that women are more calculated for
@@ -957,7 +1383,7 @@ exceptionally gifted; whilst the young men
 of the upper classes, as a rule, study whether
 they have special qualifications or not. To
 make higher education among women general
-would be to show many a failure. In the
+<span class="pagenum" id="Page_44" role="doc-pagebreak">44</span>would be to show many a failure. In the
 words of Professor Geheimrath Waldeyer,
 “The increase of the quantity would be at
 the expense of the quality.” Nor must we
@@ -976,10 +1402,10 @@ upon her it devolves to do honour to the
 flag to which she has pledged fidelity, and
 win a victory for the cause of Women’s Rights.
 Hence a higher consciousness, a more indomitable
-energy, steels her powers, urging
-her on to study.
+<span class="pagenum" id="Page_45" role="doc-pagebreak">45</span>energy, steels her powers, urging
+her on to study.</p>
 
-Numberless women, on both sides of the
+<p>Numberless women, on both sides of the
 ocean, have proved themselves capable of
 filling men’s places; it matters not whether
 women could produce a Goethe, a Shakespeare,
@@ -989,20 +1415,20 @@ We are persuaded that women could succeed
 in equalling men’s average standard in their
 different callings, and that among the lady
 professors of medicine, law, etc., there would
-be eminent examples.
+be eminent examples.</p>
 
-Having conceded this, and considered it as
+<p>Having conceded this, and considered it as
 possible that women should succeed in reaching
 and filling professional careers, the solution
 to the woman’s question brings us face to
 face with a far more serious one—the man’s
 question, as a gifted writer in a recent
-magazine has put it. For not women alone,
+<span class="pagenum" id="Page_46" role="doc-pagebreak">46</span>magazine has put it. For not women alone,
 but coming generations, are threatened by
 dangers lightly overlooked in the present
-day.
+day.</p>
 
-To these dangers we would now point, as
+<p>To these dangers we would now point, as
 we go more closely into the question which
 here involuntary presents itself: “<i>Whether
 the equality of woman with man would be for
@@ -1014,11 +1440,11 @@ gifted women are capable of entering
 successfully upon masculine careers, of making
 a name and position for themselves, is
 of no vital moment, and does not touch the
-main question.
+main question.</p>
 
-We are speaking now of the complete
+<p>We are speaking now of the complete
 removal of the social and political disabilities
-of women, to be fought for step by step by
+<span class="pagenum" id="Page_47" role="doc-pagebreak">47</span>of women, to be fought for step by step by
 the combatants for Women’s Rights; and not
 of those reforms which have been beneficently
 wrought in her position by modern
@@ -1027,9 +1453,9 @@ with man to be an established fact, we then
 have the woman standing side by side with
 man in the great arena of life, fighting for
 the same aims, the same rights, unconsciously,
-without will or intention, injuring his interests.
+without will or intention, injuring his interests.</p>
 
-As woman’s new education becomes more
+<p>As woman’s new education becomes more
 extended, her knowledge will be more
 thorough and deeply grounded. In comparison
 with that of a boy of the same age,
@@ -1037,15 +1463,15 @@ a girl’s intelligence is quicker, her ambition
 greater, her moral consciousness more highly
 developed; added to which, the endeavour
 to attain to her new sphere with credit will
-spur her on to utmost exertion. As a lawyer,
+<span class="pagenum" id="Page_48" role="doc-pagebreak">48</span>spur her on to utmost exertion. As a lawyer,
 a Government employee, etc., she will prove
 a dangerous competitor to man. She has
 the advantage of being more practical;
 her wants are more simple, less costly than
 his; thus she can offer her services for less
-salary.
+salary.</p>
 
-Already Government and private offices
+<p>Already Government and private offices
 are readily employing the services of ladies
 as cheaper and more reliable. With increased
 production, the limits of their
@@ -1057,7 +1483,7 @@ of the price of the commodity, which will
 affect the national prosperity. Do we not
 already suffer from over-production of intellectual
 force? A young man’s studies over,
-there comes the difficult question of finding
+<span class="pagenum" id="Page_49" role="doc-pagebreak">49</span>there comes the difficult question of finding
 an opening for him; he needs to exert
 all his energies to find a suitable post, and,
 when in it, to keep it, even though it
@@ -1076,7 +1502,7 @@ market? Have not pianistes, concert singers,
 lady reciters flooded our concert-rooms to
 that extent, that no concert giver, unless
 she be celebrated, or supported by most
-distinguished patronage, stands a chance of
+<span class="pagenum" id="Page_50" role="doc-pagebreak">50</span>distinguished patronage, stands a chance of
 even clearing her expenses? Our picture
 galleries are crowded with the works of
 lady artists which excite admiration—yet
@@ -1087,16 +1513,16 @@ works for publication without honorarium;
 hundreds of certificated governesses are vainly
 seeking situations, because their number exceeds
 the demand, and even that calling is
-over-stocked.
+over-stocked.</p>
 
-If we glance at those seeking lady clerkships
+<p>If we glance at those seeking lady clerkships
 in postal or telegraph offices, they
 are not much better off. The advertisement
 columns of every newspaper are filled
 with offers of teaching of every description
 on incredibly low terms. Thus, here as
 there, among male as well as female competitors,
-the market is overcrowded. Were
+<span class="pagenum" id="Page_51" role="doc-pagebreak">51</span>the market is overcrowded. Were
 women, then, to succeed in driving the men
 out of situations, their victory could but
 be attended with evil consequences, which
@@ -1115,10 +1541,10 @@ of Women’s Rights, which in its turn has
 brought about its still further decrease, and
 must continue most materially to affect the
 question of marriage, as we shall show,
-if all the demands of emancipation be
-granted.
+<span class="pagenum" id="Page_52" role="doc-pagebreak">52</span>if all the demands of emancipation be
+granted.</p>
 
-“He who strikes at matrimony,” says
+<p>“He who strikes at matrimony,” says
 Goethe, “he who by word or deed undermines
 the very foundation of all civilised
 society, let him have it out with me; and
@@ -1135,7 +1561,7 @@ them on to fresh exertions. Marriage is
 moral, natural, the proper aim in life of
 the individual, serviceable to the State and
 to society. Marriage works a great moral
-influence alike upon husband and wife,
+<span class="pagenum" id="Page_53" role="doc-pagebreak">53</span>influence alike upon husband and wife,
 suppresses selfishness, awakens self-abnegation
 and moral power, purifies mind and heart.
 Only to a married woman are reserved
@@ -1152,10 +1578,10 @@ individual, a sacred boon to society? And
 all aspirations which tend to estrange the
 sexes by bringing about a decrease of the
 marriage tie are a danger to the general
-good of mankind.
+good of mankind.</p>
 
-The emancipation of women, in its latest
-phase, has that tendency, because the new
+<p>The emancipation of women, in its latest
+<span class="pagenum" id="Page_54" role="doc-pagebreak">54</span>phase, has that tendency, because the new
 conditions evoked by it,—the student’s life
 and independent calling,—must of a necessity
 change woman’s nature. Her equality with
@@ -1174,7 +1600,7 @@ when she has the same burden as he
 to bear? The wife would become her
 husband’s comrade, but no longer be the
 loving help-meet, lavishing her care, her
-sanctifying devotion upon him. This want
+<span class="pagenum" id="Page_55" role="doc-pagebreak">55</span>sanctifying devotion upon him. This want
 of the true womanly attributes is already
 apparent, as we have said, in the American
 wife of the day, who is accustomed to
@@ -1193,7 +1619,7 @@ her diminished idealism, would lead her to
 seek, like men, her goal in ambition. Money
 and position would be her watchwords.
 The girl who devotes herself to higher
-study is necessarily estranged from family
+<span class="pagenum" id="Page_56" role="doc-pagebreak">56</span>study is necessarily estranged from family
 life; the strain she has to put upon
 herself exempts her from all domestic
 duties, she becomes accustomed to think
@@ -1209,11 +1635,11 @@ and can make a living myself, am accustomed
 to live in my own way, and have
 my own pleasures. Why should I bind myself
 in marriage?” But man does not live
-by bread alone.
+by bread alone.</p>
 
-In the States of New England, especially
+<p>In the States of New England, especially
 Boston, there are already numberless
-women who make a point of refusing
+<span class="pagenum" id="Page_57" role="doc-pagebreak">57</span>women who make a point of refusing
 marriage, in order that they may employ
 their powers for works of general usefulness.
 Blameless as is this humane object,
@@ -1232,7 +1658,7 @@ emancipation of woman be effected, there
 may not be many among them capable of
 rising to those heights of moral excellence.
 We are the more strengthened in this idea
-by the undeniable fact that in statistics we
+<span class="pagenum" id="Page_58" role="doc-pagebreak">58</span>by the undeniable fact that in statistics we
 find the greater number of criminal actions
 are committed by unmarried or divorced
 women. In matrimony their moral ratio
@@ -1246,13 +1672,13 @@ chances of setting up housekeeping—by
 which marriages must be seriously hindered—the
 changed nature of women would also
 act materially towards diminishing the number
-of marriages.
+of marriages.</p>
 
-A woman’s constitution is not the result
+<p>A woman’s constitution is not the result
 of her training, not “the eminently artificial
 thing” we are told by John Stuart
 Mill that it is, but the natural consequence
-of her destiny. Woman, who is formed by
+<span class="pagenum" id="Page_59" role="doc-pagebreak">59</span>of her destiny. Woman, who is formed by
 nature to experience the pains and joys
 of maternity, is most certainly differently
 constituted from man. Unnatural conditions,
@@ -1271,11 +1697,11 @@ of Idealism, that divine spark which alone
 leads us on to the great and beautiful!
 “The world gives nothing without a price,”
 says Börne; “thou must either pay it with
-what thou hast, or, worse still, with what
+<span class="pagenum" id="Page_60" role="doc-pagebreak">60</span>what thou hast, or, worse still, with what
 thou art!” And how dearly would women
-have to pay for their equality with men.
+have to pay for their equality with men.</p>
 
-In contradiction to our assertion that the
+<p>In contradiction to our assertion that the
 emancipation of women must lead to celibacy,
 one of our earliest and most wide-spread
 ladies’ associations in Germany has
@@ -1286,13 +1712,13 @@ celibacy, it seems expedient to advise the
 many sections of the educated middle classes
 to follow the example of the working
 orders, and to enable their women to earn
-their own living.”
+their own living.”</p>
 
-This association contends, as do most
+<p>This association contends, as do most
 women’s confederations, for the admission
 of women to the universities and other
 learned colleges, as well as for the permission
-of Government to follow those
+<span class="pagenum" id="Page_61" role="doc-pagebreak">61</span>of Government to follow those
 scientific careers for which their studies may
 have qualified them. Their hope being, by
 women’s increased facilities for money-making,
@@ -1311,7 +1737,7 @@ same callings, the competition would become
 still more unendurable. In the interests of
 society a man must necessarily earn more
 than a woman, because his superior strength
-imposes upon him the duty of supporting
+<span class="pagenum" id="Page_62" role="doc-pagebreak">62</span>imposes upon him the duty of supporting
 his family. If a man and his wife happened
 to follow the same calling, it certainly might
 be advantageous to them; supposing a
@@ -1330,7 +1756,7 @@ If a man and his wife are following
 different callings, they have to take into
 account increased taxation, their several
 professional residences, situation, additional
-servants, etc., and as increased competition
+<span class="pagenum" id="Page_63" role="doc-pagebreak">63</span>servants, etc., and as increased competition
 lessens professional incomes, it is very doubtful,
 in the face of the doubled expenses,
 whether the husband and wife would
@@ -1349,7 +1775,7 @@ carried on by another person, whose keep
 and wages represent a certain amount; but
 the eye of the mistress, her practical knowledge,
 her oversight in sudden emergencies,
-can hardly be supplied by paid assistance.
+<span class="pagenum" id="Page_64" role="doc-pagebreak">64</span>can hardly be supplied by paid assistance.
 The clever mistress can carry on her housekeeping
 at half the cost of a servants’ management.
 A wife who devotes herself with
@@ -1368,7 +1794,7 @@ by professional work, should give the same
 study and care to her household as one
 who devotes herself entirely to it; and if,
 on that account, the household has to be
-conducted on more expensive lines, the
+<span class="pagenum" id="Page_65" role="doc-pagebreak">65</span>conducted on more expensive lines, the
 question arises whether the woman would
 earn sufficient to cover the additional outlay;
 besides which, we have to take into
@@ -1387,7 +1813,7 @@ does not oblige her to neglect them altogether.
 A woman of business retains her
 practical oversight, and finds it quite easy,
 after some hours absence, to look after
-her household. But it is very different in
+<span class="pagenum" id="Page_66" role="doc-pagebreak">66</span>her household. But it is very different in
 the case of regular professional avocations,
 such as the calling of a doctor, lawyer,
 or professor. These demand undivided
@@ -1406,7 +1832,7 @@ the two persons.” We will consider further
 that there are periods in which a married
 woman must take care of herself, and
 during which her enforced retirement
-would be detrimental to her professional
+<span class="pagenum" id="Page_67" role="doc-pagebreak">67</span>would be detrimental to her professional
 work. It would depend upon her general
 health whether she must withdraw for
 weeks, or even months, from any active
@@ -1424,9 +1850,11 @@ herself full time for recovery. This could
 only be done at the cost of health and of
 the healthy development of her children,
 and sad consequences could not fail to
-ensue.
+ensue.</p>
 
-If anæmia and nervousness are terribly
+<p><span class="pagenum" id="Page_68" role="doc-pagebreak">68</span></p>
+
+<p>If anæmia and nervousness are terribly
 on the increase among the women of the
 present day, a pressure of work would tell
 still more seriously upon them; and what
@@ -1445,7 +1873,7 @@ and was endowed with exceptional power
 of mind, and perhaps among a million it
 would be hard to find another woman so
 well able to combine her natural duties
-with those of the State as she was. Or
+<span class="pagenum" id="Page_69" role="doc-pagebreak">69</span>with those of the State as she was. Or
 the women of the lower orders may be
 instanced to us, where the mother keeps
 on with her work until the baby’s birth,
@@ -1464,37 +1892,37 @@ mother, despite the strain of a large
 family, through the care and comfort by
 which she is surrounded, can preserve her
 health for many years. The women of
-the middle classes, to whom the equality
+<span class="pagenum" id="Page_70" role="doc-pagebreak">70</span>the middle classes, to whom the equality
 of the sexes will have apportioned her
 share in some arduous calling, must early
 fall a victim to the strain of repeated
 motherhood, because she can neither enjoy
 the rest and care accorded to the wealthy,
 nor has she the stronger constitution of
-the working-class.
+the working-class.</p>
 
-If, therefore, <i>woman’s natural vocation of
+<p>If, therefore, <i>woman’s natural vocation of
 motherhood</i> be carefully considered, it forms
 a powerful factor against the agitation for
-perfect equality between the two sexes.
+perfect equality between the two sexes.</p>
 
-We come now to the important question of
+<p>We come now to the important question of
 the education of her children by the business
 or professional woman. “Education,” says
 Garve, “is not only the most weighty of all
 family duties, but the most important duty
 of the State.” A woman who educates her
 children well, prepares them for school, who
-endeavours to train them in mind, is fulfilling
+<span class="pagenum" id="Page_71" role="doc-pagebreak">71</span>endeavours to train them in mind, is fulfilling
 the greatest part towards the education of the
 human species. The after-work of teachers
 and schools can only be successful if the
 mother’s care has made the child’s heart and
 mind properly receptive. <i>In doing this a
 woman renders her highest service to the State
-and to humanity.</i>
+and to humanity.</i></p>
 
-Napoleon I. once said to Madame Campan,
+<p>Napoleon I. once said to Madame Campan,
 the founder of the <i>Pension des Demoiselles</i> at
 St. Germain, “The old systems of education
 are worthless—our young girls are not well-trained;
@@ -1504,9 +1932,11 @@ de Campan. “You are right,” answered the
 emperor, quickly. “<i>In that one word is comprised
 the system of the whole world’s education.</i>
 You must train us mothers who know how to
-educate their children.”
+educate their children.”</p>
 
-In these words did the great, clear-sighted
+<p><span class="pagenum" id="Page_72" role="doc-pagebreak">72</span></p>
+
+<p>In these words did the great, clear-sighted
 Corsican elevate and establish the importance
 of woman’s mission, as mother and instructress,
 upon the development of the
@@ -1518,19 +1948,19 @@ Imperial Parliament upon the question of
 and highest duty of the Department of Education
 in what concerns the education of
 women, must ever be to train a woman to
-bring up her own children well.”
+bring up her own children well.”</p>
 
-We know that the most eminent men have
+<p>We know that the most eminent men have
 acknowledged that it is principally to the
 early education and maternal influence that
 they owe the happy development of their
 talents and genius, and that they lay the world
 partly under obligation to them for all they
-have contributed towards the glory of their
+<span class="pagenum" id="Page_73" role="doc-pagebreak">73</span>have contributed towards the glory of their
 country, of science and art, of the good and
-welfare of their fellows.
+welfare of their fellows.</p>
 
-“It is an universal rule,” says Michelet, “to
+<p>“It is an universal rule,” says Michelet, “to
 which I have scarcely found a single exception,
 that remarkable men <i>are the sons of their
 mothers</i>; they bear the moral impress of their
@@ -1545,14 +1975,16 @@ no monument, whose very names are forgotten,
 undying as they are, whose great
 intellect, inherited by their children, has
 made them grow into earnest, noble thinkers,
-and useful members of society.
+and useful members of society.</p>
 
-“Were all mothers thoroughly to grasp
+<p><span class="pagenum" id="Page_74" role="doc-pagebreak">74</span></p>
+
+<p>“Were all mothers thoroughly to grasp
 their responsibilities, the education of the
 people,” says a German writer, “would be as
-near to perfection as possible.”
+near to perfection as possible.”</p>
 
-This work, so important to the State and
+<p>This work, so important to the State and
 to society, offers at once the purest, noblest
 joy to a woman’s heart. Motherhood stands
 on the highest moral pinnacle of life; it
@@ -1567,7 +1999,7 @@ past pains and sorrows, repay it for unfulfilled
 hopes and dreams, comfort her in
 every woe, reconcile her to every discord. In
 the love of her child she finds a recompense
-for all else that life has denied to her. She
+<span class="pagenum" id="Page_75" role="doc-pagebreak">75</span>for all else that life has denied to her. She
 lives in its future. Every joy that beams in
 her child’s pure eyes is reflected in her own
 soul. And even though she must purchase
@@ -1577,9 +2009,9 @@ joys far exceed the sorrows. The flower of
 motherhood brings with it such a sweet, Lethe-like
 perfume, that a mother, as she sees her
 infant developing in health and strength, is
-oblivious of all the pains she has undergone.
+oblivious of all the pains she has undergone.</p>
 
-This joy of motherhood, this precious
+<p>This joy of motherhood, this precious
 boon to women’s hearts, is menaced by
 the advancing claims of Emancipation. In
 its entirety it can only be known to
@@ -1587,7 +2019,7 @@ those mothers who are privileged to devote
 themselves completely to their children,
 superintending their physical and mental
 development. The mother who has watched
-her infant’s first smile, has heard his first
+<span class="pagenum" id="Page_76" role="doc-pagebreak">76</span>her infant’s first smile, has heard his first
 cooing sounds, has nursed and played with
 him, and taught him, will be far more
 able to understand and instruct him than
@@ -1603,11 +2035,11 @@ the one, and encourage the other; above
 all she will take into account his individuality.
 The child who is given over to a
 stranger’s care is deprived of his holiest
-rights.
+rights.</p>
 
-When an artist is engaged upon some
+<p>When an artist is engaged upon some
 great work, whether in painting or sculpture
-he will not scorn the opinion of his fellow-artists;
+<span class="pagenum" id="Page_77" role="doc-pagebreak">77</span>he will not scorn the opinion of his fellow-artists;
 he may even alter or improve
 many a thing here and there upon their
 suggestion, but he will not permit another
@@ -1626,7 +2058,7 @@ bring up their children themselves. If the
 political Disabilities of Women were entirely
 abolished, and women were thus qualified
 to engage in men’s employments, they would
-be compelled, without exception, to let
+<span class="pagenum" id="Page_78" role="doc-pagebreak">78</span>be compelled, without exception, to let
 others take their place in the education
 of their children, as is now the case in
 the United States. To this end they have,
@@ -1644,9 +2076,11 @@ instructors of their own children. If they
 be less capable than strangers, this very
 want would be a proof how grievously
 American institutions have estranged parents
-from their most natural duties.
+from their most natural duties.</p>
 
-The equality of the sexes is brought
+<p><span class="pagenum" id="Page_79" role="doc-pagebreak">79</span></p>
+
+<p>The equality of the sexes is brought
 forward by its advocates as the way of
 escape for women from everyday cares
 and inward dissatisfaction. It is also believed
@@ -1665,7 +2099,7 @@ the future will become a calculating,
 money-making “neuter,” whose heart, little
 sensible to love, will be guided exclusively
 by motives of ambition and self. Staunch
-believers as we are in the idealistic standpoint,
+<span class="pagenum" id="Page_80" role="doc-pagebreak">80</span>believers as we are in the idealistic standpoint,
 we must yet admit that even love
 marriages occasionally turn out unhappily
 if the love be not of the true, pure metal, if it
@@ -1684,7 +2118,7 @@ the union of wedlock into a harmonious
 whole. No marriage is free from misunderstandings
 or misfortunes; unfulfilled hopes,
 heartrending bereavements, the cares of life,
-float like grey threads through every life
+<span class="pagenum" id="Page_81" role="doc-pagebreak">81</span>float like grey threads through every life
 history; no married life on earth is cloudless.
 A stern noble sense of duty enables
 a woman to stand fast by a man, even
@@ -1703,7 +2137,7 @@ in the love for her child and in seeing
 it thrive. For such a reward she can
 endure many a hardship; <i>possessing such a
 reward she dare not call herself unhappy</i>.
-Children are often the blessed solution of
+<span class="pagenum" id="Page_82" role="doc-pagebreak">82</span>Children are often the blessed solution of
 years of estrangement between young
 married couples and the means of bringing
 them together again; time smooths away
@@ -1714,16 +2148,16 @@ years of disagreement have known the
 delights of a happy after summer; the
 evening of their years cheered and made
 beautiful by seeing their children growing
-up around them.
+up around them.</p>
 
-Let us now glance at the fate of the single
+<p>Let us now glance at the fate of the single
 woman as years go by. As a young girl she
 has thrown herself into her career with enthusiasm,
 has entered the world with a high
 ideal, but by degrees disappointments, ingratitude,
 slights and isolation have embittered
 her life. Not for her the consolation
-and rest of a husband’s protection, not for
+<span class="pagenum" id="Page_83" role="doc-pagebreak">83</span>and rest of a husband’s protection, not for
 her the knowledge of a mother’s love, which
 reconciles and irradiates all things. For her
 there is no compensation in domestic happiness
@@ -1737,13 +2171,13 @@ been free from adversity, its joylessness has
 had its depressing effect. Therefore, when
 we hear laments about unhappy wives, must
 we ever oppose the question, “Are single
-women happy?”
+women happy?”</p>
 
-Increased facilities for earning money
+<p>Increased facilities for earning money
 among women will not obviate unhappy
 marriages; it will only bring about more
 frequent separations, a wife who can make
-her own living, feeling herself independent of
+<span class="pagenum" id="Page_84" role="doc-pagebreak">84</span>her own living, feeling herself independent of
 her husband. The latest statistics in Paris
 have shown that the greatest number of
 divorces have been among those where the
@@ -1755,22 +2189,22 @@ has its still greater evils; and while endurance
 in it may bring severed hearts together
 again, separation rarely, if ever, does
 so. Moreover, the children of separated
-parents are sufferers.
+parents are sufferers.</p>
 
-The emancipation of women claims to
+<p>The emancipation of women claims to
 provide for widows after the death of their
 husbands, by means of their studies, which
 will have qualified them to take up some
 calling for the maintenance of themselves and
 their children. In exposition of this view,
-the talented Polish authoress, Elise Orzesku,
+<span class="pagenum" id="Page_85" role="doc-pagebreak">85</span>the talented Polish authoress, Elise Orzesku,
 in her social romance, “A Woman’s Fate,”
 has made her heroine, left a widow, perish
 miserably, unable, through want of thorough
 training in any single department, to gain a
-living for herself and her child.
+living for herself and her child.</p>
 
-This tragic story, which may well have its
+<p>This tragic story, which may well have its
 foundation in fact, can but be considered
 as an extreme case, for we are taught by
 universal experience that there is no misfortune
@@ -1783,7 +2217,7 @@ and we could point with deepest satisfaction
 to the fact that many of our cleverest men
 have grown up under such adverse circumstances.
 A life insurance, effected where
-possible by the husband, affords his widow
+<span class="pagenum" id="Page_86" role="doc-pagebreak">86</span>possible by the husband, affords his widow
 a sure means of maintaining herself and
 their children if care and economy are
 exercised. Now, the removal of the Disabilities
@@ -1802,7 +2236,7 @@ And such cases of physical and mental breakdown
 would be on the increase, because a
 woman’s constitution unfits her for the strain
 of such heavy work. Contemporary experience
-yields too many sad examples of this
+<span class="pagenum" id="Page_87" role="doc-pagebreak">87</span>yields too many sad examples of this
 assertion. We do but need to refer to the
 melancholy case of mental derangement of
 the gifted authoress, Dr. Helene Druskowitz.
@@ -1821,15 +2255,15 @@ cannot find the means to support themselves
 and their families. The number of men who
 are driven to lay violent hands upon themselves
 far outweighs that of women—who,
-principally for psychological reasons, mental
+<span class="pagenum" id="Page_88" role="doc-pagebreak">88</span>principally for psychological reasons, mental
 derangement, melancholia, disappointed love,
 are tempted to rush into a self-inflicted
 death. In this we see proof that women,
 under the most adverse circumstances, find
 it easier to supply their simple wants than
-are men similarly placed.
+are men similarly placed.</p>
 
-What law, what social regulation, would
+<p>What law, what social regulation, would
 avail to lessen or remove the destitution,
 alike of men and women? Here we are
 brought face to face with an unsolved problem.
@@ -1841,7 +2275,7 @@ another preaches the gospel of true
 humanity. According to Bellamy, all should
 be thrown into one common fund, the whole
 capital of human skill and knowledge, and
-power and ability of the individual, should
+<span class="pagenum" id="Page_89" role="doc-pagebreak">89</span>power and ability of the individual, should
 be used for the good of the community. But
 what authority would avail to elevate mankind,
 when this innate selfishness is diametrically
@@ -1860,10 +2294,10 @@ seems like the rosy glow of a new era; the
 day has not yet dawned, but we may look
 forward to it, and when it breaks, mists and
 shadows will melt before it, and burning
-questions—even Woman’s Disabilities—will
-find their true solution.
+<span class="pagenum" id="Page_90" role="doc-pagebreak">90</span>questions—even Woman’s Disabilities—will
+find their true solution.</p>
 
-We can have an epidemic of ideas as
+<p>We can have an epidemic of ideas as
 well as of diseases. Some twenty or thirty
 years ago a mother’s one thought was to
 marry off her daughter, whether she had
@@ -1880,7 +2314,7 @@ decidedly carried too far, people have forgotten
 that it had its basis in the true
 feminine nature. There were dangers then,
 but not of so grave a character as now. The
-education of the period has developed other
+<span class="pagenum" id="Page_91" role="doc-pagebreak">91</span>education of the period has developed other
 aims. A young girl, in default of matrimony,
 is to be prepared for some vocation
 which shall render her independent. Once
@@ -1899,7 +2333,7 @@ higher education and its ensuing claims is
 proportionate to her domestic training. If
 higher education goes hand in hand with
 domestic proclivities and modesty, a girl
-could not be better fitted to rule a household.
+<span class="pagenum" id="Page_92" role="doc-pagebreak">92</span>could not be better fitted to rule a household.
 But if, through her more extended
 study, a girl be led away from the interests of
 domestic life, she will become not merely
@@ -1918,7 +2352,7 @@ only enough to begin housekeeping upon in
 a small way, and even if that would have
 contented him, the girl he loved despised
 the small beginning, and refused to venture
-upon “love in a cottage.” The man learned
+<span class="pagenum" id="Page_93" role="doc-pagebreak">93</span>upon “love in a cottage.” The man learned
 to resign himself to his fate, and sought
 solace in amusement and dissipation; the
 habit of having only himself to care for has
@@ -1928,9 +2362,9 @@ him guarded. He puts up with the discomforts
 of a solitary life, and fights shy
 of domestic bliss, for which modest framework
 the girl of the period is no longer
-suited.
+suited.</p>
 
-Girls, on their side, do not take a right
+<p>Girls, on their side, do not take a right
 view of matrimony. While the one pictures
 it to herself as a state of perpetual bliss,
 free from care and all discord, the other
@@ -1938,7 +2372,7 @@ looks upon it merely as the fulfilment of her
 every wish, the atmosphere of pleasure and
 enjoyment, of luxury and freedom. Marriage
 entered upon under such conditions is destitute
-of all moral ground-work, and must,
+<span class="pagenum" id="Page_94" role="doc-pagebreak">94</span>of all moral ground-work, and must,
 in the first storm that overtakes it, come to
 grief. Far beyond all that exaggerated
 yearning after individual happiness and enjoyment
@@ -1957,7 +2391,7 @@ springs, should have the innate consciousness
 of a stern sense of duty implanted in
 them. And gladly as we acknowledge the
 remarkable progress made of late years in
-education, we cannot overlook the fact,
+<span class="pagenum" id="Page_95" role="doc-pagebreak">95</span>education, we cannot overlook the fact,
 that in many of its efforts it oversteps
 the mark. The excessive care and attention
 expended upon children nowadays,
@@ -1976,7 +2410,7 @@ his gun that he may not be debarred from
 his shooting, whilst little girls of four or
 five are allowed to run wild in the summer
 holidays in knickerbockers, that they may
-learn to be “tom-boys.” The consequences
+<span class="pagenum" id="Page_96" role="doc-pagebreak">96</span>learn to be “tom-boys.” The consequences
 are unavoidable. Girls and boys, spoiled
 by this over-indulgence, have no idea of self-denial
 or consideration for others; they
@@ -1985,18 +2419,18 @@ only upon obtaining and carrying out
 their own wishes and desires. <i>Such training
 can only lead to unhappy marriages; the
 emancipation of women will be no help in that
-direction.</i>
+direction.</i></p>
 
-Among the various professions which
+<p>Among the various professions which
 the woman of the 19th century is eager
 to enter, there is a decided preference
 for the art of healing. To this, therefore,
-we will accord our special consideration.
+we will accord our special consideration.</p>
 
-In no profession has the controversy as
+<p>In no profession has the controversy as
 to the propriety of women entering it been
 so keen as in that of medicine; none has
-given rise to so much discussion. Their
+<span class="pagenum" id="Page_97" role="doc-pagebreak">97</span>given rise to so much discussion. Their
 partisans date the right of women to take
 part in the profession from mythical times.
 Hygeia, the daughter of Æsculapius, was
@@ -2015,7 +2449,7 @@ studied medicine, and some among their
 free women rose to much eminence and
 wealth. As, however, with them there was
 universal freedom in the following of all
-callings and professions, every woman who
+<span class="pagenum" id="Page_98" role="doc-pagebreak">98</span>callings and professions, every woman who
 gave herself out as a doctor could follow
 medicine. The calling soon, among women,
 grew into discredit and disrepute, and ended
@@ -2034,7 +2468,7 @@ daughter Zaffira Peretti, as also Katharina
 Passi. From time to time we subsequently
 come across other celebrated
 women who have risen high above the level
-of mediocrity, such as Oliva del Sabuco,
+<span class="pagenum" id="Page_99" role="doc-pagebreak">99</span>of mediocrity, such as Oliva del Sabuco,
 in Spain, Felicité de Fay at the University
 of Montpellier, Anna Volley and Elizabeth
 Kent in England, and Anna Manzolini in
@@ -2053,7 +2487,7 @@ first advocate for women medical students,
 Miss Elizabeth Blackwell, after many years
 of struggle obtained entrance into the
 medical faculty of Geneva in 1842; in 1847
-she received her doctor’s degree, and went
+<span class="pagenum" id="Page_100" role="doc-pagebreak">100</span>she received her doctor’s degree, and went
 to England, Germany, and finally to Paris,
 to complete her studies. Her example fired
 others. In that same year a medical college
@@ -2072,7 +2506,7 @@ the intervention of the Empress Eugénie,
 first admitted lady students to follow the
 medical course. In Italy, in 1876, they
 obtained equal success; in Russia, an ukase
-of the Czar Alexander II., of November 2nd,
+<span class="pagenum" id="Page_101" role="doc-pagebreak">101</span>of the Czar Alexander II., of November 2nd,
 1872, conferred upon ladies the right to
 attend the medical courses in the Medico-Chirurgical
 Academy of St. Petersburg, but
@@ -2091,7 +2525,7 @@ are seventy lady doctors in practice in
 London, five in Edinburgh, and two in
 Dublin. Seven hundred lady doctors practise
 in Russia, of whom fifty-four are the heads
-of clinical schools and laboratories. In
+<span class="pagenum" id="Page_102" role="doc-pagebreak">102</span>of clinical schools and laboratories. In
 Italy, at the same time, there were only six.
 Spain has but two qualified lady doctors.
 Roumania, also, has two. Sweden, Norway,
@@ -2110,12 +2544,12 @@ they have now one hundred lady doctors,
 three of whom are at the head of the three
 most important hospitals. The largest
 number of women practising medicine is in
-America. In the United States there are no
+<span class="pagenum" id="Page_103" role="doc-pagebreak">103</span>America. In the United States there are no
 less than three thousand lady practitioners,
 all of whom enjoy a position of honour and
 respect, and are in receipt of incomes varying
 from five to twenty thousand dollars and
-more. The above data[2] appears to give
+more. The above data&#x2060;<a id="FNanchor_2_2" href="#Footnote_2_2" class="fnanchor" role="doc-noteref" data-epub-type="noteref">[2]</a> appears to give
 sufficient evidence of woman’s aptitude for
 the medical profession. How far these have
 been proofs of individual eminence or excellence—how
@@ -2127,7 +2561,7 @@ and do not find that they are far
 behind them. Among medical bodies the
 greater number of the professors are opposed
 to ladies taking up medical studies, and we
-are not inclined to think that such distinguished
+<span class="pagenum" id="Page_104" role="doc-pagebreak">104</span>are not inclined to think that such distinguished
 men would suffer themselves to
 be influenced by narrow motives. Geheimrath
 Waldeyer at the last medical congress
@@ -2144,13 +2578,14 @@ may possibly be an unduly severe judgment,
 and there are certainly many lady students
 who do not deserve the stricture; but relying
 on the name of him who has uttered it,
-we must believe it to be justified.
+we must believe it to be justified.</p>
 
-[Footnote 2: Taken from a published address given by Dr. Rosa
-Kerschbaumer.]
+<aside class="footnote" id="Footnote_2_2" role="doc-footnote" data-epub-type="footnote"><p><a href="#FNanchor_2_2" class="label" role="doc-backlink">[2]</a>
+    Taken from a published address given by Dr. Rosa
+Kerschbaumer.</p></aside>
 
-There have already been many objections
-to the study of women in medicine, on
+<p>There have already been many objections
+<span class="pagenum" id="Page_105" role="doc-pagebreak">105</span>to the study of women in medicine, on
 the ground of morality, inasmuch as the
 students, who are for the most part young
 girls, are brought into contact with all the
@@ -2169,7 +2604,7 @@ the good and useful, in the balance, and we
 can understand how her zeal, her love for
 science, raises her above every ignoble
 thought. We can but pay her the tribute
-of admiration—and yet, we ask ourselves,
+<span class="pagenum" id="Page_106" role="doc-pagebreak">106</span>of admiration—and yet, we ask ourselves,
 is it a matter of necessity that she should
 thus triumph over her nature? Are lady
 doctors an essential with us? The warmest
@@ -2188,7 +2623,7 @@ doubt being cast upon the suitability of
 woman for the profession, and the voice
 of mistrust once aroused would be loudly
 echoed. Men practitioners who had viewed the
-adoption of the study of medicine by women
+<span class="pagenum" id="Page_107" role="doc-pagebreak">107</span>adoption of the study of medicine by women
 disapprovingly would not be too cordial to
 their lady colleagues, and would be influenced
 in their judgment, some by prejudice, some
@@ -2207,7 +2642,7 @@ lower orders are much more impressed by
 a male than by a female doctor, and would
 carry out his prescriptions far more conscientiously.
 The lady doctor is an exotic
-and can thrive but with difficulty in those
+<span class="pagenum" id="Page_108" role="doc-pagebreak">108</span>and can thrive but with difficulty in those
 countries where male competition is in the
 preponderance. A man is endowed with
 greater physical strength, energy, and power
@@ -2220,14 +2655,14 @@ patient, the doctor, and even to science,
 for a physician can be often assisted in
 the true diagnosis of a case through the
 observation and treatment of the phases of
-disease by a trained and skilful nurse.
+disease by a trained and skilful nurse.</p>
 
-Another point not to be overlooked, is
+<p>Another point not to be overlooked, is
 that a woman whose strength is over-taxed,
 as often happens in the medical
 profession, ages much sooner than a man,
 and, grown old before her time, would
-not be able to make the experience and
+<span class="pagenum" id="Page_109" role="doc-pagebreak">109</span>not be able to make the experience and
 knowledge she has gained of practical
 benefit. The mental capital which, in a
 man, is available when he is gray-headed,
@@ -2246,15 +2681,15 @@ the high fee in order to obtain an opinion
 in which she feels confidence. Is it to be
 expected that any lady doctor can attain
 to the like celebrity and popularity? Will
-the adhesion of her lady patients justify
+<span class="pagenum" id="Page_110" role="doc-pagebreak">110</span>the adhesion of her lady patients justify
 her expectations—or will there be but a
 limited faint-hearted few knocking at her
 door? We cannot, at the present time,
 gauge the prospects of lady practitioners
 amongst us; it is one of those problems
-which time alone can solve.
+which time alone can solve.</p>
 
-Among lady doctors only a very small
+<p>Among lady doctors only a very small
 proportion are married. “Clearly,” says
 Dr. Rosa Kerschbaumer, “because the
 higher education and her independent
@@ -2266,7 +2701,7 @@ happiness? Is her heart to know no
 yearnings after love, and a mother’s joy?
 The consciousness of duty done is to be
 her recompense for the longings of her
-heart—or have they been deadened by
+<span class="pagenum" id="Page_111" role="doc-pagebreak">111</span>heart—or have they been deadened by
 the earnest nature of her calling? A lady
 doctor is often called upon to see into the
 very depths of family life, is often witness
@@ -2279,14 +2714,14 @@ tenderness of husband to wife, or wife
 to husband, a mother’s love, a child’s utter
 dependence, are all these to pass by her
 without arousing in her heart the subtlest
-yearning after family love?
+yearning after family love?</p>
 
-Youth clusters round the banner of
+<p>Youth clusters round the banner of
 idealism. The young lady doctor dreams
 of making a mark in her profession, and
 these dreams carry her high above common-place
 hopes and wishes to the lofty heights
-of fame. Her ambition, her high aspirations,
+<span class="pagenum" id="Page_112" role="doc-pagebreak">112</span>of fame. Her ambition, her high aspirations,
 may perhaps enable her in youth
 to more easily forego family love; but as
 years go on and dreams give place to stern
@@ -2299,14 +2734,14 @@ the mistake she has made in her life.
 Striving and endeavour is one thing, accomplishment
 and success another. Seldom
 is the promise of the bud fulfilled in the
-fruit.
+fruit.</p>
 
-There are, however, married lady doctors
+<p>There are, however, married lady doctors
 too, and we cannot understand how they
 can guard against their professional claims
 warring with their home duties. A German
 authoress tells us, that out of thirty-four
-married lady doctors practising in New
+<span class="pagenum" id="Page_113" role="doc-pagebreak">113</span>married lady doctors practising in New
 York, there are only two who have not
 nursed their infants themselves. It sounds
 almost incredible that, amid all the suffering
@@ -2325,7 +2760,7 @@ on its account. Or does a lady doctor
 retire at such times for a while from her
 profession; does she only take it up occasionally?
 But the medical profession is
-not to be played with; it is a holy calling,
+<span class="pagenum" id="Page_114" role="doc-pagebreak">114</span>not to be played with; it is a holy calling,
 demanding the whole strength and mind of
 its devotee. And how is it, if a lady
 doctor, in the execution of her professional
@@ -2344,10 +2779,10 @@ precious little one cold and stiff, those
 eyes closed in death which had sought in
 vain a mother’s tender gaze, the lips silent
 forever, which, perhaps, had called to her
-in their extremity, the little hands so cold,
-that had been stretched out imploring for her!
+<span class="pagenum" id="Page_115" role="doc-pagebreak">115</span>in their extremity, the little hands so cold,
+that had been stretched out imploring for her!</p>
 
-Such a sorrow must nullify any satisfaction
+<p>Such a sorrow must nullify any satisfaction
 she might feel in the fulfilment of
 her professional work. And even had she
 been present at her child’s death-bed—what
@@ -2363,9 +2798,11 @@ a doctor, who is father of a family, such a
 case might also occur; but a man is made
 of sterner stuff and does not feel things as
 women do, nor would it be well that he
-should.
+should.</p>
 
-We have considered a woman’s medical
+<p><span class="pagenum" id="Page_116" role="doc-pagebreak">116</span></p>
+
+<p>We have considered a woman’s medical
 calling under many aspects, all of which are
 more or less adverse to it. It would then
 be a dangerous experiment to admit women
@@ -2384,7 +2821,7 @@ Anyway, as far as we are concerned, we
 should hold it as even preferable that one
 specially gifted woman should fail to develop
 her powers than that a large number
-of women, of average abilities, should enter
+<span class="pagenum" id="Page_117" role="doc-pagebreak">117</span>of women, of average abilities, should enter
 upon professions for which they must inevitably
 prove themselves unfit. We may
 be told that numbers of professional men
@@ -2392,9 +2829,9 @@ barely come up to the average. This we
 do not deny; but, in any case, the man is
 at least fulfilling his vocation as far as he
 can, while the woman would be doing it at
-the cost of hers.
+the cost of hers.</p>
 
-It would carry us too far were we to go
+<p>It would carry us too far were we to go
 into the question of the adoption of other masculine
 callings by women. We will only
 briefly glance at it under its political aspect.
@@ -2404,12 +2841,12 @@ emancipation, has, so far, not removed their
 political disabilities. In England, many noble
 women have actively opposed the question
 of the political rights of women, yet the
-stream of aspirants is ever increasing, and
+<span class="pagenum" id="Page_118" role="doc-pagebreak">118</span>stream of aspirants is ever increasing, and
 eminent men have advocated woman’s participation
 in every department of the affairs
-of State.
+of State.</p>
 
-There is a proverb which says, “Two
+<p>There is a proverb which says, “Two
 people can do the same thing, yet it is not
 the same.” So is it with man and woman.
 Political struggles which often enough unchain
@@ -2424,7 +2861,7 @@ unforgiving and revengeful. Fashion has
 made gambling popular among women.
 Anyone who has quietly watched the scenes
 enacted round a gambling-table by women,
-must admit that their passions, when once
+<span class="pagenum" id="Page_119" role="doc-pagebreak">119</span>must admit that their passions, when once
 excited, are more violent than those of men,
 more revolting and hideous in their effects.
 How the soft delicate features harden, cloud
@@ -2443,12 +2880,12 @@ once they are granted, will demand woman’s
 action as a duty. How does this harmonise
 with woman’s mission as a peace-maker?
 What are the advantages to accrue
-from the participation of the sex in political
+<span class="pagenum" id="Page_120" role="doc-pagebreak">120</span>from the participation of the sex in political
 life? What compensation will it offer for
 the disadvantages it entails upon family
-life?
+life?</p>
 
-Clever women take up the modern idea
+<p>Clever women take up the modern idea
 with enthusiasm, forgetting that by so doing
 they become the pioneers of a path which
 may be mischievous and dangerous to many
@@ -2463,14 +2900,14 @@ same lamentable step. Their failures would
 cause a mental deterioration in the female
 sex; disappointed lives, increased cases of
 mental derangement, and suicide among
-women, would be the unavoidable, melancholy
-consequences.
+<span class="pagenum" id="Page_121" role="doc-pagebreak">121</span>women, would be the unavoidable, melancholy
+consequences.</p>
 
-We cannot here refrain from quoting a
+<p>We cannot here refrain from quoting a
 passage from Schiller’s “Conversation with
-Christiana von Wurmb”:
+Christiana von Wurmb”:</p>
 
-“Clever women are curious beings!” says
+<p>“Clever women are curious beings!” says
 our great poet. “When once they leave
 their own appointed sphere they soar to
 heights above, with amazing rapidity and
@@ -2484,7 +2921,7 @@ and must, inevitably, become either ridiculous
 or unhappy.</i>” We believe ourselves
 justified in quoting these words, as we contest
 the opening up of universities and
-colleges to women. <i>If women are to be protected
+<span class="pagenum" id="Page_122" role="doc-pagebreak">122</span>colleges to women. <i>If women are to be protected
 from mental disturbance and from disappointed
 lives, let us preserve our gifted,
 clever sisters for the sanctity of domestic life</i>; it
@@ -2499,12 +2936,12 @@ Her influence upon society will be more
 powerful and ennobling, <i>her deeds and aspirations
 infinitely more rich in blessings to the community,
 than if her life had been devoted to
-science</i>.
+science</i>.</p>
 
-Withal, a woman’s sphere of action must
+<p>Withal, a woman’s sphere of action must
 not be solely restricted to home life; where
 circumstances allow, if she be childless, or
-her children grown-up, she may legitimately
+<span class="pagenum" id="Page_123" role="doc-pagebreak">123</span>her children grown-up, she may legitimately
 take up and interest herself in intellectual
 pursuits. We know how gifted women have,
 in all ages, exerted an influence upon art and
@@ -2520,11 +2957,11 @@ true, the good, and the beautiful. Our
 authoresses and lady artists give us noble
 work in the departments of literature and
 art, and find that their efforts meet with
-universal recognition and support.
+universal recognition and support.</p>
 
-In another sphere of action we gladly
+<p>In another sphere of action we gladly
 acknowledge woman’s work; that is, in devoting
-their spare time and energy to benevolent
+<span class="pagenum" id="Page_124" role="doc-pagebreak">124</span>their spare time and energy to benevolent
 institutions; thereby, through their
 humanitarian efforts, conducing to the relief
 of social distress. By these means it is open
@@ -2542,9 +2979,11 @@ are still painfully felt, we can but repeat,
 that, unhappily, they apply not alone to
 women, but to men. It is beyond the limits
 of this pamphlet to enter more closely into
-this social question.
+this social question.</p>
 
-We draw to a conclusion. To have
+<p><span class="pagenum" id="Page_125" role="doc-pagebreak">125</span></p>
+
+<p>We draw to a conclusion. To have
 contested the struggle for the political and
 social equality of women with men, from an
 ideal, as well as practical, standpoint, with
@@ -2563,16 +3002,16 @@ of the two sexes will become hostile to each
 other, without one or the other finding the
 struggle for existence in any way lightened
 to them; we are alarmed for the good of
-the children, those tender little beings, who
+<span class="pagenum" id="Page_126" role="doc-pagebreak">126</span>the children, those tender little beings, who
 can only develop happily under the sunshine
 of a mother’s love and care. And, in the
 light of these considerations, we believe the
 one answer to the question with which we
 started—“Will the equality of the two sexes
 conduce to the good of humanity at large?”—is
-a decided negative.
+a decided negative.</p>
 
-It may be that we have succeeded in convincing
+<p>It may be that we have succeeded in convincing
 some who have held a contrary
 opinion. Many people are ready to allow
 themselves to drift with the stream, without
@@ -2583,7 +3022,7 @@ and affect the strongest heads. But great
 intellects are often impaired by partiality;
 and if the psychological eye be short-sighted,
 its judgment becomes less trustworthy.
-Many a prospect may look
+<span class="pagenum" id="Page_127" role="doc-pagebreak">127</span>Many a prospect may look
 enticing, many a narrow path seem to
 open out into the broad road of promise,
 but few ask whither it leads. Whither?
@@ -2602,15 +3041,15 @@ great venture, and by going against the
 immovable laws of nature procure new
 conditions of life for ourselves, let us
 rather pause and seek to stem the
-current. Perhaps the time is not far off
+<span class="pagenum" id="Page_128" role="doc-pagebreak">128</span>current. Perhaps the time is not far off
 when the efforts of lovers of peace and
 good-will among nations may bring about
 the disarmament of Europe. This great
 work accomplished, domestic relations
 would soon offer brighter prospects to
-both sexes.
+both sexes.</p>
 
-While waiting for better times, instead
+<p>While waiting for better times, instead
 of expending our strength contending for
 mistaken aims, let us rather turn our
 attention to the present; instead of tearing
@@ -2622,7 +3061,7 @@ by time and adverse agencies; let us try
 to close up the gaping rifts. Let us endeavour
 to order our mode of living with
 greater simplicity, to limit our pretensions
-to luxury and pleasure, and return to ways
+<span class="pagenum" id="Page_129" role="doc-pagebreak">129</span>to luxury and pleasure, and return to ways
 of greater conscientiousness in the fulfilment
 of duty; thus shall we steer clear
 of the non-marrying difficulty, which has
@@ -2640,35 +3079,44 @@ in whose hearts from earliest infancy a
 strong sense of duty should be instilled,
 may then justify the hope that future generations
 will not be led to seek the amelioration
-of social relations in mistaken directions.
+of social relations in mistaken directions.</p>
 
-Let us hold fast to the highest and
+<p><span class="pagenum" id="Page_130" role="doc-pagebreak">130</span></p>
+
+<p>Let us hold fast to the highest and
 best that belongs to us women, <i>the vocations
 of wife and mother</i>, and do our utmost
-to win others over to our convictions.
+to win others over to our convictions.</p>
 
-In this way can each woman of like
+<p>In this way can each woman of like
 mind contribute in the best and noblest
 manner to the solution of the question of
-the Emancipation of Women.
+the Emancipation of Women.</p>
 
 
-THE END.
+<h3 id="THE_END">
+  THE END.
+</h3>
 
 
-<i>Printed by Cowan & Co., Limited, Perth.</i>
+<h3 id="Printed_by_Cowan_Co_Limited_Perth">
+  <i>Printed by Cowan &amp; Co., Limited, Perth.</i>
+</h3>
 
 
+<hr class="chap x-ebookmaker-drop" aria-hidden="true">
+<div class="chapter">
+  <h2 class="nobreak" id="OPINIONS_OF_THE_PRESS">
+    OPINIONS OF THE PRESS
+    <br>
+    ON THE
+    <br>
+    SOCIAL SCIENCE SERIES.
+  </h2>
+</div>
 
 
-OPINIONS OF THE PRESS
-
-ON THE
-
-SOCIAL SCIENCE SERIES.
-
-
-/X
+<pre>
 “‘The Principles of State Interference’ is another of Messrs. Swan Sonnenschein’s
 Series of Handbooks on Scientific Social Subjects. <b>It would be
 fitting to close our remarks on this little work with a word of commendation
@@ -2709,311 +3157,319 @@ be forthcoming at the hands of the next contributor.”—<i>Literary World.</i>
 
 “‘The Social Science Series’ aims at the illustration of all sides of social and
 economic truth and error.”—<i>Scotsman.</i>
-X/
+</pre>
 
 
-SWAN SONNENSCHEIN & CO., LONDON.
+<h3 id="SWAN_SONNENSCHEIN_CO_LONDON">
+  SWAN SONNENSCHEIN &amp; CO., LONDON.
+</h3>
 
 
+<hr class="chap x-ebookmaker-drop" aria-hidden="true">
+<div class="chapter">
+  <h2 class="nobreak" id="SOCIAL_SCIENCE_SERIES">
+    SOCIAL SCIENCE SERIES.
+    <br>
+    <i>SCARLET CLOTH, EACH 2s. 6d.</i>
+  </h2>
+</div>
 
 
-SOCIAL SCIENCE SERIES.
-
-<i>SCARLET CLOTH, EACH 2s. 6d.</i>
-
-
-/X
-1. <b>Work and Wages.</b>      Prof. <sc>J. E. Thorold Rogers</sc>.
+<pre>
+1. <b>Work and Wages.</b>      Prof. <span class="smcap">J. E. Thorold Rogers</span>.
 
 “Nothing that Professor Rogers writes can fail to be of interest to thoughtful
 people.”—<i>Athenæum.</i>
 
-2. <b>Civilisation: its Cause and Cure.</b>      <sc>Edward Carpenter.</sc>
+2. <b>Civilisation: its Cause and Cure.</b>      <span class="smcap">Edward Carpenter.</span>
 
 “No passing piece of polemics, but a permanent possession.”—<i>Scottish Review.</i>
 
-3. <b>Quintessence of Socialism.</b>      Dr. <sc>Schäffle</sc>.
+3. <b>Quintessence of Socialism.</b>      Dr. <span class="smcap">Schäffle</span>.
 
 “Precisely the manual needed. Brief, lucid, fair and wise.”—<i>British Weekly.</i>
 
-4. <b>Darwinism and Politics.</b>      <sc>D. G. Ritchie</sc>, M.A. (Oxon.).
+4. <b>Darwinism and Politics.</b>      <span class="smcap">D. G. Ritchie</span>, M.A. (Oxon.).
 
-New Edition, with two additional Essays on <sc>Human Evolution</sc>.
+New Edition, with two additional Essays on <span class="smcap">Human Evolution</span>.
 
 “One of the most suggestive books we have met with.”—<i>Literary World.</i>
 
-5. <b>Religion of Socialism.</b>      <sc>E. Belfort Bax.</sc>
+5. <b>Religion of Socialism.</b>      <span class="smcap">E. Belfort Bax.</span>
 
-6. <b>Ethics of Socialism.</b>      <sc>E. Belfort Bax.</sc>
+6. <b>Ethics of Socialism.</b>      <span class="smcap">E. Belfort Bax.</span>
 
 “Mr. Bax is by far the ablest of the English exponents of Socialism.”—<i>Westminster
 Review.</i>
 
-7. <b>The Drink Question.</b>      Dr. <sc>Kate Mitchell</sc>.
+7. <b>The Drink Question.</b>      Dr. <span class="smcap">Kate Mitchell</span>.
 
 “Plenty of interesting matter for reflection.”—<i>Graphic.</i>
 
-8. <b>Promotion of General Happiness.</b>      Prof. <sc>M. Macmillan</sc>.
+8. <b>Promotion of General Happiness.</b>      Prof. <span class="smcap">M. Macmillan</span>.
 
 “A reasoned account of the most advanced and most enlightened utilitarian doctrine
 in a clear and readable form.”—<i>Scotsman.</i>
 
-9. <b>England’s Ideal, &c.</b>      <sc>Edward Carpenter.</sc>
+9. <b>England’s Ideal, &amp;c.</b>      <span class="smcap">Edward Carpenter.</span>
 
 “The literary power is unmistakable, their freshness of style, their humour, and
 their enthusiasm.”—<i>Pall Mall Gazette.</i>
 
-10. <b>Socialism in England.</b>      <sc>Sidney Webb</sc>, LL.B.
+10. <b>Socialism in England.</b>      <span class="smcap">Sidney Webb</span>, LL.B.
 
 “The best general view of the subject from the modern Socialist side.”—<i>Athenæum.</i>
 
-11. <b>Prince Bismarck and State Socialism.</b>      <sc>W. H. Dawson.</sc>
+11. <b>Prince Bismarck and State Socialism.</b>      <span class="smcap">W. H. Dawson.</span>
 
 “A succinct, well-digested review of German social and economic legislation since
 1870.”—<i>Saturday Review.</i>
 
-12. <b>Godwin’s Political Justice (On Property).</b>      Edited by <sc>H. S. Salt</sc>.
+12. <b>Godwin’s Political Justice (On Property).</b>      Edited by <span class="smcap">H. S. Salt</span>.
 
 “Shows Godwin at his best; with an interesting and informing introduction.”—<i>Glasgow
 Herald.</i>
 
-13. <b>The Story of the French Revolution.</b>      <sc>E. Belfort Bax.</sc>
+13. <b>The Story of the French Revolution.</b>      <span class="smcap">E. Belfort Bax.</span>
 
 “A trustworthy outline.”—<i>Scotsman.</i>
 
-14. <b>The Co-Operative Commonwealth.</b>      <sc>Laurence Gronlund.</sc>
+14. <b>The Co-Operative Commonwealth.</b>      <span class="smcap">Laurence Gronlund.</span>
 
 “An independent exposition of the Socialism of the Marx school.”—<i>Contemporary
 Review.</i>
 
-15. <b>Essays and Addresses.</b>      <sc>Bernard Bosanquet</sc>, M.A. (Oxon.).
+15. <b>Essays and Addresses.</b>      <span class="smcap">Bernard Bosanquet</span>, M.A. (Oxon.).
 
 “Ought to be in the hands of every student of the Nineteenth Century spirit.”—<i>Echo.</i>
 
 “No one can complain of not being able to understand what Mr. Bosanquet
 means.”—<i>Pall Mall Gazette.</i>
 
-16. <b>Charity Organisation.</b>      <sc>C. S. Loch</sc>, Secretary to Charity Organisation Society.
+16. <b>Charity Organisation.</b>      <span class="smcap">C. S. Loch</span>, Secretary to Charity Organisation Society.
 
 “A perfect little manual.”—<i>Athenæum.</i>
 
 “Deserves a wide circulation.”—<i>Scotsman.</i>
 
-17. <b>Thoreau’s Anti-Slavery and Reform Papers.</b>      Edited by <sc>H. S. Salt</sc>.
+17. <b>Thoreau’s Anti-Slavery and Reform Papers.</b>      Edited by <span class="smcap">H. S. Salt</span>.
 
 “An interesting collection of essays.”—<i>Literary World.</i>
 
-18. <b>Self-Help a Hundred Years Ago.</b>      <sc>G. J. Holyoake.</sc>
+18. <b>Self-Help a Hundred Years Ago.</b>      <span class="smcap">G. J. Holyoake.</span>
 
 “Will be studied with much benefit by all who are interested in the amelioration
 of the condition of the poor.”—<i>Morning Post.</i>
 
-19. <b>The New York State Reformatory at Elmira.</b>      <sc>Alexander Winter.</sc>
+19. <b>The New York State Reformatory at Elmira.</b>      <span class="smcap">Alexander Winter.</span>
 
-With Preface by <sc>Havelock Ellis</sc>.
+With Preface by <span class="smcap">Havelock Ellis</span>.
 
 “A valuable contribution to the literature of penology.”—<i>Black and White.</i>
 
-20. <b>Common Sense about Women.</b>      <sc>T. W. Higginson.</sc>
+20. <b>Common Sense about Women.</b>      <span class="smcap">T. W. Higginson.</span>
 
 “An admirable collection of papers, advocating in the most liberal spirit the
 emancipation of women.”—<i>Woman’s Herald.</i>
 
-21. <b>The Unearned Increment.</b>      <sc>W. H. Dawson.</sc>
+21. <b>The Unearned Increment.</b>      <span class="smcap">W. H. Dawson.</span>
 
 “A concise but comprehensive volume.”—<i>Echo.</i>
 
-22. <b>Our Destiny.</b>      <sc>Laurence Gronlund.</sc>
+22. <b>Our Destiny.</b>      <span class="smcap">Laurence Gronlund.</span>
 
 “A very vigorous little book, dealing with the influence of Socialism on morals
 and religion.”—<i>Daily Chronicle.</i>
 
-23. <b>The Working-Class Movement in America.</b>      Dr. <sc>Edward</sc> and <sc>E. Marx Aveling</sc>.
+23. <b>The Working-Class Movement in America.</b>      Dr. <span class="smcap">Edward</span> and <span class="smcap">E. Marx Aveling</span>.
 
 “Will give a good idea of the condition of the working classes in America, and of
 the various organisations which they have formed.”—<i>Scots Leader.</i>
 
-24. <b>Luxury.</b>      Prof. <sc>Emile de Laveleye</sc>.
+24. <b>Luxury.</b>      Prof. <span class="smcap">Emile de Laveleye</span>.
 
 “An eloquent plea on moral and economical grounds for simplicity of life.”—<i>Academy.</i>
 
-25. <b>The Land and the Labourers.</b>      Rev. <sc>C. W. Stubbs</sc>, M.A.
+25. <b>The Land and the Labourers.</b>      Rev. <span class="smcap">C. W. Stubbs</span>, M.A.
 
 “This admirable book should be circulated in every village in the country.”—<i>Manchester
 Guardian.</i>
 
-26. <b>The Evolution of Property.</b>      <sc>Paul Lafargue.</sc>
+26. <b>The Evolution of Property.</b>      <span class="smcap">Paul Lafargue.</span>
 
 “Will prove interesting and profitable to all students of economic history.”—<i>Scotsman.</i>
 
-27. <b>Crime and its Causes.</b>      <sc>W. Douglas Morrison.</sc>
+27. <b>Crime and its Causes.</b>      <span class="smcap">W. Douglas Morrison.</span>
 
 “Can hardly fail to suggest to all readers several new and pregnant reflections on
 the subject.”—<i>Anti-Jacobin.</i>
 
-28. <b>Principles of State Interference.</b>      <sc>D. G. Ritchie</sc>, M.A.
+28. <b>Principles of State Interference.</b>      <span class="smcap">D. G. Ritchie</span>, M.A.
 
 “An interesting contribution to the controversy on the functions of the State.”—<i>Glasgow
 Herald.</i>
 
-29. <b>German Socialism and F. Lassalle.</b>      <sc>W. H. Dawson.</sc>
+29. <b>German Socialism and F. Lassalle.</b>      <span class="smcap">W. H. Dawson.</span>
 
 “As a biographical history of German Socialistic movements during this century
 it may be accepted as complete.”—<i>British Weekly.</i>
 
-30. <b>The Purse and the Conscience.</b>      <sc>H. M. Thompson</sc>, B.A. (Cantab.).
+30. <b>The Purse and the Conscience.</b>      <span class="smcap">H. M. Thompson</span>, B.A. (Cantab.).
 
 “Shows common sense and fairness in his arguments.”—<i>Scotsman.</i>
 
-31. <b>Origin of Property in Land.</b> <sc>Fustel de Coulanges.</sc> Edited, with an
-Introductory Chapter on the English Manor, by Prof. <sc>W. J. Ashley</sc>, M.A.
+31. <b>Origin of Property in Land.</b> <span class="smcap">Fustel de Coulanges.</span> Edited, with an
+Introductory Chapter on the English Manor, by Prof. <span class="smcap">W. J. Ashley</span>, M.A.
 
 “His views are clearly stated, and are worth reading.”—<i>Saturday Review.</i>
 
-32. <b>The English Republic.</b>      <sc>W. J. Linton.</sc>    Edited by <sc>Kineton Parkes</sc>.
+32. <b>The English Republic.</b>      <span class="smcap">W. J. Linton.</span>    Edited by <span class="smcap">Kineton Parkes</span>.
 
 “Characterised by that vigorous intellectuality which has marked his long life of
 literary and artistic activity.”—<i>Glasgow Herald.</i>
 
-33. <b>The Co-Operative Movement.</b>      <sc>Beatrice Potter.</sc>
+33. <b>The Co-Operative Movement.</b>      <span class="smcap">Beatrice Potter.</span>
 
 “Without doubt the ablest and most philosophical analysis of the Co-Operative
 Movement which has yet been produced.”—<i>Speaker.</i>
 
-34. <b>Neighbourhood Guilds.</b>      Dr. <sc>Stanton Coit</sc>.
+34. <b>Neighbourhood Guilds.</b>      Dr. <span class="smcap">Stanton Coit</span>.
 
 “A most suggestive little book to anyone interested in the social question.”—<i>Pall
 Mall Gazette.</i>
 
-35. <b>Modern Humanists.</b>      <sc>J. M. Robertson.</sc>
+35. <b>Modern Humanists.</b>      <span class="smcap">J. M. Robertson.</span>
 
 “Mr. Robertson’s style is excellent—nay, even brilliant—and his purely literary
 criticisms bear the mark of much acumen.”—<i>Times.</i>
 
-36. <b>Outlooks from the New Standpoint.</b>      <sc>E. Belfort Bax.</sc>
+36. <b>Outlooks from the New Standpoint.</b>      <span class="smcap">E. Belfort Bax.</span>
 
 “Mr. Bax is a very acute and accomplished student of history and economics.”—<i>Daily
 Chronicle.</i>
 
-37. <b>Distributing Co-Operative Societies.</b>    Dr. <sc>Luigi Pizzamiglio</sc>.    Edited by
-<sc>F. J. Snell</sc>.
+37. <b>Distributing Co-Operative Societies.</b>    Dr. <span class="smcap">Luigi Pizzamiglio</span>.    Edited by
+<span class="smcap">F. J. Snell</span>.
 
 “Dr. Pizzamiglio has gathered together and grouped a wide array of facts and
 statistics, and they speak for themselves.”—<i>Speaker.</i>
 
-38. <b>Collectivism and Socialism.</b>      By <sc>A. Nacquet</sc>.    Edited by <sc>W. Heaford</sc>.
+38. <b>Collectivism and Socialism.</b>      By <span class="smcap">A. Nacquet</span>.    Edited by <span class="smcap">W. Heaford</span>.
 
 “An admirable criticism by a well-known French politician of the New Socialism
 of Marx and Lassalle.”—<i>Daily Chronicle.</i>
 
-39. <b>The London Programme.</b>      <sc>Sidney Webb</sc>, LL.B.
+39. <b>The London Programme.</b>      <span class="smcap">Sidney Webb</span>, LL.B.
 
 “Brimful of excellent ideas.”—<i>Anti-Jacobin.</i>
 
-40. <b>The Modern State.</b>      <sc>Paul Leroy Beaulieu.</sc>
+40. <b>The Modern State.</b>      <span class="smcap">Paul Leroy Beaulieu.</span>
 
 “A most interesting book; well worth a place in the library of every social
 inquirer.”—<i>N. B. Economist.</i>
 
-41. <b>The Condition of Labour.</b>      <sc>Henry George.</sc>
+41. <b>The Condition of Labour.</b>      <span class="smcap">Henry George.</span>
 
 “Written with striking ability, and sure to attract attention.”—<i>Newcastle Chronicle.</i>
 
 42. <b>The Revolutionary Spirit preceding the French Revolution.</b>
-<sc>Felix Rocquain.</sc> With a Preface by Professor <sc>Huxley</sc>.
+<span class="smcap">Felix Rocquain.</span> With a Preface by Professor <span class="smcap">Huxley</span>.
 
 “The student of the French Revolution will find in it an excellent introduction to
 the study of that catastrophe.”—<i>Scotsman.</i>
 
-43. <b>The Student’s Marx.</b>      <sc>Edward Aveling</sc>, D.Sc.
+43. <b>The Student’s Marx.</b>      <span class="smcap">Edward Aveling</span>, D.Sc.
 
 “One of the most practically useful of any in the Series.”—<i>Glasgow Herald.</i>
 
-44. <b>A Short History of Parliament.</b>      <sc>B. C. Skottowe</sc>, M.A. (Oxon.).
+44. <b>A Short History of Parliament.</b>      <span class="smcap">B. C. Skottowe</span>, M.A. (Oxon.).
 
 “Deals very carefully and completely with this side of constitutional history.”—<i>Spectator.</i>
 
-45. <b>Poverty: Its Genesis and Exodus.</b>      <sc>J. G. Godard.</sc>
+45. <b>Poverty: Its Genesis and Exodus.</b>      <span class="smcap">J. G. Godard.</span>
 
 “He states the problems with great force and clearness.”—<i>N. B. Economist.</i>
 
-46. <b>The Trade Policy of Imperial Federation.</b>      <sc>Maurice H. Hervey.</sc>
+46. <b>The Trade Policy of Imperial Federation.</b>      <span class="smcap">Maurice H. Hervey.</span>
 
 “An interesting contribution to the discussion.”—<i>Publishers’ Circular.</i>
 
-47. <b>The Dawn of Radicalism.</b>      <sc>J. Bowles Daly</sc>, LL.D.
+47. <b>The Dawn of Radicalism.</b>      <span class="smcap">J. Bowles Daly</span>, LL.D.
 
 “Forms an admirable picture of an epoch more pregnant, perhaps, with political
 instruction than any other in the world’s history.”—<i>Daily Telegraph.</i>
 
-48. <b>The Destitute Alien in Great Britain.</b>      <sc>Arnold White</sc>; <sc>Montague Crackanthorpe</sc>,
-Q.C.; <sc>W. A. M‘Arthur</sc>, M.P.; <sc>W. H. Wilkins</sc>, &c.
+48. <b>The Destitute Alien in Great Britain.</b>      <span class="smcap">Arnold White</span>; <span class="smcap">Montague Crackanthorpe</span>,
+Q.C.; <span class="smcap">W. A. M‘Arthur</span>, M.P.; <span class="smcap">W. H. Wilkins</span>, &amp;c.
 
 “Much valuable information concerning a burning question of the day.”—<i>Times.</i>
 
 49. <b>Illegitimacy and the Influence of Seasons on Conduct.</b>
-<sc>Albert Leffingwell</sc>, M.D.
+<span class="smcap">Albert Leffingwell</span>, M.D.
 
 “We have not often seen a work based on statistics which is more continuously
 interesting.”—<i>Westminster Review.</i>
 
-50. <b>Commercial Crises of the Nineteenth Century.</b>      <sc>H. M. Hyndman.</sc>
+50. <b>Commercial Crises of the Nineteenth Century.</b>      <span class="smcap">H. M. Hyndman.</span>
 
 “One of the best and most permanently useful volumes of the Series.”—<i>Literary
 Opinion.</i>
 
-51. <b>The State and Pensions in Old Age.</b>      <sc>J. A. Spender</sc> and <sc>Arthur Acland</sc>, M.P.
+51. <b>The State and Pensions in Old Age.</b>      <span class="smcap">J. A. Spender</span> and <span class="smcap">Arthur Acland</span>, M.P.
 
 “A careful and cautious examination of the question.”—<i>Times.</i>
 
-52. <b>The Fallacy of Saving.</b>      <sc>John M. Robertson.</sc>
+52. <b>The Fallacy of Saving.</b>      <span class="smcap">John M. Robertson.</span>
 
 “A plea for the reorganisation of our social and industrial system.”—<i>Speaker.</i>
 
-53. <b>The Irish Peasant.</b>      <sc>Anon.</sc>
+53. <b>The Irish Peasant.</b>      <span class="smcap">Anon.</span>
 
 “A real contribution to the Irish Problem by a close, patient and dispassionate
 investigator.”—<i>Daily Chronicle.</i>
 
-54. <b>The Effects of Machinery on Wages.</b>      Prof. <sc>J. S. Nicholson</sc>, D.Sc.
+54. <b>The Effects of Machinery on Wages.</b>      Prof. <span class="smcap">J. S. Nicholson</span>, D.Sc.
 
 “Ably reasoned, clearly stated, impartially written.”—<i>Literary World.</i>
 
-55. <b>The Social Horizon.</b>      <sc>Anon.</sc>
+55. <b>The Social Horizon.</b>      <span class="smcap">Anon.</span>
 
 “A really admirable little book, bright, clear, and unconventional.”—<i>Daily
 Chronicle.</i>
 
-56. <b>Socialism, Utopian and Scientific.</b>      <sc>Frederick Engels.</sc>
+56. <b>Socialism, Utopian and Scientific.</b>      <span class="smcap">Frederick Engels.</span>
 
 “The body of the book is still fresh and striking.”—<i>Daily Chronicle.</i>
 
-57. <b>Land Nationalisation.</b>      <sc>A. R. Wallace.</sc>
+57. <b>Land Nationalisation.</b>      <span class="smcap">A. R. Wallace.</span>
 
 “The most instructive and convincing of the popular works on the subject.”—<i>National
 Reformer.</i>
 
-58. <b>The Ethic of Usury and Interest.</b>      Rev. <sc>W. Blissard</sc>.
+58. <b>The Ethic of Usury and Interest.</b>      Rev. <span class="smcap">W. Blissard</span>.
 
 “The work is marked by genuine ability.”—<i>North British Agriculturalist.</i>
 
-59. <b>The Emancipation of Women.</b>      <sc>Adele Crepaz.</sc>
+59. <b>The Emancipation of Women.</b>      <span class="smcap">Adele Crepaz.</span>
 
 “By far the most comprehensive, luminous, and penetrating work on this question
-that I have yet met with.”—<i>Extract from</i> Mr. <sc>Gladstone’s</sc> <i>Preface</i>.
+that I have yet met with.”—<i>Extract from</i> Mr. <span class="smcap">Gladstone’s</span> <i>Preface</i>.
 
-60. <b>The Eight Hours’ Question.</b>      <sc>John M. Robertson.</sc>
-X/
+60. <b>The Eight Hours’ Question.</b>      <span class="smcap">John M. Robertson.</span>
+</pre>
 
-DOUBLE VOLUMES, Each 3s. 6d.
+<p>DOUBLE VOLUMES, Each 3s. 6d.</p>
 
-/X
-1. <b>Life of Robert Owen.</b>      <sc>Lloyd Jones.</sc>
+<pre>
+1. <b>Life of Robert Owen.</b>      <span class="smcap">Lloyd Jones.</span>
 
 2. <b>The Impossibility of Social Democracy</b>: a Second Part of “The Quintessence
-of Socialism”.      Dr. <sc>A. Schäffle</sc>.
+of Socialism”.      Dr. <span class="smcap">A. Schäffle</span>.
 
-3. <b>The Condition of the Working Class in England in 1844.</b>      <sc>Frederick Engels.</sc>
+3. <b>The Condition of the Working Class in England in 1844.</b>      <span class="smcap">Frederick Engels.</span>
 
-4. <b>The Principles of Social Economy.</b>      <sc>Yves Guyot.</sc>
-X/
+4. <b>The Principles of Social Economy.</b>      <span class="smcap">Yves Guyot.</span>
+</pre>
+
+</body>
+</html>
