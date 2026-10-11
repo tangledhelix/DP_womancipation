@@ -198,11 +198,11 @@ Instructions for ~/* */~ and ~/# #/~ blocks:
   - Various fixup tools included on this panel
 - [X] If needed, validate quotes pairings by searching for ~[“”‘’]~
 *** Fractions
-- [ ] ~Tools → Convert Fractions → Unicode Fractions or Super/Subscript~
+- [X] ~Tools → Convert Fractions → Unicode Fractions or Super/Subscript~
 - This regex: ~([¹²³⁴⁵⁶⁷⁸⁹⁰]+⁄[₁₂₃₄₅₆₇₈₉₀]+|[¼½¾⅓⅔⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞⅐⅑⅒↉])~ may be of use to locate fractions once converted.
 *** Unicode EN dashes
 For now, do not process EM dash. The EM dash and long dash (2x EM) are left for after the text/html split.
-- [ ] [[https://www.pgdp.net/wiki/En-dash][En dash]]:
+- [X] [[https://www.pgdp.net/wiki/En-dash][En dash]]:
   - ~Tools → Regex Library~ and load the ~dashes.json~ file
   - Ignore the first regex (em-dash) and do these:
     - Range of numbers ~12–15~ (uses EN DASH)
