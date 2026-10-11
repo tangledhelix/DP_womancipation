@@ -8,12 +8,12 @@
 ** General
 - [X] 140: ~M'Arthur should get opening curly-quote
 ** Text only
-- [ ] 003: right-aligned heading (not all at the margin)
-- [ ] 004: complicated sign-off
-- [ ] 004: unanchored footnote
-- [ ] 006: right-aligned sign-off
-- [ ] 137-140: ad section
-- [ ] 138-140: float left/right (title, author)
+- [X] 003: right-aligned heading (not all at the margin)
+- [X] 004: complicated sign-off
+- [X] 004: unanchored footnote
+- [X] 006: right-aligned sign-off
+- [X] 137-140: ad section
+- [X] 138-140: float left/right (title, author)
 ** HTML only
 - [ ] 127: citation: Conversation with Christiana von Wurmb
 *** Formatting
@@ -248,12 +248,12 @@ We now proceed to create a Plain Text Version of the book.
 - [X] Under ~Tools → Footnote Fixup~, use ~Tidy Footnotes~.
   - NOTE: tidy footnotes will rewrap footnote text not protected by wrap markers; so they are not removed until the next step.
 - [X] ~Tools → Clean Up Rewrap Markers~.
-- [ ] Rerun Bookloupe or pptext. Resolve any new issues.
+- [X] Rerun Bookloupe or pptext. Resolve any new issues.
 *** Final checks
-- [ ] Search for ~<~ and ~>~ to locate any tag markup not yet removed.
-- [ ] Search ~[^A-Z][A-Z]\.\n[A-Z]\.~ to look for initials across a line-break and rewrap as appropriate. (/optional/)
+- [X] Search for ~<~ and ~>~ to locate any tag markup not yet removed.
+- [X] Search ~[^A-Z][A-Z]\.\n[A-Z]\.~ to look for initials across a line-break and rewrap as appropriate. (/optional/)
 *** Check revisit list
-- [ ] Check "things to revisit" list for anything lingering in the text version
+- [X] Check "things to revisit" list for anything lingering in the text version
 *** Add TN
 - [ ] Add transcriber's notes, example follows. Use 4+2 blank lines as in new chapter.
 - [ ] Rewrap this section of text when finished.
