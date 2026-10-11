@@ -38,6 +38,9 @@
 - p. 14: “clergywoman” changed to “clergywomen” (officials, clergywomen, ladies everywhere)
 - p. 34: “defendue” changed to “défendue” (Toute recherche de paternité est défendue)
 - p. 37: “no” changed to “not” (woman does not equal man in brain power)
+** Text version only
+- `=` used for bold
+- smallcaps to all-caps
 * Notes
 ** General notes
 ** Proofer notes
@@ -219,12 +222,12 @@ For now, do not process EM dash. The EM dash and long dash (2x EM) are left for 
   - This will be the starting file for the HTML version. You can also use it  as fallback in case you mess up and need to start the following steps over.
 ** Prepare the Plain Text Version
 We now proceed to create a Plain Text Version of the book.
-- [ ] Re-open ~womancipation-utf8.txt~ (if not still open).
+- [X] Re-open ~womancipation-utf8.txt~ (if not still open).
 *** Convert ~<tb>~, Italic, Bold, and Smallcap
-- [ ] ~Text → Convert Markup~:
-  - [ ] Convert [[https://www.pgdp.net/wiki/DP_Official_Documentation:Formatting/Formatting_Guidelines#Formatting_at_the_Character_Level:][inline formatting]].
-  - [ ] Convert [[https://www.pgdp.net/wiki/DP_Official_Documentation:Formatting/Formatting_Guidelines#Thought_Breaks_.28Extra_Spacing.2FDecoration_Between_Paragraphs.29][thought breaks]].
-  - [ ] Convert [[https://www.pgdp.net/wiki/DP_Official_Documentation:PP_and_PPV/Guide_to_smallcaps][smallcaps]].
+- [X] ~Text → Convert Markup~:
+  - [X] Convert [[https://www.pgdp.net/wiki/DP_Official_Documentation:Formatting/Formatting_Guidelines#Formatting_at_the_Character_Level:][inline formatting]].
+  - [X] Convert [[https://www.pgdp.net/wiki/DP_Official_Documentation:Formatting/Formatting_Guidelines#Thought_Breaks_.28Extra_Spacing.2FDecoration_Between_Paragraphs.29][thought breaks]].
+  - [X] Convert [[https://www.pgdp.net/wiki/DP_Official_Documentation:PP_and_PPV/Guide_to_smallcaps][smallcaps]].
 *** Fix ASCII Tables
 - [ ] Search for ~/[xX*]~ and step through any tables
   - Compare to page image; reformat to best convey author intent.
