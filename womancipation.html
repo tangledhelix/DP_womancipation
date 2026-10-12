@@ -20,6 +20,14 @@ h1,h2,h3,h4,h5,h6 {
     clear: both;
 }
 
+h1 .small { font-size: 45%; }
+h1 .medium { font-size: 60%; }
+h1 .large { font-size: 65%; }
+h1 .xlarge { font-size: 110%; }
+.tp-small { font-size: 90%; }
+.tp-large { font-size: 125%; }
+.smaller { font-size: 90%; }
+
 p {
     margin-top: .5em;
     text-align: justify;
@@ -56,7 +64,7 @@ hr.hrimage {
     margin: 1em 0;
 }
 
-div.chapter {page-break-before: always;}
+div.chapter, section.chapter {page-break-before: always;}
 h2.nobreak  {page-break-before: avoid;}
 
 ul.index { list-style-type: none; }
@@ -362,27 +370,26 @@ p.drop-cap::first-letter {
 </head>
 <body>
 
-
+<section>
 <p><span class="pagenum" id="Page_i" role="doc-pagebreak">i</span></p>
 
-<p class="center">THE
-<span class="smcap">Emancipation of Women</span>
-AND
-ITS PROBABLE CONSEQUENCES</p>
+<h1><span class="medium uppercase">The</span><br>
+<span class="smcap xlarge">Emancipation of Women</span><br>
+<span class="small uppercase">and</span><br>
+<span class="large uppercase">Its Probable Consequences</span></h1>
 
-<p class="center">BY
-ADELE CREPAZ</p>
+<p class="center p2"><span class="tp-small uppercase">by</span><br>
+<span class="tp-large uppercase">Adele Crepaz</span></p>
 
-<p class="center"><i>WITH A LETTER TO THE AUTHORESS BY</i>
-THE RIGHT HON. W. E. GLADSTONE, M.P.</p>
+<p class="center p2"><i class="uppercase">With a letter to the authoress by</i><br>
+<span class="tp-large uppercase">The Right Hon. W. E. Gladstone, M.P.</span></p>
 
-<p class="center">[Illustration]</p>
+<p class="center p2">[Illustration]</p>
 
-<p class="center">LONDON
-SWAN SONNENSCHEIN &amp; CO.
-NEW YORK: CHARLES SCRIBNER’S SONS
-1893</p>
-
+<p class="center p2 uppercase">London<br>
+<span class="tp-large">Swan Sonnenschein &amp; Co.</span><br>
+New York: Charles Scribner’s Sons<br>
+<span class="tp-small">1893</span></p>
 
 <p><span class="pagenum" id="Page_ii" role="doc-pagebreak"></span><span class="pagenum" id="Page_iii" role="doc-pagebreak">iii</span></p>
 
@@ -391,17 +398,15 @@ NEW YORK: CHARLES SCRIBNER’S SONS
 <div class="chapter">
 <p class="right">
   <span class="smcap">10 Downing Street,</span><br>
-  <span style="margin-right: 3.5em;"><span class="smcap">Whitehall.</span></span><br>
-  <span style="margin-right: 1.5em;"><i>Oct. 3, ’92.</i></span>
+  <span style="margin-right: 2em;" class="smcap">Whitehall.</span><br>
+  <i>Oct. 3, ’92.</i>
 </p>
 </div>
 
 
-<h3 id="Madam">
-  <span class="smcap">Madam</span>,
-</h3>
+<p class="smcap">Madam,</p>
 
-<p>I recently found that I had had the
+<p style="text-indent: 2.5em;">I recently found that I had had the
 honour to receive, possibly from yourself,
 your tract on the <i>Frauen-Emancipation</i>. The
 German type is somewhat trying to my failing
@@ -433,35 +438,30 @@ to my countrymen and countrywomen in their
 own tongue.</p>
 
 <p class="right">
-  <span style="margin-right: 4.5em;">I remain, Madam,</span><br>
-  <span style="margin-right: 0.5em;">With high consideration,</span><br>
-  <span style="margin-right: 1.5em;">Your faithful servant,</span><br>
-  <span class="smcap">W. E. Gladstone</span>.
+  <span style="margin-right: 5.5em;">I remain, Madam,</span><br>
+  <span style="margin-right: 1.5em;">With high consideration,</span><br>
+  <span style="margin-right: 2.5em;">Your faithful servant,</span><br>
+  <span class="smcap" style="margin-right: 1.5em;">W. E. Gladstone.</span>
 </p>
 
 <p><i>P.S.</i>—For this as well as for other subjects,
 I deeply regret the death of J. S. Mill: he had
 perhaps the most <i>open</i> mind of his generation.</p>
 
-<p>⁂ <i>This Letter is published by special permission of the Right
+<p>⁂ <i style="font-size: 90%;">This Letter is published by special permission of the Right
 Hon. W. E. Gladstone.</i></p>
-
+</section>
 
 <hr class="chap x-ebookmaker-drop" aria-hidden="true">
-<div class="chapter">
 
+<section class="chapter">
 <p><span class="pagenum" id="Page_v" role="doc-pagebreak">v</span></p>
-
-
-  <h2 class="nobreak" id="TRANSLATORS">
+  <h2 class="nobreak" id="TRANSLATORS_PREFACE">
     TRANSLATOR’S
-    <br>
     PREFACE TO THE ENGLISH EDITION.
   </h2>
-</div>
 
-
-<p>In order to avoid the possibility of misconception
+<p class="noindent">In order to avoid the possibility of misconception
 on the part of English readers of the
 following essay, it seems well to point out
 that, although written principally with a view
@@ -489,11 +489,11 @@ country.</p>
   <span class="smcap">Ellis Wright.</span>
 </p>
 
-<p><span class="smcap">London</span>, <i>January 1893</i>.</p>
-
+<p class="smaller"><span class="smcap">London</span>, <i>January 1893</i>.</p>
+</section>
 
 <hr class="chap x-ebookmaker-drop" aria-hidden="true">
-<div class="chapter">
+<section class="chapter">
 
 <p><span class="pagenum" id="Page_1" role="doc-pagebreak">1</span></p>
 
@@ -502,10 +502,9 @@ country.</p>
     THE EMANCIPATION OF
     WOMEN.
   </h2>
-</div>
 
 
-<p>It is no light task, at the present juncture,
+<p class="noindent">It is no light task, at the present juncture,
 to discuss the dangers of a movement of
 which the fruitful seeds are rapidly
 spreading throughout the whole world.</p>
@@ -3058,18 +3057,18 @@ manner to the solution of the question of
 the Emancipation of Women.</p>
 
 
-<h3 id="THE_END">
+<p class="smaller center p2">
   THE END.
-</h3>
+</p>
 
 
-<h3 id="Printed_by_Cowan_Co_Limited_Perth">
+<p class="smaller center p2">
   <i>Printed by Cowan &amp; Co., Limited, Perth.</i>
-</h3>
-
+</p>
+</section>
 
 <hr class="chap x-ebookmaker-drop" aria-hidden="true">
-<div class="chapter">
+<section class="chapter">
   <h2 class="nobreak" id="OPINIONS_OF_THE_PRESS">
     OPINIONS OF THE PRESS
     <br>
@@ -3077,8 +3076,6 @@ the Emancipation of Women.</p>
     <br>
     SOCIAL SCIENCE SERIES.
   </h2>
-</div>
-
 
 <pre>
 “‘The Principles of State Interference’ is another of Messrs. Swan Sonnenschein’s
@@ -3124,19 +3121,17 @@ economic truth and error.”—<i>Scotsman.</i>
 </pre>
 
 
-<h3 id="SWAN_SONNENSCHEIN_CO_LONDON">
+<p>
   SWAN SONNENSCHEIN &amp; CO., LONDON.
-</h3>
+</p>
 
 
 <hr class="chap x-ebookmaker-drop" aria-hidden="true">
-<div class="chapter">
   <h2 class="nobreak" id="SOCIAL_SCIENCE_SERIES">
     SOCIAL SCIENCE SERIES.
     <br>
     <i>SCARLET CLOTH, EACH 2s. 6d.</i>
   </h2>
-</div>
 
 
 <pre>
@@ -3434,6 +3429,7 @@ of Socialism”.      Dr. <span class="smcap">A. Schäffle</span>.
 
 4. <b>The Principles of Social Economy.</b>      <span class="smcap">Yves Guyot.</span>
 </pre>
+</section>
 
 </body>
 </html>
