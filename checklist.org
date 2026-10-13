@@ -463,7 +463,7 @@ Perform these validation steps before submitting your book. Validation is also h
     - [X] if uploading CSS3, leave a note for WWer about it.
 - [X] Use ~HTML → HTML Link Checker~. Fix any reported problems.
 *** Compare text and HTML
-- [ ] ~Tools → PPcomp...~ and compare the text and html files.
+- [X] ~Tools → PPcomp...~ and compare the text and html files.
   - Suppress word join (NoBreak) because GG2 uses them for footnotes
 *** Review HTML
 The iPhone/iPad simulator can't read from the Mac's filesystem, so you need a
@@ -473,8 +473,8 @@ web server for them to talk to. Go to the book's directory and run
 To use multi-touch gestures on iPhone/iPad Simulator, hold the Option key.
 This lets you do pinch gestures. To track two fingers together (no pinch),
 e.g. for scrolling, use Shift-Option instead.
-- [ ] Scroll through in multiple browsers (Safari, Chrome, Firefox, etc.)
-- [ ] Pay particular attention to complex items like tables, poetry
+- [X] Scroll through in multiple browsers (Safari, Chrome, Firefox, etc.)
+- [X] Pay particular attention to complex items like tables, poetry
 ** Ebook generation
 *** Notes on rendering
 **** CSS
