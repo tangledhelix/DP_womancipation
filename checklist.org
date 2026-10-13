@@ -15,24 +15,24 @@
 - [X] 137-140: ad section
 - [X] 138-140: float left/right (title, author)
 ** HTML only
-- [ ] 127: citation: Conversation with Christiana von Wurmb
+- [X] 127: citation: Conversation with Christiana von Wurmb
 *** Formatting
-- [ ] 003: right-aligned heading (not all at the margin)
-- [ ] 003: paragraph has "deep indent"
-- [ ] 004: complicated sign-off
-- [ ] 004: unanchored footnote: render in smaller text?
-- [ ] 005: opening word in smallcaps
-- [ ] 006: right-aligned sign-off
-- [ ] 006: timestamp in smaller type?
-- [ ] 007: opening word in smallcaps
-- [ ] 137: ads: hanging indents
-- [ ] 137-140: ad section
-- [ ] 138-140: float left/right (title, author)
+- [X] 003: right-aligned heading (not all at the margin)
+- [X] 003: paragraph has "deep indent"
+- [X] 004: complicated sign-off
+- [X] 004: unanchored footnote: render in smaller text?
+- [X] 005: opening word in smallcaps
+- [X] 006: right-aligned sign-off
+- [X] 006: timestamp in smaller type?
+- [X] 007: opening word in smallcaps
+- [X] 137: ads: hanging indents
+- [X] 137-140: ad section
+- [X] 138-140: float left/right (title, author)
 *** Languages
-- [ ] 014: Latin
-- [ ] 017: French
-- [ ] 040: French
-- [ ] 065: German
+- [X] 014: Latin
+- [X] 017: French
+- [X] 040: French
+- [X] 065: German
 * Transcriber Notes
 - p. 12: “Hall” changed to “Falls” (the little town of Seneca Falls)
 - p. 14: “clergywoman” changed to “clergywomen” (officials, clergywomen, ladies everywhere)
@@ -419,7 +419,7 @@ For each image:
 - [X] If any images were modified substantially (including removing a library sticker or stamp), add a TN. Place the new image in the public domain in the TN. This is a PG requirement.
 - [X] If fabricating your own cover, add the TN as noted in [[https://www.pgdp.net/wiki/DP_Official_Documentation:PP_and_PPV/Easy_Epub/Cover][Easy_Epub/Cover]].
 *** Check "things to revisit"
-- [ ] Check revisit list for anything left for the HTML version
+- [X] Check revisit list for anything left for the HTML version
 *** Add TN
 - [ ] Add transcriber's notes, example follows.
 #+BEGIN_SRC html
