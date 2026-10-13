@@ -421,7 +421,7 @@ For each image:
 *** Check "things to revisit"
 - [X] Check revisit list for anything left for the HTML version
 *** Add TN
-- [ ] Add transcriber's notes, example follows.
+- [X] Add transcriber's notes, example follows.
 #+BEGIN_SRC html
 <section class="transnote">
 <h2 class="nobreak">Transcriber’s Note</h2>
@@ -446,7 +446,7 @@ p. 123: changed “foo” to “fool”
 </ul>
 #+END_SRC
 
-- [ ] Make sure the TN has no straight-quotes ~'"~ and instead uses curly quotes ~“”‘’~
+- [X] Make sure the TN has no straight-quotes ~'"~ and instead uses curly quotes ~“”‘’~
 *** Validate HTML and CSS
 Perform these validation steps before submitting your book. Validation is also helpful while customizing the HTML and CSS above.
 - [ ] Use ~HTML → HTML5 Validator~. Fix any reported problems.
