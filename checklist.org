@@ -16,6 +16,8 @@
 - [X] 138-140: float left/right (title, author)
 ** HTML only
 - [X] 127: citation: Conversation with Christiana von Wurmb
+- [X] cover image is poor quality, re-export with less compression
+  - seems fine; ebookmaker re-compresses, maybe?
 *** Formatting
 - [X] 003: right-aligned heading (not all at the margin)
 - [X] 003: paragraph has "deep indent"
@@ -499,8 +501,8 @@ e.g. for scrolling, use Shift-Option instead.
   - PG is looking at doing KEPUB files, but using Calibre, not kepubify.
 - Google Play Books seems to ignore page break CSS entirely?
 *** Build Ebook, initial cursory review
-- [ ] HTML → Ebookmaker (online) - build EPUB2 and EPUB3
-- [ ] Review in Apple Books; focus on page breaks and major issues
+- [X] HTML → Ebookmaker (online) - build EPUB2 and EPUB3
+- [X] Review in Apple Books; focus on page breaks and major issues
 ** Build and upload ebooks
 - [ ] If any changes were made from previous step, rebuild EPUB3
 - [ ] Optional: Convert EPUB3 to KEPUB with Calibre
