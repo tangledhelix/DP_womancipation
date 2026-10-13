@@ -20,13 +20,13 @@ h1,h2,h3,h4,h5,h6 {
     clear: both;
 }
 
-h1 .small { font-size: 45%; }
-h1 .medium { font-size: 60%; }
-h1 .large { font-size: 65%; }
-h1 .xlarge { font-size: 110%; }
+h1 .small,  h2 .small  { font-size: 45%; }
+h1 .medium, h2 .medium { font-size: 60%; }
+h1 .large,  h2 .large  { font-size: 65%; }
+h1 .xlarge, h2 .xlarge { font-size: 110%; }
 .tp-small { font-size: 90%; }
 .tp-large { font-size: 125%; }
-.smaller { font-size: 90%; }
+.smaller  { font-size: 90%; }
 
 p {
     margin-top: .5em;
@@ -64,7 +64,7 @@ hr.hrimage {
     margin: 1em 0;
 }
 
-div.chapter {page-break-before: always;}
+div.chapter, section.chapter {page-break-before: always;}
 h2.nobreak  {page-break-before: avoid;}
 
 ul.index { list-style-type: none; }
@@ -365,6 +365,18 @@ p.drop-cap::first-letter {
   font-size: 100%;
 }
 
+.ads-title, .ads-author {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.ads-title { float: left; }
+.ads-author { float: right;
+              text-align: right;
+              margin-left: 2em;}
+.ads-summary { clear: both;
+               margin-left: 1.25em; }
 
     </style>
 </head>
@@ -3070,15 +3082,12 @@ the Emancipation of Women.</p>
 <hr class="chap x-ebookmaker-drop" aria-hidden="true">
 <section class="chapter">
   <h2 class="nobreak" id="OPINIONS_OF_THE_PRESS">
-    OPINIONS OF THE PRESS
-    <br>
-    ON THE
-    <br>
-    SOCIAL SCIENCE SERIES.
+    <span class="large">OPINIONS OF THE PRESS</span><br>
+    <span class="small">ON THE</span><br>
+    <span class="x2large">SOCIAL SCIENCE SERIES.</span>
   </h2>
 
-<pre>
-“‘The Principles of State Interference’ is another of Messrs. Swan Sonnenschein’s
+<p class="hanging2">“‘The Principles of State Interference’ is another of Messrs. Swan Sonnenschein’s
 Series of Handbooks on Scientific Social Subjects. <b>It would be
 fitting to close our remarks on this little work with a word of commendation
 of the publishers of so many useful volumes by eminent
@@ -3091,21 +3100,21 @@ are concise; they give a fair estimate of the progress which recent discussion
 has added towards the solution of the pressing social questions
 of to-day, are well up to date, and are published at a price within the
 resources of the public to which they are likely to be of the most use.</b>”—<i>Westminster
-Review</i>, July, 1891.
+Review</i>, July, 1891.</p>
 
-“The excellent ‘Social Science Series,’ which is published at as low a price
-as to place it within everybody’s reach.”—<i>Review of Reviews.</i>
+<p class="hanging2">“The excellent ‘Social Science Series,’ which is published at as low a price
+as to place it within everybody’s reach.”—<i>Review of Reviews.</i></p>
 
-“A most useful series.... This impartial series welcomes both just writers
-and unjust.”—<i>Manchester Guardian.</i>
+<p class="hanging2">“A most useful series.... This impartial series welcomes both just writers
+and unjust.”—<i>Manchester Guardian.</i></p>
 
-“Concise in treatment, lucid in style and moderate in price, these books can
+<p class="hanging2">“Concise in treatment, lucid in style and moderate in price, these books can
 hardly fail to do much towards spreading sound views on economic and
-social questions.”—<i>Review of the Churches.</i>
+social questions.”—<i>Review of the Churches.</i></p>
 
-“Convenient, well-printed, and moderately-priced volumes.”—<i>Reynold’s Newspaper.</i>
+<p class="hanging2">“Convenient, well-printed, and moderately-priced volumes.”—<i>Reynold’s Newspaper.</i></p>
 
-“There is a certain impartiality about the attractive and well-printed volumes
+<p class="hanging2">“There is a certain impartiality about the attractive and well-printed volumes
 which form the series to which the works noticed in this article belong.
 There is no editor and no common design beyond a desire to redress those
 errors and irregularities of society which all the writers, though they may
@@ -3114,14 +3123,12 @@ adopted appears to be to select men known to have a claim to speak with
 more or less authority upon the shortcomings of civilisation, and to allow
 each to propound the views which commend themselves most strongly to
 his mind, without reference to the possible flat contradiction which may
-be forthcoming at the hands of the next contributor.”—<i>Literary World.</i>
+be forthcoming at the hands of the next contributor.”—<i>Literary World.</i></p>
 
-“‘The Social Science Series’ aims at the illustration of all sides of social and
-economic truth and error.”—<i>Scotsman.</i>
-</pre>
+<p class="hanging2">“‘The Social Science Series’ aims at the illustration of all sides of social and
+economic truth and error.”—<i>Scotsman.</i></p>
 
-
-<p>
+<p class="center p2">
   SWAN SONNENSCHEIN &amp; CO., LONDON.
 </p>
 
@@ -3129,306 +3136,374 @@ economic truth and error.”—<i>Scotsman.</i>
 <hr class="chap x-ebookmaker-drop" aria-hidden="true">
   <h2 class="nobreak" id="SOCIAL_SCIENCE_SERIES">
     SOCIAL SCIENCE SERIES.
-    <br>
-    <i>SCARLET CLOTH, EACH 2s. 6d.</i>
   </h2>
 
+<p class="center"><i><b>SCARLET CLOTH, EACH 2s. 6d.</b></i></p>
 
-<pre>
-1. <b>Work and Wages.</b>      Prof. <span class="smcap">J. E. Thorold Rogers</span>.
+<div class="p2"></div>
 
-“Nothing that Professor Rogers writes can fail to be of interest to thoughtful
-people.”—<i>Athenæum.</i>
+<div class="ads-title">1. <b>Work and Wages.</b></div>
+<div class="ads-author">Prof. <span class="smcap">J. E. Thorold Rogers</span>.</div>
 
-2. <b>Civilisation: its Cause and Cure.</b>      <span class="smcap">Edward Carpenter.</span>
+<p class="ads-summary">“Nothing that Professor Rogers writes can fail to be of interest to thoughtful
+people.”—<i>Athenæum.</i></p>
 
-“No passing piece of polemics, but a permanent possession.”—<i>Scottish Review.</i>
+<div class="ads-title">2. <b>Civilisation: its Cause and Cure.</b></div>
+<div class="ads-author"><span class="smcap">Edward Carpenter.</span></div>
 
-3. <b>Quintessence of Socialism.</b>      Dr. <span class="smcap">Schäffle</span>.
+<p class="ads-summary">“No passing piece of polemics, but a permanent possession.”—<i>Scottish Review.</i></p>
 
-“Precisely the manual needed. Brief, lucid, fair and wise.”—<i>British Weekly.</i>
+<div class="ads-title">3. <b>Quintessence of Socialism.</b></div>
+<div class="ads-author">Dr. <span class="smcap">Schäffle</span>.</div>
 
-4. <b>Darwinism and Politics.</b>      <span class="smcap">D. G. Ritchie</span>, M.A. (Oxon.).
+<p class="ads-summary">“Precisely the manual needed. Brief, lucid, fair and wise.”—<i>British Weekly.</i></p>
 
-New Edition, with two additional Essays on <span class="smcap">Human Evolution</span>.
+<div class="ads-title">4. <b>Darwinism and Politics.</b></div>
+<div class="ads-author"><span class="smcap">D. G. Ritchie</span>, M.A. (Oxon.).</div>
 
-“One of the most suggestive books we have met with.”—<i>Literary World.</i>
+<p class="ads-summary">New Edition, with two additional Essays on <span class="smcap">Human Evolution</span>.</p>
 
-5. <b>Religion of Socialism.</b>      <span class="smcap">E. Belfort Bax.</span>
+<p class="ads-summary">“One of the most suggestive books we have met with.”—<i>Literary World.</i></p>
 
-6. <b>Ethics of Socialism.</b>      <span class="smcap">E. Belfort Bax.</span>
+<div class="ads-title">5. <b>Religion of Socialism.</b></div>
+<div class="ads-author"><span class="smcap">E. Belfort Bax.</span></div>
 
-“Mr. Bax is by far the ablest of the English exponents of Socialism.”—<i>Westminster
-Review.</i>
+<p class="ads-summary"></p>
 
-7. <b>The Drink Question.</b>      Dr. <span class="smcap">Kate Mitchell</span>.
+<div class="ads-title">6. <b>Ethics of Socialism.</b></div>
+<div class="ads-author"><span class="smcap">E. Belfort Bax.</span></div>
 
-“Plenty of interesting matter for reflection.”—<i>Graphic.</i>
+<p class="ads-summary">“Mr. Bax is by far the ablest of the English exponents of Socialism.”—<i>Westminster
+Review.</i></p>
 
-8. <b>Promotion of General Happiness.</b>      Prof. <span class="smcap">M. Macmillan</span>.
+<div class="ads-title">7. <b>The Drink Question.</b></div>
+<div class="ads-author">Dr. <span class="smcap">Kate Mitchell</span>.</div>
 
-“A reasoned account of the most advanced and most enlightened utilitarian doctrine
-in a clear and readable form.”—<i>Scotsman.</i>
+<p class="ads-summary">“Plenty of interesting matter for reflection.”—<i>Graphic.</i></p>
 
-9. <b>England’s Ideal, &amp;c.</b>      <span class="smcap">Edward Carpenter.</span>
+<div class="ads-title">8. <b>Promotion of General Happiness.</b></div>
+<div class="ads-author">Prof. <span class="smcap">M. Macmillan</span>.</div>
 
-“The literary power is unmistakable, their freshness of style, their humour, and
-their enthusiasm.”—<i>Pall Mall Gazette.</i>
+<p class="ads-summary">“A reasoned account of the most advanced and most enlightened utilitarian doctrine
+in a clear and readable form.”—<i>Scotsman.</i></p>
 
-10. <b>Socialism in England.</b>      <span class="smcap">Sidney Webb</span>, LL.B.
+<div class="ads-title">9. <b>England’s Ideal, &amp;c.</b></div>
+<div class="ads-author"><span class="smcap">Edward Carpenter.</span></div>
 
-“The best general view of the subject from the modern Socialist side.”—<i>Athenæum.</i>
+<p class="ads-summary">“The literary power is unmistakable, their freshness of style, their humour, and
+their enthusiasm.”—<i>Pall Mall Gazette.</i></p>
 
-11. <b>Prince Bismarck and State Socialism.</b>      <span class="smcap">W. H. Dawson.</span>
+<div class="ads-title">10. <b>Socialism in England.</b></div>
+<div class="ads-author"><span class="smcap">Sidney Webb</span>, LL.B.</div>
 
-“A succinct, well-digested review of German social and economic legislation since
-1870.”—<i>Saturday Review.</i>
+<p class="ads-summary">“The best general view of the subject from the modern Socialist side.”—<i>Athenæum.</i></p>
 
-12. <b>Godwin’s Political Justice (On Property).</b>      Edited by <span class="smcap">H. S. Salt</span>.
+<div class="ads-title">11. <b>Prince Bismarck and State Socialism.</b></div>
+<div class="ads-author"><span class="smcap">W. H. Dawson.</span></div>
 
-“Shows Godwin at his best; with an interesting and informing introduction.”—<i>Glasgow
-Herald.</i>
+<p class="ads-summary">“A succinct, well-digested review of German social and economic legislation since
+1870.”—<i>Saturday Review.</i></p>
 
-13. <b>The Story of the French Revolution.</b>      <span class="smcap">E. Belfort Bax.</span>
+<div class="ads-title">12. <b>Godwin’s Political Justice (On Property).</b></div>
+<div class="ads-author">Edited by <span class="smcap">H. S. Salt</span>.</div>
 
-“A trustworthy outline.”—<i>Scotsman.</i>
+<p class="ads-summary">“Shows Godwin at his best; with an interesting and informing introduction.”—<i>Glasgow
+Herald.</i></p>
 
-14. <b>The Co-Operative Commonwealth.</b>      <span class="smcap">Laurence Gronlund.</span>
+<div class="ads-title">13. <b>The Story of the French Revolution.</b></div>
+<div class="ads-author"><span class="smcap">E. Belfort Bax.</span></div>
 
-“An independent exposition of the Socialism of the Marx school.”—<i>Contemporary
-Review.</i>
+<p class="ads-summary">“A trustworthy outline.”—<i>Scotsman.</i></div>
 
-15. <b>Essays and Addresses.</b>      <span class="smcap">Bernard Bosanquet</span>, M.A. (Oxon.).
+<div class="ads-title">14. <b>The Co-Operative Commonwealth.</b></div>
+<div class="ads-author"><span class="smcap">Laurence Gronlund.</span></div>
 
-“Ought to be in the hands of every student of the Nineteenth Century spirit.”—<i>Echo.</i>
+<p class="ads-summary">“An independent exposition of the Socialism of the Marx school.”—<i>Contemporary
+Review.</i></p>
 
-“No one can complain of not being able to understand what Mr. Bosanquet
-means.”—<i>Pall Mall Gazette.</i>
+<div class="ads-title">15. <b>Essays and Addresses.</b></div>
+<div class="ads-author"><span class="smcap">Bernard Bosanquet</span>, M.A. (Oxon.).</div>
 
-16. <b>Charity Organisation.</b>      <span class="smcap">C. S. Loch</span>, Secretary to Charity Organisation Society.
+<p class="ads-summary">“Ought to be in the hands of every student of the Nineteenth Century spirit.”—<i>Echo.</i></p>
 
-“A perfect little manual.”—<i>Athenæum.</i>
+<p class="ads-summary">“No one can complain of not being able to understand what Mr. Bosanquet
+means.”—<i>Pall Mall Gazette.</i></p>
 
-“Deserves a wide circulation.”—<i>Scotsman.</i>
+<div class="ads-title">16. <b>Charity Organisation.</b></div>
+<div class="ads-author"><span class="smcap">C. S. Loch</span>, Secretary to Charity Organisation Society.</div>
 
-17. <b>Thoreau’s Anti-Slavery and Reform Papers.</b>      Edited by <span class="smcap">H. S. Salt</span>.
+<p class="ads-summary">“A perfect little manual.”—<i>Athenæum.</i></p>
 
-“An interesting collection of essays.”—<i>Literary World.</i>
+<p class="ads-summary">“Deserves a wide circulation.”—<i>Scotsman.</i></p>
 
-18. <b>Self-Help a Hundred Years Ago.</b>      <span class="smcap">G. J. Holyoake.</span>
+<div class="ads-title">17. <b>Thoreau’s Anti-Slavery and Reform Papers.</b></div>
+<div class="ads-author">Edited by <span class="smcap">H. S. Salt</span>.</div>
 
-“Will be studied with much benefit by all who are interested in the amelioration
-of the condition of the poor.”—<i>Morning Post.</i>
+<p class="ads-summary">“An interesting collection of essays.”—<i>Literary World.</i></p>
 
-19. <b>The New York State Reformatory at Elmira.</b>      <span class="smcap">Alexander Winter.</span>
+<div class="ads-title">18. <b>Self-Help a Hundred Years Ago.</b></div>
+<div class="ads-author"><span class="smcap">G. J. Holyoake.</span></div>
 
-With Preface by <span class="smcap">Havelock Ellis</span>.
+<p class="ads-summary">“Will be studied with much benefit by all who are interested in the amelioration
+of the condition of the poor.”—<i>Morning Post.</i></p>
 
-“A valuable contribution to the literature of penology.”—<i>Black and White.</i>
+<div class="ads-title">19. <b>The New York State Reformatory at Elmira.</b></div>
+<div class="ads-author"><span class="smcap">Alexander Winter.</span> With Preface by <span class="smcap">Havelock Ellis</span>.</div>
 
-20. <b>Common Sense about Women.</b>      <span class="smcap">T. W. Higginson.</span>
+<p class="ads-summary">“A valuable contribution to the literature of penology.”—<i>Black and White.</i></p>
 
-“An admirable collection of papers, advocating in the most liberal spirit the
-emancipation of women.”—<i>Woman’s Herald.</i>
+<div class="ads-title">20. <b>Common Sense about Women.</b></div>
+<div class="ads-author"><span class="smcap">T. W. Higginson.</span></div>
 
-21. <b>The Unearned Increment.</b>      <span class="smcap">W. H. Dawson.</span>
+<p class="ads-summary">“An admirable collection of papers, advocating in the most liberal spirit the
+emancipation of women.”—<i>Woman’s Herald.</i></p>
 
-“A concise but comprehensive volume.”—<i>Echo.</i>
+<div class="ads-title">21. <b>The Unearned Increment.</b></div>
+<div class="ads-author"><span class="smcap">W. H. Dawson.</span></div>
 
-22. <b>Our Destiny.</b>      <span class="smcap">Laurence Gronlund.</span>
+<p class="ads-summary">“A concise but comprehensive volume.”—<i>Echo.</i></p>
 
-“A very vigorous little book, dealing with the influence of Socialism on morals
-and religion.”—<i>Daily Chronicle.</i>
+<div class="ads-title">22. <b>Our Destiny.</b></div>
+<div class="ads-author"><span class="smcap">Laurence Gronlund.</span></div>
 
-23. <b>The Working-Class Movement in America.</b>      Dr. <span class="smcap">Edward</span> and <span class="smcap">E. Marx Aveling</span>.
+<p class="ads-summary">“A very vigorous little book, dealing with the influence of Socialism on morals
+and religion.”—<i>Daily Chronicle.</i></p>
 
-“Will give a good idea of the condition of the working classes in America, and of
-the various organisations which they have formed.”—<i>Scots Leader.</i>
+<div class="ads-title">23. <b>The Working-Class Movement in America.</b></div>
+<div class="ads-author">Dr. <span class="smcap">Edward</span> and
+<span class="smcap">E. Marx Aveling</span>.</div>
 
-24. <b>Luxury.</b>      Prof. <span class="smcap">Emile de Laveleye</span>.
+<p class="ads-summary">“Will give a good idea of the condition of the working classes in America, and of
+the various organisations which they have formed.”—<i>Scots Leader.</i></p>
 
-“An eloquent plea on moral and economical grounds for simplicity of life.”—<i>Academy.</i>
+<div class="ads-title">24. <b>Luxury.</b></div>
+<div class="ads-author">Prof. <span class="smcap">Emile de Laveleye</span>.</div>
 
-25. <b>The Land and the Labourers.</b>      Rev. <span class="smcap">C. W. Stubbs</span>, M.A.
+<p class="ads-summary">“An eloquent plea on moral and economical grounds for simplicity of life.”—<i>Academy.</i></p>
 
-“This admirable book should be circulated in every village in the country.”—<i>Manchester
-Guardian.</i>
+<div class="ads-title">25. <b>The Land and the Labourers.</b></div>
+<div class="ads-author">Rev. <span class="smcap">C. W. Stubbs</span>, M.A.</div>
 
-26. <b>The Evolution of Property.</b>      <span class="smcap">Paul Lafargue.</span>
+<p class="ads-summary">“This admirable book should be circulated in every village in the country.”—<i>Manchester
+Guardian.</i></p>
 
-“Will prove interesting and profitable to all students of economic history.”—<i>Scotsman.</i>
+<div class="ads-title">26. <b>The Evolution of Property.</b></div>
+<div class="ads-author"><span class="smcap">Paul Lafargue.</span></div>
 
-27. <b>Crime and its Causes.</b>      <span class="smcap">W. Douglas Morrison.</span>
+<p class="ads-summary">“Will prove interesting and profitable to all students of economic history.”—<i>Scotsman.</i></p>
 
-“Can hardly fail to suggest to all readers several new and pregnant reflections on
-the subject.”—<i>Anti-Jacobin.</i>
+<div class="ads-title">27. <b>Crime and its Causes.</b></div>
+<div class="ads-author"><span class="smcap">W. Douglas Morrison.</span></div>
 
-28. <b>Principles of State Interference.</b>      <span class="smcap">D. G. Ritchie</span>, M.A.
+<p class="ads-summary">“Can hardly fail to suggest to all readers several new and pregnant reflections on
+the subject.”—<i>Anti-Jacobin.</i></p>
 
-“An interesting contribution to the controversy on the functions of the State.”—<i>Glasgow
-Herald.</i>
+<div class="ads-title">28. <b>Principles of State Interference.</b></div>
+<div class="ads-author"><span class="smcap">D. G. Ritchie</span>, M.A.</div>
 
-29. <b>German Socialism and F. Lassalle.</b>      <span class="smcap">W. H. Dawson.</span>
+<p class="ads-summary">“An interesting contribution to the controversy on the functions of the State.”—<i>Glasgow
+Herald.</i></p>
 
-“As a biographical history of German Socialistic movements during this century
-it may be accepted as complete.”—<i>British Weekly.</i>
+<div class="ads-title">29. <b>German Socialism and F. Lassalle.</b></div>
+<div class="ads-author"><span class="smcap">W. H. Dawson.</span></div>
 
-30. <b>The Purse and the Conscience.</b>      <span class="smcap">H. M. Thompson</span>, B.A. (Cantab.).
+<p class="ads-summary">“As a biographical history of German Socialistic movements during this century
+it may be accepted as complete.”—<i>British Weekly.</i></p>
 
-“Shows common sense and fairness in his arguments.”—<i>Scotsman.</i>
+<div class="ads-title">30. <b>The Purse and the Conscience.</b></div>
+<div class="ads-author"><span class="smcap">H. M. Thompson</span>, B.A. (Cantab.).</div>
 
-31. <b>Origin of Property in Land.</b> <span class="smcap">Fustel de Coulanges.</span> Edited, with an
-Introductory Chapter on the English Manor, by Prof. <span class="smcap">W. J. Ashley</span>, M.A.
+<p class="ads-summary">“Shows common sense and fairness in his arguments.”—<i>Scotsman.</i></p>
 
-“His views are clearly stated, and are worth reading.”—<i>Saturday Review.</i>
+<div class="ads-title">31. <b>Origin of Property in Land.</b></div>
+<div class="ads-author"><span class="smcap">Fustel de Coulanges.</span> Edited, with an
+Introductory Chapter on the English Manor, by Prof. <span class="smcap">W. J. Ashley</span>, M.A.</div>
 
-32. <b>The English Republic.</b>      <span class="smcap">W. J. Linton.</span>    Edited by <span class="smcap">Kineton Parkes</span>.
+<p class="ads-summary">“His views are clearly stated, and are worth reading.”—<i>Saturday Review.</i></p>
 
-“Characterised by that vigorous intellectuality which has marked his long life of
-literary and artistic activity.”—<i>Glasgow Herald.</i>
+<div class="ads-title">32. <b>The English Republic.</b></div>
+<div class="ads-author"><span class="smcap">W. J. Linton.</span> Edited by <span class="smcap">Kineton Parkes</span>.</div>
 
-33. <b>The Co-Operative Movement.</b>      <span class="smcap">Beatrice Potter.</span>
+<p class="ads-summary">“Characterised by that vigorous intellectuality which has marked his long life of
+literary and artistic activity.”—<i>Glasgow Herald.</i></p>
 
-“Without doubt the ablest and most philosophical analysis of the Co-Operative
-Movement which has yet been produced.”—<i>Speaker.</i>
+<div class="ads-title">33. <b>The Co-Operative Movement.</b></div>
+<div class="ads-author"><span class="smcap">Beatrice Potter.</span></div>
 
-34. <b>Neighbourhood Guilds.</b>      Dr. <span class="smcap">Stanton Coit</span>.
+<p class="ads-summary">“Without doubt the ablest and most philosophical analysis of the Co-Operative
+Movement which has yet been produced.”—<i>Speaker.</i></p>
 
-“A most suggestive little book to anyone interested in the social question.”—<i>Pall
-Mall Gazette.</i>
+<div class="ads-title">34. <b>Neighbourhood Guilds.</b></div>
+<div class="ads-author">Dr. <span class="smcap">Stanton Coit</span>.</div>
 
-35. <b>Modern Humanists.</b>      <span class="smcap">J. M. Robertson.</span>
+<p class="ads-summary">“A most suggestive little book to anyone interested in the social question.”—<i>Pall
+Mall Gazette.</i></p>
 
-“Mr. Robertson’s style is excellent—nay, even brilliant—and his purely literary
-criticisms bear the mark of much acumen.”—<i>Times.</i>
+<div class="ads-title">35. <b>Modern Humanists.</b></div>
+<div class="ads-author"><span class="smcap">J. M. Robertson.</span></div>
 
-36. <b>Outlooks from the New Standpoint.</b>      <span class="smcap">E. Belfort Bax.</span>
+<p class="ads-summary">“Mr. Robertson’s style is excellent—nay, even brilliant—and his purely literary
+criticisms bear the mark of much acumen.”—<i>Times.</i></p>
 
-“Mr. Bax is a very acute and accomplished student of history and economics.”—<i>Daily
-Chronicle.</i>
+<div class="ads-title">36. <b>Outlooks from the New Standpoint.</b></div>
+<div class="ads-author"><span class="smcap">E. Belfort Bax.</span></div>
 
-37. <b>Distributing Co-Operative Societies.</b>    Dr. <span class="smcap">Luigi Pizzamiglio</span>.    Edited by
-<span class="smcap">F. J. Snell</span>.
+<p class="ads-summary">“Mr. Bax is a very acute and accomplished student of history and economics.”—<i>Daily
+Chronicle.</i></p>
 
-“Dr. Pizzamiglio has gathered together and grouped a wide array of facts and
-statistics, and they speak for themselves.”—<i>Speaker.</i>
+<div class="ads-title">37. <b>Distributing Co-Operative Societies.</b>
+</div>
+<div class="ads-author">Dr. <span class="smcap">Luigi Pizzamiglio</span>.    Edited by
+<span class="smcap">F. J. Snell</span>.</div>
 
-38. <b>Collectivism and Socialism.</b>      By <span class="smcap">A. Nacquet</span>.    Edited by <span class="smcap">W. Heaford</span>.
+<p class="ads-summary">“Dr. Pizzamiglio has gathered together and grouped a wide array of facts and
+statistics, and they speak for themselves.”—<i>Speaker.</i></p>
 
-“An admirable criticism by a well-known French politician of the New Socialism
-of Marx and Lassalle.”—<i>Daily Chronicle.</i>
+<div class="ads-title">38. <b>Collectivism and Socialism.</b></div>
+<div class="ads-author">By <span class="smcap">A. Nacquet</span>.    Edited by <span class="smcap">W. Heaford</span>.</div>
 
-39. <b>The London Programme.</b>      <span class="smcap">Sidney Webb</span>, LL.B.
+<p class="ads-summary">“An admirable criticism by a well-known French politician of the New Socialism
+of Marx and Lassalle.”—<i>Daily Chronicle.</i></p>
 
-“Brimful of excellent ideas.”—<i>Anti-Jacobin.</i>
+<div class="ads-title">39. <b>The London Programme.</b></div>      <div class="ads-author"><span class="smcap">Sidney Webb</span>, LL.B.</div>
 
-40. <b>The Modern State.</b>      <span class="smcap">Paul Leroy Beaulieu.</span>
+<p class="ads-summary">“Brimful of excellent ideas.”—<i>Anti-Jacobin.</i></p>
 
-“A most interesting book; well worth a place in the library of every social
-inquirer.”—<i>N. B. Economist.</i>
+<div class="ads-title">40. <b>The Modern State.</b></div>
+<div class="ads-author"><span class="smcap">Paul Leroy Beaulieu.</span></div>
 
-41. <b>The Condition of Labour.</b>      <span class="smcap">Henry George.</span>
+<p class="ads-summary">“A most interesting book; well worth a place in the library of every social
+inquirer.”—<i>N. B. Economist.</i></p>
 
-“Written with striking ability, and sure to attract attention.”—<i>Newcastle Chronicle.</i>
+<div class="ads-title">41. <b>The Condition of Labour.</b></div>
+<div class="ads-author"><span class="smcap">Henry George.</span></div>
 
-42. <b>The Revolutionary Spirit preceding the French Revolution.</b>
-<span class="smcap">Felix Rocquain.</span> With a Preface by Professor <span class="smcap">Huxley</span>.
+<p class="ads-summary">“Written with striking ability, and sure to attract attention.”—<i>Newcastle Chronicle.</i></p>
 
-“The student of the French Revolution will find in it an excellent introduction to
-the study of that catastrophe.”—<i>Scotsman.</i>
+<div class="ads-title">42. <b>The Revolutionary Spirit preceding the French Revolution.</b></div>
+<div class="ads-author"><span class="smcap">Felix Rocquain.</span> With a Preface by Professor <span class="smcap">Huxley</span>.</div>
 
-43. <b>The Student’s Marx.</b>      <span class="smcap">Edward Aveling</span>, D.Sc.
+<p class="ads-summary">“The student of the French Revolution will find in it an excellent introduction to
+the study of that catastrophe.”—<i>Scotsman.</i></p>
 
-“One of the most practically useful of any in the Series.”—<i>Glasgow Herald.</i>
+<div class="ads-title">43. <b>The Student’s Marx.</b></div>
+<div class="ads-author"><span class="smcap">Edward Aveling</span>, D.Sc.</div>
 
-44. <b>A Short History of Parliament.</b>      <span class="smcap">B. C. Skottowe</span>, M.A. (Oxon.).
+<p class="ads-summary">“One of the most practically useful of any in the Series.”—<i>Glasgow Herald.</i></p>
 
-“Deals very carefully and completely with this side of constitutional history.”—<i>Spectator.</i>
+<div class="ads-title">44. <b>A Short History of Parliament.</b></div>
+<div class="ads-author"><span class="smcap">B. C. Skottowe</span>, M.A. (Oxon.).</div>
 
-45. <b>Poverty: Its Genesis and Exodus.</b>      <span class="smcap">J. G. Godard.</span>
+<p class="ads-summary">“Deals very carefully and completely with this side of constitutional history.”—<i>Spectator.</i></p>
 
-“He states the problems with great force and clearness.”—<i>N. B. Economist.</i>
+<div class="ads-title">45. <b>Poverty: Its Genesis and Exodus.</b></div>      <div class="ads-author"><span class="smcap">J. G. Godard.</span></div>
 
-46. <b>The Trade Policy of Imperial Federation.</b>      <span class="smcap">Maurice H. Hervey.</span>
+<p class="ads-summary">“He states the problems with great force and clearness.”—<i>N. B. Economist.</i></p>
 
-“An interesting contribution to the discussion.”—<i>Publishers’ Circular.</i>
+<div class="ads-title">46. <b>The Trade Policy of Imperial Federation.</b></div>
+<div class="ads-author"><span class="smcap">Maurice H. Hervey.</span></div>
 
-47. <b>The Dawn of Radicalism.</b>      <span class="smcap">J. Bowles Daly</span>, LL.D.
+<p class="ads-summary">“An interesting contribution to the discussion.”—<i>Publishers’ Circular.</i></p>
 
-“Forms an admirable picture of an epoch more pregnant, perhaps, with political
-instruction than any other in the world’s history.”—<i>Daily Telegraph.</i>
+<div class="ads-title">47. <b>The Dawn of Radicalism.</b></div>
+<div class="ads-author"><span class="smcap">J. Bowles Daly</span>, LL.D.</div>
 
-48. <b>The Destitute Alien in Great Britain.</b>      <span class="smcap">Arnold White</span>; <span class="smcap">Montague Crackanthorpe</span>,
-Q.C.; <span class="smcap">W. A. M‘Arthur</span>, M.P.; <span class="smcap">W. H. Wilkins</span>, &amp;c.
+<p class="ads-summary">“Forms an admirable picture of an epoch more pregnant, perhaps, with political
+instruction than any other in the world’s history.”—<i>Daily Telegraph.</i></p>
 
-“Much valuable information concerning a burning question of the day.”—<i>Times.</i>
+<div class="ads-title">48. <b>The Destitute Alien in Great Britain.</b></div>
+<div class="ads-author"><span class="smcap">Arnold White</span>; <span class="smcap">Montague Crackanthorpe</span>,
+Q.C.; <span class="smcap">W. A. M‘Arthur</span>, M.P.; <span class="smcap">W. H. Wilkins</span>, &amp;c.</div>
 
-49. <b>Illegitimacy and the Influence of Seasons on Conduct.</b>
-<span class="smcap">Albert Leffingwell</span>, M.D.
+<p class="ads-summary">“Much valuable information concerning a burning question of the day.”—<i>Times.</i></p>
 
-“We have not often seen a work based on statistics which is more continuously
-interesting.”—<i>Westminster Review.</i>
+<div class="ads-title">49. <b>Illegitimacy and the Influence of Seasons on Conduct.</b></div>
+<div class="ads-author"><span class="smcap">Albert Leffingwell</span>, M.D.</div>
 
-50. <b>Commercial Crises of the Nineteenth Century.</b>      <span class="smcap">H. M. Hyndman.</span>
+<p class="ads-summary">“We have not often seen a work based on statistics which is more continuously
+interesting.”—<i>Westminster Review.</i></p>
 
-“One of the best and most permanently useful volumes of the Series.”—<i>Literary
-Opinion.</i>
+<div class="ads-title">50. <b>Commercial Crises of the Nineteenth Century.</b></div>
+<div class="ads-author"><span class="smcap">H. M. Hyndman.</span></div>
 
-51. <b>The State and Pensions in Old Age.</b>      <span class="smcap">J. A. Spender</span> and <span class="smcap">Arthur Acland</span>, M.P.
+<p class="ads-summary">“One of the best and most permanently useful volumes of the Series.”—<i>Literary
+Opinion.</i></p>
 
-“A careful and cautious examination of the question.”—<i>Times.</i>
+<div class="ads-title">51. <b>The State and Pensions in Old Age.</b></div>
+<div class="ads-author"><span class="smcap">J. A. Spender</span> and <span class="smcap">Arthur Acland</span>, M.P.</div>
 
-52. <b>The Fallacy of Saving.</b>      <span class="smcap">John M. Robertson.</span>
+<p class="ads-summary">“A careful and cautious examination of the question.”—<i>Times.</i></p>
 
-“A plea for the reorganisation of our social and industrial system.”—<i>Speaker.</i>
+<div class="ads-title">52. <b>The Fallacy of Saving.</b></div>      <div class="ads-author"><span class="smcap">John M. Robertson.</span></div>
 
-53. <b>The Irish Peasant.</b>      <span class="smcap">Anon.</span>
+<p class="ads-summary">“A plea for the reorganisation of our social and industrial system.”—<i>Speaker.</i></p>
 
-“A real contribution to the Irish Problem by a close, patient and dispassionate
-investigator.”—<i>Daily Chronicle.</i>
+<div class="ads-title">53. <b>The Irish Peasant.</b></div>
+<div class="ads-author"><span class="smcap">Anon.</span></div>
 
-54. <b>The Effects of Machinery on Wages.</b>      Prof. <span class="smcap">J. S. Nicholson</span>, D.Sc.
+<p class="ads-summary">“A real contribution to the Irish Problem by a close, patient and dispassionate
+investigator.”—<i>Daily Chronicle.</i></p>
 
-“Ably reasoned, clearly stated, impartially written.”—<i>Literary World.</i>
+<div class="ads-title">54. <b>The Effects of Machinery on Wages.</b></div>
+<div class="ads-author">Prof. <span class="smcap">J. S. Nicholson</span>, D.Sc.</div>
 
-55. <b>The Social Horizon.</b>      <span class="smcap">Anon.</span>
+<p class="ads-summary">“Ably reasoned, clearly stated, impartially written.”—<i>Literary World.</i></p>
 
-“A really admirable little book, bright, clear, and unconventional.”—<i>Daily
-Chronicle.</i>
+<div class="ads-title">55. <b>The Social Horizon.</b></div>
+<div class="ads-author"><span class="smcap">Anon.</span></div>
 
-56. <b>Socialism, Utopian and Scientific.</b>      <span class="smcap">Frederick Engels.</span>
+<p class="ads-summary">“A really admirable little book, bright, clear, and unconventional.”—<i>Daily
+Chronicle.</i></p>
 
-“The body of the book is still fresh and striking.”—<i>Daily Chronicle.</i>
+<div class="ads-title">56. <b>Socialism, Utopian and Scientific.</b></div>
+<div class="ads-author"><span class="smcap">Frederick Engels.</span></div>
 
-57. <b>Land Nationalisation.</b>      <span class="smcap">A. R. Wallace.</span>
+<p class="ads-summary">“The body of the book is still fresh and striking.”—<i>Daily Chronicle.</i></p>
 
-“The most instructive and convincing of the popular works on the subject.”—<i>National
-Reformer.</i>
+<div class="ads-title">57. <b>Land Nationalisation.</b></div>
+<div class="ads-author"><span class="smcap">A. R. Wallace.</span></div>
 
-58. <b>The Ethic of Usury and Interest.</b>      Rev. <span class="smcap">W. Blissard</span>.
+<p class="ads-summary">“The most instructive and convincing of the popular works on the subject.”—<i>National
+Reformer.</i></p>
 
-“The work is marked by genuine ability.”—<i>North British Agriculturalist.</i>
+<div class="ads-title">58. <b>The Ethic of Usury and Interest.</b></div>
+<div class="ads-author">Rev. <span class="smcap">W. Blissard</span>.</div>
 
-59. <b>The Emancipation of Women.</b>      <span class="smcap">Adele Crepaz.</span>
+<p class="ads-summary">“The work is marked by genuine ability.”—<i>North British Agriculturalist.</i></p>
 
-“By far the most comprehensive, luminous, and penetrating work on this question
-that I have yet met with.”—<i>Extract from</i> Mr. <span class="smcap">Gladstone’s</span> <i>Preface</i>.
+<div class="ads-title">59. <b>The Emancipation of Women.</b></div>
+<div class="ads-author"><span class="smcap">Adele Crepaz.</span></div>
 
-60. <b>The Eight Hours’ Question.</b>      <span class="smcap">John M. Robertson.</span>
-</pre>
+<p class="ads-summary">“By far the most comprehensive, luminous, and penetrating work on this question
+that I have yet met with.”—<i>Extract from</i> Mr. <span class="smcap">Gladstone’s</span> <i>Preface</i>.</p>
 
-<p>DOUBLE VOLUMES, Each 3s. 6d.</p>
+<div class="ads-title">60. <b>The Eight Hours’ Question.</b></div>
+<div class="ads-author"><span class="smcap">John M. Robertson.</span></div>
+<p class="ads-summary"></p>
 
-<pre>
-1. <b>Life of Robert Owen.</b>      <span class="smcap">Lloyd Jones.</span>
+<p class="center p2"><b><span class="uppercase">Double Volumes</span>, Each 3s. 6d.</b></p>
 
-2. <b>The Impossibility of Social Democracy</b>: a Second Part of “The Quintessence
-of Socialism”.      Dr. <span class="smcap">A. Schäffle</span>.
+<div class="ads-title">1. <b>Life of Robert Owen.</b></div>
+<div class="ads-author"><span class="smcap">Lloyd Jones.</span></div>
 
-3. <b>The Condition of the Working Class in England in 1844.</b>      <span class="smcap">Frederick Engels.</span>
+<p class="ads-summary"></p>
 
-4. <b>The Principles of Social Economy.</b>      <span class="smcap">Yves Guyot.</span>
-</pre>
+<div class="ads-title">2. <b>The Impossibility of Social Democracy</b>: a Second Part of “The Quintessence
+of Socialism”.</div>
+<div class="ads-author">Dr. <span class="smcap">A. Schäffle</span>.</div>
+
+<p class="ads-summary"></p>
+
+<div class="ads-title">3. <b>The Condition of the Working Class in England in 1844.</b></div>
+<div class="ads-author"><span class="smcap">Frederick Engels.</span></div>
+
+<p class="ads-summary"></p>
+
+<div class="ads-title">4. <b>The Principles of Social Economy.</b></div>
+<div class="ads-author"><span class="smcap">Yves Guyot.</span></div>
+
+<p class="ads-summary"></p>
+
 </section>
 
 </body>
