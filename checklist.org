@@ -504,38 +504,41 @@ e.g. for scrolling, use Shift-Option instead.
 - [X] HTML → Ebookmaker (online) - build EPUB2 and EPUB3
 - [X] Review in Apple Books; focus on page breaks and major issues
 ** Build and upload ebooks
-- [ ] If any changes were made from previous step, rebuild EPUB3
-- [ ] Optional: Convert EPUB3 to KEPUB with Calibre
-- [ ] Optional: Upload EPUB3 with [[https://www.amazon.com/gp/sendtokindle][Send to Kindle]]
-- [ ] Add epub3 to Apple Books
-- [ ] Optional: Add EPUB3, KEPUB to Dropbox for Kobo, Android, etc
+- [X] If any changes were made from previous step, rebuild EPUB3
+- [X] Optional: Convert EPUB3 to KEPUB with Calibre
+- [X] Optional: Upload EPUB3 with [[https://www.amazon.com/gp/sendtokindle][Send to Kindle]]
+- [X] Add epub3 to Apple Books
+- [X] Optional: Add EPUB3, KEPUB to Dropbox for Kobo, Android, etc
 *** Ebook review
 Don't necessarily have to do *all* of these, but these are what I have.
-- [ ] Review Ebook ToC in at least one e-reader, for structure & content
+- [X] Review Ebook ToC in at least one e-reader, for structure & content
   - Can try using ~title=~ attr if a header title has footnote marker etc.
-- [ ] Mac
-  - [ ] Apple Books
-  - [ ] Calibre
-  - [ ] Thorium
-- [ ] Phone
-  - [ ] Apple Books (iPhone)
-  - [ ] Kindle (iPhone)
-- [ ] Tablet
-  - [ ] Kindle (Android)
-  - [ ] Google Play Books - Android (Dropbox)
-- [ ] E-ink
-  - [ ] Kobo Libra Colour (kepub)
+- [X] Mac
+  - [X] Apple Books
+  - [X] Calibre
+  - [X] Thorium
+- [X] Phone
+  - [X] Apple Books (iPhone)
+  - [X] Kindle (iPhone)
+  - [X] Thorium (iPhone)
+- [X] Tablet
+  - [X] Kindle (Android)
+  - [X] Google Play Books - Android (Dropbox)
+  - [X] ReadEra (Android) - Dropbox
+  - [X] Lithium (Android) - Dropbox
+- [-] E-ink
+  - [X] Kobo Libra Colour (kepub)
   - [ ] Kindle Colorsoft
 ** Smooth Reading
 *** Submit to SR pool
 Submit for a decent length of time, up to the maximum. Check what's in ~ebooks/~ folder, it'll all be uploaded.
-- [ ] Make sure git is clean, committed, pushed
-- [ ] If not already done, run online Ebookmaker and get books into ~ebooks/~
-- [ ] ~make sr~
-- [ ] Write or find a summary/blurb about the book for the SR submission. This can help to interest a potential reader.
-- [ ] Go to [[https://www.pgdp.net/c/project.php?id=projectID65d9ffa2f17d8][project page]], select SR time period, upload ~womancipation-sr.zip~
-- [ ] Subscribe to “user uploads a SR report” item
-- [ ] Update my Trello project board with due date, set card to SR status
+- [X] Make sure git is clean, committed, pushed
+- [X] If not already done, run online Ebookmaker and get books into ~ebooks/~
+- [X] ~make sr~
+- [X] Write or find a summary/blurb about the book for the SR submission. This can help to interest a potential reader.
+- [X] Go to [[https://www.pgdp.net/c/project.php?id=projectID65d9ffa2f17d8][project page]], select SR time period, upload ~womancipation-sr.zip~
+- [X] Subscribe to “user uploads a SR report” item
+- [X] Update my Trello project board with due date, set card to SR status
 - [ ] If time permits, smooth read it myself as well
 *** Process SR feedback
 - [ ] After SR is finished, processed SR feedback into project.
