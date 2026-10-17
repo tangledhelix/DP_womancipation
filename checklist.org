@@ -526,9 +526,9 @@ Don't necessarily have to do *all* of these, but these are what I have.
   - [X] Google Play Books - Android (Dropbox)
   - [X] ReadEra (Android) - Dropbox
   - [X] Lithium (Android) - Dropbox
-- [-] E-ink
+- [X] E-ink
   - [X] Kobo Libra Colour (kepub)
-  - [ ] Kindle Colorsoft
+  - [X] Kindle Colorsoft
 ** Smooth Reading
 *** Submit to SR pool
 Submit for a decent length of time, up to the maximum. Check what's in ~ebooks/~ folder, it'll all be uploaded.
@@ -539,7 +539,7 @@ Submit for a decent length of time, up to the maximum. Check what's in ~ebooks/~
 - [X] Go to [[https://www.pgdp.net/c/project.php?id=projectID65d9ffa2f17d8][project page]], select SR time period, upload ~womancipation-sr.zip~
 - [X] Subscribe to “user uploads a SR report” item
 - [X] Update my Trello project board with due date, set card to SR status
-- [ ] If time permits, smooth read it myself as well
+- [X] If time permits, smooth read it myself as well
 *** Process SR feedback
 - [ ] After SR is finished, processed SR feedback into project.
 - [ ] Add *anonymized* files to git, e.g. ~womancipation-smoothread01.txt~
